@@ -1,0 +1,16 @@
+div {
+    font-size: 14px;
+}
+
+div > div {
+    font-size: 40px;
+}
+
+div > div:hover {
+    color: red;
+    background-color: black;
+}
+
+p {
+    background-color: blue !important;
+}
