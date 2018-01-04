@@ -1,8 +1,8 @@
-#boroda {
+.boroda {
     font-size: 30px;
     color: green;
 }
-p {
+.class {
     color: blue;
 }
 .class1 {

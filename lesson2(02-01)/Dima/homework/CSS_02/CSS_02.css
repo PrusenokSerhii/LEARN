@@ -1,10 +1,11 @@
-p.class1
-{
+.class1 {
     color:blue;
 }
-p.class2
-{
+.class2 {
     font-size:30px;
 }
-
+.span-class {
+    color: green;
+    font-size: 50px;
+}
 
