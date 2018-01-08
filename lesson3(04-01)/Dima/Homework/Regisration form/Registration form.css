@@ -1,0 +1,27 @@
+.Body{
+    background-color: #9196f2;
+}
+.Div{
+    width: 450px;
+    height: 480px;
+    background-color: #9383c4;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #30215b;
+}
+.input  {
+    height: 35px;
+    width: 300px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+.select {
+    height: 30px;
+    width: 100px;
+    font-size: 18px;
+}
+.h1 {
+    font-size: 44px;
+    margin: 10px;
+}
