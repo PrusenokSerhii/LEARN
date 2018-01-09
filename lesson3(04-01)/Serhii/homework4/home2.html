@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="home2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="osnova"><form method="get" target="_self">
+        Шановний учаснику конкурсу «Вчитель-новатор»!
+        Заповніть, будь ласка, реєстраційну анкету українською мовою.
+        Прохання надати повну відповідь на всі поставлені запитання.
+        Якщо ви подаєте декілька конкурсних робіт, будь ласка,
+        заповніть дану анкету для кожної конкурсної роботи окремо.
+        Дякуємо Вам за участь у конкурсі та бажаємо успіхів!
+        <div>
+            Прізвище<input type="text" name="Прізвище" title="Введіть прізвище"/>
+        </div>
+        <div>
+            Ім’я та по-батькові<input type="text" name="Ім’я та по-батькові" title="Введіть ім’я та по-батькові"/>
+        </div>
+        <div>
+            Назва конкурсної роботи<input type="text" name="Назва конкурсної роботи" title="Введіть назву конкурсної роботи">
+        </div>
+        <div>
+            Номінація конкурсної роботи
+            <select name="Номінація конкурсної роботи">
+                <option value="f1">Навчальний проект</option>
+                <option value="f2">Виховний проект</option>
+                <option value="f3">Позашкільний проект</option>
+                <option value="f4">Навчальний контент</option>
+                <option value="f5">Он-лайновий освітній ресурс</option>
+                <option value="f6">Навчально-методичне забезпечення</option>
+            </select>
+        </div>
+        <div>
+            Навчальна дисципліна (наприклад, біологія)<input type="text" name="Навчальна дисципліна (наприклад, біологія)" title="Наприклад, біологія"/>
+        </div>
+        <div>
+            Чи була апробована ваша робота?
+            <br/>
+            Так:<input type="radio" name="answer" value="yes"/>
+            <br/>
+            Ні:<input type="radio" name="answer" value="no"/>
+        </div>
+        <div>
+            Якщо "Так", то на якому рівні?<input type="text"/>
+        </div>
+        <div>
+            Повна назва установи, де ви працюєте<input type="text"/>
+        </div>
+        <div>
+            Ваша посада<input type="text"/>
+        </div>
+        <div>
+            Місто/населений пункт<input type="text"/>
+        </div>
+        <div>
+            Область
+            <select name="Область">
+                <option value="f1">Автономна республіка Крим</option>
+                <option value="f2">Вінницька область</option>
+                <option value="f3">Волинська область</option>
+                <option value="f4">Дніпропетровська область</option>
+                <option value="f5">Донецька область</option>
+                <option value="f6">Житомирська область</option>
+                <option value="f7">Закарпатська область</option>
+                <option value="f8">Запорізька область</option>
+                <option value="f9">Івано-Франківська область</option>
+                <option value="f10">Київська область</option>
+                <option value="f11">Кіровоградська область</option>
+                <option value="f12">Луганська область</option>
+                <option value="f13">Львіська область</option>
+                <option value="f14">Миколаївська область</option>
+                <option value="f15">Одеська область</option>
+                <option value="f16">Полтавська область</option>
+                <option value="f17">Рівненська область</option>
+                <option value="f18">Сумська область</option>
+                <option value="f19">Тернопільська область</option>
+                <option value="f20">Харківська область</option>
+                <option value="f21">Херсонська область</option>
+                <option value="f22">Хмельницька область</option>
+                <option value="f23">Черкаська область</option>
+                <option value="f24">Чернівецька область</option>
+                <option value="f25">Чернігівська область</option>
+                <option value="f26">м. Київ</option>
+            </select>
+        </div>
+        <div>
+            Мобільний телефон<input type="text" value="+38">
+        </div>
+        <div>
+            Електронна пошта<input type="text"/>
+        </div>
+        <div>
+            Ви брали участь у попередніх конкурсах  «Вчитель-новатор»?
+            <br/>
+            Так:<input type="radio" name="answer" value="yes"/>
+            <br/>
+            Ні:<input type="radio" name="answer" value="no"/>
+        </div>
+        <div>
+            Якщо так,  то вкажіть, коли саме.<input type="date">
+        </div>
+        <div>
+            Яким чином ви дізналися про конкурс «Вчитель-новатор»? (на вибір, можна декілька варіантів)
+            <select multiple="vybor">
+                <option value="f1">Сайт МОН молодьспорту</option>
+                <option value="f2">Сайт Майкрософт Україна</option>
+                <option value="f3">Сайт Мережі «Партнерство в навчанні»</option>
+                <option value="f4">Обласний ІППО</option>
+                <option value="f5">Обласне управління освіти</option>
+                <option value="f6">Міське управління освіти</option>
+                <option value="f7">Osvita.com</option>
+                <option value="f8">Gurt.org.ua</option>
+                <option value="f9">інше</option>
+            </select>
+        </div>
+        <div>
+            Я даю згоду на обробку моїх персональних даних і погоджуюся з Політикою конфіденційності
+            <input type="checkbox" required>
+        </div>
+        <input type="submit" value="Подати анкету"/><input type="reset" value="Заповнити знову"/>
+    </form></div>
+
+</body>
+</html>
+
+
+
+
+
+
+
