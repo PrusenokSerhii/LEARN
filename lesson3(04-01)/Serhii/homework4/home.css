@@ -1,134 +1,131 @@
 .green1 {
-    border: 1px solid #008000;
+    border: 3px solid #008000;
     display: block;
+    width: 100%;
 }
-
 .red1 {
-    border: 1px solid #ff0000;
-    display: block;
+    border: 3px solid #ff0000;
+    display: flex;
     margin: 5px 5px;
     height: 10%;
 }
-
 .blue1 {
-    border: 1px solid #0000ff;
+    border: 3px solid #0000ff;
     margin: 5px 5px;
     display: inline-block;
     width: 25%;
     height: 100px;
 }
-
 .blue2 {
-    border: 1px solid #0000ff;
+    border: 3px solid #0000ff;
     margin: 5px 5px;
     display: inline-block;
-    width: 46%;
+    width: 50%;
     height: 100px;
 }
-
 .blue3 {
-    border: 1px solid #0000ff;
+    border: 3px solid #0000ff;
     margin: 5px 5px;
     display: inline-block;
     width: 25%;
     height: 100px;
 }
-
 .yellow {
-    border: 1px solid #ffff00;
+    border: 3px solid #ffff00;
     height: 37px;
     margin: 5px 5px;
     display: block;
 }
-
+.red2 {
+    display: flex;
+    justify-content: space-between;
+}
 .blue4 {
-    border: 1px solid #0000ff;
+    border: 3px solid #0000ff;
     margin: 5px 5px;
     display: inline-block;
     height: 50px;
-    width: 14%
+    width: 15%;
+    align-items: center;
 }
-
+.blue4Blue {
+    border: 3px solid #0000ff;
+    margin: 5px 5px;
+    display: inline-block;
+    height: 50px;
+    width: 15%;
+}
 .blue5 {
-    border: 1px solid #0000ff;
+    border: 3px solid #0000ff;
     margin: 5px 5px;
     display: inline-block;
     height: 50px;
-    width: 33%;
+    width: 30%;
 }
-
 .red3 {
-    border: 1px solid #ff0000;
+    border: 3px solid #ff0000;
     margin: 5px 5px;
-    display: block;
+    display: flex;
     height: 50%;
+    justify-content: space-between;
 }
-
 .blue6 {
-    border: 1px solid #0000ff;
+    border: 3px solid #0000ff;
     margin: 5px 5px;
     display: inline-block;
-    width: 30%;
+    width: 35%;
     height: 250px;
 }
-
 .blue7 {
-    border: 1px solid #0000ff;
+    border: 3px solid #0000ff;
     margin: 5px 5px;
     display: inline-block;
     width: 65%;
     height: 250px;
 }
-
 .yellow1 {
-    border: 1px solid #ffff00;
+    border: 3px solid #ffff00;
     margin: 5px 5px;
     display: block;
     height: 180px;
 }
-
 .yellow2 {
-    border: 1px solid #ffff00;
+    border: 3px solid #ffff00;
     margin: 5px 5px;
     display: block;
     height: 40px;
 }
-
 .red4 {
-    border: 1px solid #ff0000;
-    display: block;
+    border: 3px solid #ff0000;
+    display: flex;
     margin: 5px 5px;
     height: 10%;
+    justify-content: space-between;
 }
-
 .blue8 {
-    border: 1px solid #0000ff;
+    border: 3px solid #0000ff;
     margin: 5px 5px;
     display: inline-block;
     width: 25%;
     height: 100px;
 }
-
 .yellow3 {
-    border: 1px solid #ffff00;
+    border: 3px solid #ffff00;
     height: 37px;
     margin: 5px 5px;
     display: block;
 }
-
 .blue9 {
-    border: 1px solid #0000ff;
+    border: 3px solid #0000ff;
     margin: 5px 5px;
     display: inline-block;
     width: 25%;
     height: 100px;
 }
-
 .blue10 {
-    border: 1px solid #0000ff;
+    border: 3px solid #0000ff;
     margin: 5px 5px;
     display: inline-block;
-    width: 45%;
+    width: 50%;
     height: 100px;
 }
-
