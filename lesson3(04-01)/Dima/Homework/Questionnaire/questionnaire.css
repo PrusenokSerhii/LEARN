@@ -1,10 +1,28 @@
-
-.Body {
-    background-color: #a8ed7b;
+.form{
+    background:#babbc6;
 }
-.Div {
-    border: 2px solid #5360aa;
-    width:500px;
+.div {
+    border: 3px solid green;
+    width: 600px;
+    display: block;
     margin: 0 auto;
+    background: #858de2;
+    justify-content: center;
     text-align: center;
+    font-size: 20px;
+    font-family: "Berlin Sans FB Demi";
 }
+.input {
+    background:#e9ede8;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+.img {
+    height: 450px;
+}
+header {
+    display: inline-flex;
+}
+
