@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .element {
+            margin: 50px auto;
+            width: 100px;
+        }
+        .element:before {
+            content: attr(data-id);
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="element" data-id="ТЫ ">ХУЙ</div>
+</body>
+</html>
