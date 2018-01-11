@@ -5,25 +5,42 @@
     <title>Title</title>
     <link href="home2.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-    <div class="osnova">
+<body class="osnova">
+    <div class="div">
         <form method="get" target="_self">
+            <p>
         Шановний учаснику конкурсу «Вчитель-новатор»!
+                <br/>
         Заповніть, будь ласка, реєстраційну анкету українською мовою.
+                <br/>
         Прохання надати повну відповідь на всі поставлені запитання.
+                <br/>
         Якщо ви подаєте декілька конкурсних робіт, будь ласка,
+                <br/>
         заповніть дану анкету для кожної конкурсної роботи окремо.
+                <br/>
         Дякуємо Вам за участь у конкурсі та бажаємо успіхів!
+            </p>
             <div>
-            Прізвище<input type="text" name="Прізвище" placeholder="Введіть прізвище"/>
+                <p>
+            Прізвище
+                    <input type="text" name="Прізвище" placeholder="Введіть прізвище"/>
+                </p>
             </div>
              <div>
-            Ім’я та по-батькові<input type="text" name="Ім’я та по-батькові" placeholder="Введіть ім’я та по-батькові"/>
+                 <p>
+            Ім’я та по-батькові
+                     <input type="text" name="Ім’я та по-батькові" placeholder="Введіть ім’я та по-батькові"/>
+                 </p>
              </div>
              <div>
-            Назва конкурсної роботи<input type="text" name="Назва конкурсної роботи" placeholder="Введіть назву конкурсної роботи">
+                 <p>
+            Назва конкурсної роботи
+                     <input type="text" name="Назва конкурсної роботи" placeholder="Введіть назву конкурсної роботи">
+                 </p>
              </div>
             <div>
+                <p>
             Номінація конкурсної роботи
                 <label>
                     <select name="Номінація конкурсної роботи">
@@ -35,30 +52,49 @@
                         <option value="f6">Навчально-методичне забезпечення</option>
                     </select>
                 </label>
+                </p>
             </div>
         <div>
-            Навчальна дисципліна (наприклад, біологія)<input type="text" name="Навчальна дисципліна (наприклад, біологія)" placeholder="Наприклад, біологія"/>
+            <p>
+            Навчальна дисципліна (наприклад, біологія)
+                <input type="text" name="Навчальна дисципліна (наприклад, біологія)" placeholder="Наприклад, біологія"/>
+            </p>
         </div>
         <div>
+            <p>
             Чи була апробована ваша робота?
             <br/>
-            Так:<input type="radio" name="answer" value="yes"/>
+            Так: <input type="radio" name="answer" value="yes"/>
             <br/>
-            Ні:<input type="radio" name="answer" value="no"/>
+            Ні: <input type="radio" name="answer" value="no"/>
+            </p>
         </div>
         <div>
-            Якщо "Так", то на якому рівні?<input type="text"/>
+            <p>
+            Якщо "Так", то на якому рівні?
+            <input type="text"/>
+            </p>
         </div>
         <div>
-            Повна назва установи, де ви працюєте<input type="text"/>
+            <p>
+            Повна назва установи, де ви працюєте
+            <input type="text"/>
+            </p>
         </div>
         <div>
-            Ваша посада<input type="text"/>
+            <p>
+            Ваша посада
+            <input type="text"/>
+            </p>
         </div>
         <div>
-            Місто/населений пункт<input type="text"/>
+            <p>
+            Місто/населений пункт
+            <input type="text"/>
+            </p>
         </div>
         <div>
+            <p>
             Область
             <label>
                 <select name="Область">
@@ -90,24 +126,37 @@
                     <option value="f26">м. Київ</option>
                 </select>
             </label>
+            </p>
         </div>
         <div>
-            Мобільний телефон<input type="text" value="+38">
+            <p>
+            Мобільний телефон
+            <input type="text" value="+38">
+            </p>
         </div>
         <div>
-            Електронна пошта<input type="text"/>
+            <p>
+            Електронна пошта
+            <input type="text"/>
+            </p>
         </div>
         <div>
+            <p>
             Ви брали участь у попередніх конкурсах  «Вчитель-новатор»?
             <br/>
             Так:<input type="radio" name="answer" value="yes"/>
             <br/>
             Ні:<input type="radio" name="answer" value="no"/>
+            </p>
         </div>
         <div>
-            Якщо так,  то вкажіть, коли саме.<input type="date" name="calendar" max="01-01-1920" min="01-01-2018"/>
+            <p>
+            Якщо так,  то вкажіть, коли саме
+            <input type="date" name="calendar" max="01-01-1920" min="01-01-2018"/>
+            </p>
         </div>
         <div>
+            <p>
             Яким чином ви дізналися про конкурс «Вчитель-новатор»? (на вибір, можна декілька варіантів)
             <label>
                 <select multiple="vybor">
@@ -122,12 +171,17 @@
                     <option value="f9">інше</option>
                 </select>
             </label>
+            </p>
         </div>
         <div>
+            <p>
             Я даю згоду на обробку моїх персональних даних і погоджуюся з Політикою конфіденційності
             <input name="321" type="checkbox" required />
+            </p>
         </div>
-        <input type="submit" value="Подати анкету"/><input type="reset" value="Заповнити знову"/>
+            <p>
+                <input type="submit" value="Подати анкету"/><input type="reset" value="Заповнити знову"/>
+            </p>
         </form>
     </div>
 </body>
