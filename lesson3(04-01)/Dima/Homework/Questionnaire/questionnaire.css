@@ -15,8 +15,8 @@
 .input {
     background:#e9ede8;
     text-align: center;
-    border-radius: 10px;
-    font-size: 20px;
+    border-radius: 5px;
+    font-size: 17px;
     border: 1px solid black;
 }
 .img {
@@ -25,4 +25,6 @@
 header {
     display: inline-flex;
 }
-
+input:focus {
+    color: darkblue;
+}
