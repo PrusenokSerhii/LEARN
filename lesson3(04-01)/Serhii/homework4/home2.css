@@ -4,6 +4,7 @@
     border: 3px solid #000000;
     margin: 0 auto;
     display: block;
+    justify-content: space-between;
 }
 .div {
     font-size: 15px;

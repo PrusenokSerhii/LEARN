@@ -1,0 +1,12 @@
+.main {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+}
+.header {
+    background-color: #babbc6;
+    display: block;
+}
+.stamp {
+    height: 100%;
+}
