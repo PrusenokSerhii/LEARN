@@ -1,0 +1,53 @@
+.wow {
+    display: flex;
+    width: 100%;
+    height: 481px;
+    align-items: stretch;
+}
+.zero {
+    background-image: url(https://itc.ua/wp-content/uploads/2018/01/0-8-770x481.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.p {
+    font-size: 25px;
+    font-family: "Comic Sans MS";
+    color: #ffffff;
+    align-items: flex-end;
+}
+.granica {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 100%;
+    width: 50%;
+}
+.small-img {
+    background-size: cover;
+    width: 50%;
+    position: relative;
+}
+.one {
+    background-image: url(https://itc.ua/wp-content/uploads/2018/01/Intel_Core_8_Radeon_RX_Vega_intro_770-770x547.jpg);
+}
+.two {
+    background-image: url(https://itc.ua/wp-content/uploads/2018/01/0-7-770x481.jpg);
+}
+.three {
+    background-image: url(https://itc.ua/wp-content/uploads/2018/01/ai1-770x546.jpg);
+}
+.four {
+    background-image: url(https://itc.ua/wp-content/uploads/2018/01/HTC-U11-EYEs-Color-Variants-770x452.jpg);
+}
+.small-img:hover:after, .zero:hover:after {
+    position: absolute;
+    background-color: #2f4ea8;
+    opacity: .454;
+    content: "";
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
