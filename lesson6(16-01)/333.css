@@ -1,0 +1,21 @@
+.div {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+.yebok {
+    width: 200px;
+    height: 280px;
+    animation-name: boy;
+    animation-duration: 4s;
+    animation-iteration-count: 25;
+    animation-fill-mode: revert;
+}
+@keyframes boy {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
