@@ -9,7 +9,7 @@
 *
 **/
 var gulp         = require('gulp');
-var sass         = require('gulp-sass');
+var less         = require('gulp-less');
 var browserSync  = require('browser-sync');
 var prefix       = require('gulp-autoprefixer');
 var plumber      = require('gulp-plumber');
@@ -27,10 +27,10 @@ var pngquant     = require('imagemin-pngquant');
 * - Autoprefixer
 *
 **/
-gulp.task('sass', function() {
-  gulp.src('sass/**/*.scss')
+gulp.task('less', function() {
+  gulp.src('less/**/*.less')
   .pipe(plumber())
-  .pipe(sass({outputStyle: 'compressed'}))
+  .pipe(less())
   .pipe(prefix('last 2 versions', '> 1%', 'ie 8', 'Android 2', 'Firefox ESR'))
   .pipe(gulp.dest('css'));
 });
@@ -70,11 +70,11 @@ gulp.task('images', function () {
 /**
 *
 * Default task
-* - Runs sass, browser-sync, scripts and image tasks
-* - Watchs for file changes for images, scripts and sass/css
+* - Runs less, browser-sync, scripts and image tasks
+* - Watchs for file changes for images, scripts and less/css
 *
 **/
-gulp.task('default', ['sass', 'browser-sync', 'images'], function () {
-  gulp.watch('sass/**/*.scss', ['sass']);
+gulp.task('default', ['less', 'browser-sync', 'images'], function () {
+  gulp.watch('less/**/*.less', ['less']);
   gulp.watch('images/*', ['images']);
 });
