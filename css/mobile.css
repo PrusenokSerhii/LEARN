@@ -1,5 +1,83 @@
-@media all and (max-width: 320px) {
-  .colorLeftTwo {
-    background: #000;
+@media all and (max-width: 720px) {
+  .center {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: end;
+  }
+  .touch-menu {
+    display: block;
+  }
+  .centerTwo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .head {
+    margin-left: 15px;
+  }
+  .head:hover {
+    background: antiquewhite;
+  }
+  .touch-menu {
+    margin-left: 15px;
+    text-decoration: none;
+    color: cadetblue;
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+  }
+  .touch-menu:hover {
+    background: ghostwhite;
+    color: #ef6347;
+  }
+  .centerOne {
+    display: none;
+  }
+  .colorLeftTwo,
+  .squareNine,
+  .squareTen,
+  .squareEleven,
+  .square,
+  .dataOneOne,
+  .dataOneTwo {
+    display: none;
+  }
+  .image {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .dataOne {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .categoriesOne,
+  .lineimageOne,
+  .photo,
+  .lineFour {
+    margin-top: 10px;
+  }
+  .video {
+    margin-top: 5px;
+  }
+  .lineSix {
+    display: grid;
+    grid-template-areas: "lineTwelf lineTwelf lineTwelf" "dataThirteen textTwelf textTwelf";
+  }
+  .lineTwelve {
+    grid-area: lineTwelf;
+  }
+  .textTwelf {
+    grid-area: textTwelf;
+  }
+  .dataThirteen {
+    grid-area: dataThirteen;
+  }
+  .theEnd {
+    display: grid;
+    grid-template-columns: 100%;
   }
 }
