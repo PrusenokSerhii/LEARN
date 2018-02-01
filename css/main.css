@@ -11,6 +11,9 @@
 .colorLeftTwo {
   background: #f7b5a8;
 }
+.touch-menu {
+  color: white;
+}
 .square {
   background-image: url("../images/icon1.png");
   background-size: cover;
