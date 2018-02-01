@@ -5,8 +5,10 @@
   font-family: "Comic Sans MS";
 }
 .column1 {
-  display: grid;
-  grid-template-rows: 20% 25% 25% 15% 15%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 .first1 {
   background-color: #f7b5a8;
@@ -26,6 +28,10 @@
 }
 .third3 {
   background-image: url(../images/icon2.png);
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 2;
 }
 .fourth4 {
   background-image: url(../images/icon3.png);
@@ -71,10 +77,8 @@
   padding: 15px 20px;
 }
 .content {
-  display: grid;
-  grid-template-columns: 80% 20%;
-  grid-column-gap: 10px;
-  margin-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
 }
 .img {
   display: -ms-flexbox;
@@ -105,8 +109,11 @@
   margin: 5px 0 2px;
 }
 .contentBehind {
-  display: grid;
-  grid-template-columns: 20% 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin-right: 5px;
 }
 .loren {
   text-align: justify;
@@ -147,13 +154,11 @@
   background-color: #ef6347;
 }
 .dana {
-  display: grid;
-}
-.right {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 25fr;
-  grid-template-areas: "head head1" "text text";
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 300px;
 }
 .right1 {
   font-size: 10px;
@@ -189,4 +194,7 @@
   width: 100%;
   height: 50px;
   margin-top: 50px;
+}
+.div {
+  margin-left: 10px;
 }
