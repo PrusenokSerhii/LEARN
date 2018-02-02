@@ -11,10 +11,10 @@
 .colorLeftTwo {
   background: #f7b5a8;
 }
-.touch-menu {
-  color: white;
-}
-.square {
+.square,
+.squareNine,
+.squareTen,
+.squareEleven {
   background-image: url("../images/icon1.png");
   background-size: cover;
   width: 80px;
@@ -24,17 +24,11 @@
 }
 .squareNine {
   background-image: url("../images/icon2.png");
-  background-size: cover;
-  width: 80px;
-  height: 80px;
   justify-self: end;
   margin-top: 13px;
 }
 .squareTen {
   background-image: url("../images/icon3.png");
-  background-size: cover;
-  width: 80px;
-  height: 80px;
   margin-top: 42px;
   justify-self: end;
   -ms-flex-item-align: center;
@@ -42,9 +36,6 @@
 }
 .squareEleven {
   background-image: url("../images/icon4.png");
-  background-size: cover;
-  width: 80px;
-  height: 80px;
   margin-top: 7px;
   justify-self: end;
 }
@@ -153,9 +144,8 @@
   height: 300px;
 }
 .imageTwo {
-  /*background: yellow;*/
   display: grid;
-  grid-template-rows: 20% 30% 30% auto;
+  grid-template-rows: auto auto auto auto;
 }
 .about {
   display: grid;
@@ -164,15 +154,17 @@
   grid-template-areas: "aboutt lineimage" "loren  loren";
 }
 .aboutt {
-  font-size: 14px;
+  font-size: 1vw;
   font-weight: 600;
   color: #ef6347;
   grid-area: aboutt;
 }
-.lineimage {
+.lineimage,
+.lineimageOne,
+.lineimageTwo {
   background-image: url("../images/line.png");
   background-size: cover;
-  height: 14px;
+  height: 1vw;
   grid-area: lineimage;
 }
 .loren {
@@ -188,15 +180,13 @@
 }
 .categoriesOne {
   grid-area: categories;
-  font-size: 14px;
+  font-size: 1vw;
   font-weight: 600;
   color: #ef6347;
 }
 .lineimageOne {
   grid-area: lineimageOne;
   background-image: url("../images/line.png");
-  background-size: cover;
-  height: 14px;
 }
 .video {
   grid-area: video;
@@ -212,55 +202,46 @@
 }
 .photoOne {
   grid-area: photoOne;
-  font-size: 14px;
+  font-size: 1vw;
   font-weight: 600;
   color: #ef6347;
 }
 .lineimageTwo {
   grid-area: lineimageTwo;
   background-image: url("../images/line.png");
-  background-size: cover;
-  height: 14px;
 }
-.squareOne {
+.squareOne,
+.squareTwo,
+.squareThree,
+.squareFour,
+.squareFive,
+.squareSix,
+.squareSeven,
+.squareEight {
   grid-area: squareOne;
   background-color: #f7b5a8;
   border: 1px solid #ef6347;
 }
 .squareTwo {
   grid-area: squareTwo;
-  background-color: #f7b5a8;
-  border: 1px solid #ef6347;
 }
 .squareThree {
   grid-area: squareThree;
-  background-color: #f7b5a8;
-  border: 1px solid #ef6347;
 }
 .squareFour {
   grid-area: squareFour;
-  background-color: #f7b5a8;
-  border: 1px solid #ef6347;
 }
 .squareFive {
   grid-area: squareFive;
-  background-color: #f7b5a8;
-  border: 1px solid #ef6347;
 }
 .squareSix {
   grid-area: squareSix;
-  background-color: #f7b5a8;
-  border: 1px solid #ef6347;
 }
 .squareSeven {
   grid-area: squareSeven;
-  background-color: #f7b5a8;
-  border: 1px solid #ef6347;
 }
 .squareEight {
   grid-area: squareEight;
-  background-color: #f7b5a8;
-  border: 1px solid #ef6347;
 }
 .lineFour {
   display: grid;
@@ -313,15 +294,27 @@
   grid-template-columns: 68%;
   grid-template-areas: "pop" "popOne" "popTwo" "popTThree";
 }
-.pop {
+.pop,
+.popTwo {
   grid-area: pop;
   background-image: url("../images/line.png");
   background-size: cover;
   height: 18px;
   margin-top: 40px;
 }
-.popOne {
+.popOne,
+.popTwoOne {
   grid-area: popOne;
+  margin-top: 50px;
+}
+.popTwo,
+.popTwoTwo {
+  grid-area: popTwo;
+  background-image: url("../images/line.png");
+}
+.popTThree,
+.popTwoTThree {
+  grid-area: popTThree;
   margin-top: 50px;
 }
 .some {
@@ -334,17 +327,6 @@
 }
 .possim {
   font-size: 14px;
-}
-.popTwo {
-  grid-area: popTwo;
-  background-image: url("../images/line.png");
-  background-size: cover;
-  height: 18px;
-  margin-top: 40px;
-}
-.popTThree {
-  grid-area: popTThree;
-  margin-top: 50px;
 }
 .hol {
   background-color: #f7b5a8;

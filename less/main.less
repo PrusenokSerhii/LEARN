@@ -3,15 +3,17 @@
     grid-template-columns: 15% auto 15%;
     grid-column-gap: 10px;
     font-family: "Arial", sans-serif;
+    &One {
+        display: grid;
+        grid-template-rows: 70px 53px 34% 26% 20% 20%;
+    }
 }
-.collOne {
-    display: grid;
-    grid-template-rows: 70px 53px 34% 26% 20% 20%;
-}
+@color:#f7b5a8;
+@colorOne:#ef6347;
 .colorLeftTwo {
-    background:#f7b5a8;
+    background:@color;
 }
-.square {
+.square,.squareNine,.squareTen,.squareEleven {
     background-image: url("../images/icon1.png");
     background-size: cover;
     width: 80px;
@@ -21,30 +23,19 @@
 }
 .squareNine {
     background-image: url("../images/icon2.png");
-    background-size: cover;
-    width: 80px;
-    height: 80px;
     justify-self: end;
     margin-top: 13px;
-
 }
 .squareTen {
     background-image: url("../images/icon3.png");
-    background-size: cover;
-    width: 80px;
-    height: 80px;
     margin-top: 42px;
     justify-self: end;
     align-self: center;
 }
 .squareEleven {
     background-image: url("../images/icon4.png");
-    background-size: cover;
-    width: 80px;
-    height: 80px;
     margin-top: 7px;
     justify-self: end;
-
 }
 .center {
     display: flex;
@@ -55,10 +46,10 @@
 .centerOne {
     font-size: 35px;
     font-weight: 600;
-    color: #ef6347;
+    color: @colorOne;
 }
 .ro {
-    color:#f7b5a8;
+    color:@color;
 }
 .centerTwo {
     display: flex;
@@ -71,10 +62,10 @@
     font-size: 15px;
 }
 .head:hover {
-    color: #ef6347;
+    color: @colorOne;
 }
 .blog {
-    background: #ef6347;
+    background: @colorOne;
     font-size: 30px;
 }
 .blogOne {
@@ -105,7 +96,7 @@
 .dataOneOne {
     font-size: 14px;
     font-weight: 600;
-    color: #ef6347;
+    color: @colorOne;
     margin-top: 23px;
 }
 .dataOneTwo {
@@ -113,7 +104,7 @@
     font-size: 13px;
 }
 .top{
-    color: #ef6347;
+    color: @colorOne;
     font-weight: 600;
     font-size: 20px;
 }
@@ -145,9 +136,8 @@
     height: 300px;
 }
 .imageTwo{
-    /*background: yellow;*/
     display: grid;
-    grid-template-rows: 20% 30% 30% auto;
+    grid-template-rows: auto auto auto auto;
 }
 .about {
     display: grid;
@@ -157,15 +147,15 @@
     "loren  loren";
 }
 .aboutt {
-    font-size: 14px;
+    font-size: 1vw;
     font-weight: 600;
-    color: #ef6347;
+    color: @colorOne;
     grid-area: aboutt;
 }
-.lineimage {
+.lineimage,.lineimageOne,.lineimageTwo {
     background-image: url("../images/line.png");
     background-size: cover;
-    height: 14px;
+    height: 1vw;
     grid-area: lineimage;
 }
 .loren {
@@ -182,15 +172,13 @@
 }
 .categoriesOne {
     grid-area: categories;
-    font-size: 14px;
+    font-size: 1vw;
     font-weight: 600;
-    color: #ef6347;
+    color: @colorOne;
 }
 .lineimageOne {
     grid-area:lineimageOne;
     background-image: url("../images/line.png");
-    background-size: cover;
-    height: 14px;
 }
 .video {
     grid-area:video;
@@ -203,61 +191,44 @@
     grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
     grid-template-rows: 30px 70px 70px;
     grid-template-areas: "photoOne photoOne lineimageTwo lineimageTwo"
-    "squareOne squareTwo squareThree squareFour"
-    "squareFive squareSix squareSeven squareEight";
-}
-.photoOne {
-    grid-area: photoOne;
-    font-size: 14px;
-    font-weight: 600;
-    color: #ef6347;
+                         "squareOne squareTwo squareThree squareFour"
+                         "squareFive squareSix squareSeven squareEight";
+    &One {
+        grid-area: photoOne;
+        font-size: 1vw;
+        font-weight: 600;
+        color: @colorOne;
+    }
 }
 .lineimageTwo {
     grid-area: lineimageTwo;
     background-image: url("../images/line.png");
-    background-size: cover;
-    height: 14px;
 }
-.squareOne {
+.squareOne,.squareTwo,.squareThree,.squareFour,.squareFive,.squareSix,.squareSeven,.squareEight  {
     grid-area: squareOne;
-    background-color: #f7b5a8;
-    border: 1px solid #ef6347;
-
+    background-color: @color;
+    border: 1px solid @colorOne;
 }
 .squareTwo {
     grid-area: squareTwo;
-    background-color: #f7b5a8;
-    border: 1px solid #ef6347;
 }
 .squareThree {
     grid-area: squareThree;
-    background-color: #f7b5a8;
-    border: 1px solid #ef6347;
 }
 .squareFour {
     grid-area: squareFour;
-    background-color: #f7b5a8;
-    border: 1px solid #ef6347;
 }
 .squareFive {
     grid-area: squareFive;
-    background-color: #f7b5a8;
-    border: 1px solid #ef6347;
 }
 .squareSix {
     grid-area: squareSix;
-    background-color: #f7b5a8;
-    border: 1px solid #ef6347;
 }
 .squareSeven {
     grid-area: squareSeven;
-    background-color: #f7b5a8;
-    border: 1px solid #ef6347;
 }
 .squareEight {
     grid-area: squareEight;
-    background-color: #f7b5a8;
-    border: 1px solid #ef6347;
 }
 .lineFour {
     display: grid;
@@ -292,11 +263,12 @@
     background-size: cover;
     height: 17px;
 }
+@colorThree:#e2e0e0;
 .dataThirteen {
     background-size: cover;
-    background-color: #e2e0e0;
+    background-color: @colorThree;
     font-size: 60px;
-    color: #ef6347;
+    color: @colorOne;
     font-weight: bolder;
     font-family: "Aparajita";
     margin-top: 40px;
@@ -304,7 +276,7 @@
 }
 .textTwelf {
     font-size: 14px;
-    background-color: #e2e0e0;
+    background-color: @colorThree;
     margin-top: 40px;
     font-style: italic;
 }
@@ -316,19 +288,27 @@
     "popTwo"
     "popTThree";
 }
-.pop {
+.pop,.popTwo {
     grid-area: pop;
     background-image: url("../images/line.png");
     background-size: cover;
     height: 18px;
     margin-top: 40px;
-}
-.popOne {
-    grid-area: popOne;
-    margin-top: 50px;
+    &One {
+        grid-area: popOne;
+        margin-top: 50px;
+    }
+    &Two {
+        grid-area: popTwo;
+        background-image: url("../images/line.png");
+    }
+    &TThree {
+        grid-area: popTThree;
+        margin-top: 50px;
+    }
 }
 .some {
-    color: #ef6347;
+    color: @colorOne;
     font-weight: 600;
     font-size: 20px;
 }
@@ -338,25 +318,14 @@
 .possim {
     font-size: 14px;
 }
-.popTwo {
-    grid-area: popTwo;
-    background-image: url("../images/line.png");
-    background-size: cover;
-    height: 18px;
-    margin-top: 40px;
-}
-.popTThree {
-    grid-area: popTThree;
-    margin-top: 50px;
-}
 .hol {
-    background-color: #f7b5a8;
+    background-color: @color;
     color: white;
     text-decoration: none;
     padding: 4px 9px;
     margin-right: 5px;
     font-size: 18px;
-}
-.hol:hover {
-    background-color: #ef6347;
+    &:hover {
+        background-color: @colorOne;
+    }
 }
