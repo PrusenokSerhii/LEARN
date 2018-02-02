@@ -24,18 +24,18 @@
 .squareNine {
     background-image: url("../images/icon2.png");
     justify-self: end;
-    margin-top: 13px;
+    margin-top: 32px;
 }
 .squareTen {
     background-image: url("../images/icon3.png");
-    margin-top: 42px;
     justify-self: end;
     align-self: center;
+    margin-top: 51px;
 }
 .squareEleven {
     background-image: url("../images/icon4.png");
-    margin-top: 7px;
     justify-self: end;
+    margin-top: 8px;
 }
 .center {
     display: flex;
@@ -90,8 +90,9 @@
 }
 .dataOne {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% auto;
     margin-top: 5px;
+    grid-column-gap: 10px;
 }
 .dataOneOne {
     font-size: 14px;
@@ -132,7 +133,7 @@
 }
 .yellowCircle {
     background-image: url("../images/img1.png");
-    background-size: cover;
+    background-size:100% 100%;
     height: 300px;
 }
 .imageTwo{
@@ -147,7 +148,7 @@
     "loren  loren";
 }
 .aboutt {
-    font-size: 1vw;
+    font-size: 14px;
     font-weight: 600;
     color: @colorOne;
     grid-area: aboutt;
@@ -155,7 +156,7 @@
 .lineimage,.lineimageOne,.lineimageTwo {
     background-image: url("../images/line.png");
     background-size: cover;
-    height: 1vw;
+    height: 14px;
     grid-area: lineimage;
 }
 .loren {
@@ -172,7 +173,7 @@
 }
 .categoriesOne {
     grid-area: categories;
-    font-size: 1vw;
+    font-size: 14px;
     font-weight: 600;
     color: @colorOne;
 }
@@ -195,7 +196,7 @@
                          "squareFive squareSix squareSeven squareEight";
     &One {
         grid-area: photoOne;
-        font-size: 1vw;
+        font-size: 14px;
         font-weight: 600;
         color: @colorOne;
     }
@@ -294,6 +295,7 @@
     background-size: cover;
     height: 18px;
     margin-top: 40px;
+
     &One {
         grid-area: popOne;
         margin-top: 50px;
@@ -305,6 +307,9 @@
     &TThree {
         grid-area: popTThree;
         margin-top: 50px;
+        display: flex;
+        justify-content: center;
+
     }
 }
 .some {
