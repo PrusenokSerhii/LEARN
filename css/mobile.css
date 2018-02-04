@@ -88,7 +88,8 @@
   .yellowCircle {
     background-size: 100% 100%;
   }
-  .collOne {
+  .collOne,
+  .dataThirteen {
     display: none;
   }
   .about,
@@ -104,8 +105,12 @@
     grid-template-rows: 30px 70px 70px;
     grid-template-areas: "photoOne lineimageTwo lineimageTwo lineimageTwo" "squareOne squareTwo squareThree squareFour" "squareFive squareSix squareSeven squareEight";
   }
+  .categories {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
 }
-@media all and (max-width: 943px) and (min-width: 721px) {
+@media all and (max-width: 1000px) and (min-width: 721px) {
   .date,
   .tags,
   .comment {
@@ -115,5 +120,11 @@
   .website,
   .website {
     font-size: 10px;
+  }
+}
+@media all and (max-width: 1000px) and (min-width: 721px) {
+  .categories {
+    display: grid;
+    grid-template-columns: auto 40%;
   }
 }

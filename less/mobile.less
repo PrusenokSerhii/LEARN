@@ -74,7 +74,7 @@
   .imageJesus, .yellowCircle {
     background-size: 100% 100%;
   }
-  .collOne {
+  .collOne,.dataThirteen {
     display: none;
   }
   .about,.categories {
@@ -91,6 +91,10 @@
   "squareOne squareTwo squareThree squareFour"
   "squareFive squareSix squareSeven squareEight";
   }
+  .categories {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
 }
 @mobileOne:943px;
 @mobileTwo:721px;
@@ -100,5 +104,13 @@
   }
   .april,.website,.website{
     font-size: 10px;
+  }
+}
+@mobileOne:1000px;
+@mobileTwo:721px;
+@media all and (max-width: @mobileOne)and (min-width: @mobileTwo){
+  .categories {
+      display: grid;
+      grid-template-columns: auto 40%;
   }
 }
