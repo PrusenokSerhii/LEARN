@@ -1,6 +1,6 @@
 @media all and (max-width: 768px) {
   .grid {
-    display: grid;
+    display: block;
     grid-template-columns: 1fr 5fr 1fr;
     grid-column-gap: 15px;
     font-family: "Comic Sans MS";
@@ -41,8 +41,7 @@
     background-image: url(../images/icon4.png);
   }
   .header {
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -ms-flex-pack: justify;
         justify-content: space-between;
     -ms-flex-align: center;
@@ -70,6 +69,7 @@
   }
   .header3 {
     background: #ef6347;
+    display: none;
   }
   .header4 {
     color: white;
@@ -82,6 +82,7 @@
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
+    text-align: center;
   }
   .img {
     display: -ms-flexbox;
@@ -94,6 +95,7 @@
     background-image: url(../images/img1.png);
     background-size: cover;
     height: 300px;
+    display: none;
   }
   .date,
   .tags,
@@ -112,7 +114,7 @@
     margin: 5px 0 2px;
   }
   .contentBehind {
-    display: grid;
+    display: block;
     grid-template-columns: 20% 80%;
   }
   .loren {
@@ -142,7 +144,8 @@
     margin-top: 2px;
   }
   .but {
-    margin-top: 25px;
+    margin-top: 10px;
+    text-align: center;
   }
   .button {
     background-color: #f7b5a8;
@@ -194,5 +197,15 @@
     height: 50px;
     margin-top: 50px;
     display: none;
+  }
+  .date {
+    display: none;
+  }
+  .column2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 100%;
   }
 }
