@@ -124,6 +124,7 @@
 .loren1 {
   font-size: 12px;
   font-style: italic;
+  position: relative;
 }
 .quote {
   background-color: #d3d3d3;
@@ -189,4 +190,43 @@
   width: 100%;
   height: 50px;
   margin-top: 50px;
+}
+.img1:before {
+  content: "";
+  background-image: url(../images/icon1.png);
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: -90px;
+}
+.insert:before {
+  content: "";
+  background-image: url(../images/icon2.png);
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: -90px;
+}
+.loren1:before {
+  content: "";
+  background-image: url(../images/icon3.png);
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: -130px;
+}
+.headd1:before {
+  content: "";
+  background-image: url(../images/icon4.png);
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: -90px;
+}
+.headd1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ef6347;
+  margin: 5px 2px 2px;
+  position: relative;
 }
