@@ -113,7 +113,8 @@
   text-align: justify;
   font-size: 12px;
 }
-.line {
+.line,
+.line1 {
   background-image: url(../images/line.png);
   background-size: cover;
   height: 15px;
@@ -161,7 +162,6 @@
   white-space: nowrap;
   color: #ef6347;
   font-weight: 600;
-  text-align: right;
 }
 .right2 {
   grid-area: text;
@@ -192,7 +192,10 @@
   height: 50px;
   margin-top: 50px;
 }
-.img1:before {
+.img1:before,
+.headd1:before,
+.insert:before,
+.loren1:before {
   content: "";
   background-image: url(../images/icon1.png);
   width: 75px;
@@ -201,28 +204,14 @@
   left: -90px;
 }
 .insert:before {
-  content: "";
   background-image: url(../images/icon2.png);
-  width: 75px;
-  height: 75px;
-  position: absolute;
-  left: -90px;
 }
 .loren1:before {
-  content: "";
   background-image: url(../images/icon3.png);
-  width: 75px;
-  height: 75px;
-  position: absolute;
   left: -130px;
 }
 .headd1:before {
-  content: "";
   background-image: url(../images/icon4.png);
-  width: 75px;
-  height: 75px;
-  position: absolute;
-  left: -90px;
 }
 .headd1 {
   font-size: 14px;
@@ -230,4 +219,9 @@
   color: #ef6347;
   margin: 5px 2px 2px;
   position: relative;
+}
+.text {
+  display: inline;
+  background-color: #ffffff;
+  padding-right: 5px;
 }
