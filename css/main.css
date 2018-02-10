@@ -91,10 +91,11 @@
 .tags,
 .comment,
 .headd {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #ef6347;
   width: 100%;
+  padding-right: 10px;
 }
 .april,
 .wbs,
@@ -161,7 +162,7 @@
   padding-left: 20px;
 }
 .right1 {
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   color: #ef6347;
   font-weight: 600;
@@ -219,7 +220,7 @@
   background-image: url(../images/icon4.png);
 }
 .headd1 {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #ef6347;
   margin: 20px 2px 2px;
