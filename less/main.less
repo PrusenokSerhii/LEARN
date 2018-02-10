@@ -1,8 +1,9 @@
 .grid {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-column-gap: 15px;
+    grid-template-columns: 16.5% 67% 16.5%;
+    grid-column-gap: 10px;
     font-family: "Comic Sans MS";
+    overflow: hidden;
 }
 .column1 {
     display: flex;
@@ -79,7 +80,7 @@
     font-size: 14px;
     font-weight: 600;
     color: #ef6347;
-    margin: 5px 2px 2px;
+    width: 100%;
 }
 .april, .wbs, .four {
     color: #cccac9;
@@ -90,6 +91,7 @@
     display: flex;
     flex-direction: row;
     margin-right: 5px;
+    margin-bottom: 20px;
 }
 .loren {
     text-align: justify;
@@ -108,6 +110,7 @@
     font-size: 12px;
     font-style: italic;
     position: relative;
+    margin: 20px 0 20px;
 }
 .quote {
     background-color: #d3d3d3;
@@ -126,31 +129,33 @@
     text-decoration: none;
     padding: 4px 9px;
     font-size: 15px;
-}
-.button:hover {
-    background-color: #ef6347;
+
+    &:hover {
+        background-color: #ef6347;
+    }
 }
 .dana {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 700px;
     padding-left: 20px;
 }
 .right1 {
-    font-size: 10px;
+    font-size: 14px;
     white-space: nowrap;
     color: #ef6347;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 .right2 {
     grid-area: text;
-    font-size: 10px;
+    font-size: 12px;
     text-align: justify;
 }
 .right3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 25px 25px;
+    grid-template-rows: 35px 35px;
     grid-row-gap: 5px;
     grid-column-gap: 5px;
     justify-items: stretch;
@@ -161,6 +166,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    border: 1px #ef6347 solid;
 }
 .column3 {
     background-color: #f7b5a8;
@@ -190,11 +196,14 @@
     font-size: 14px;
     font-weight: 600;
     color: #ef6347;
-    margin: 5px 2px 2px;
+    margin: 20px 2px 2px;
     position: relative;
 }
 .text {
     display: inline;
     background-color: #ffffff;
     padding-right: 5px;
+}
+.right, .once {
+    margin-bottom: 10px;
 }
