@@ -1,0 +1,476 @@
+@font-face {
+  font-family: One;
+  src: url("../Font/PTC55F.ttf");
+}
+@font-face {
+  font-family: Two;
+  src: url("../Font/PTC75F.ttf");
+}
+@font-face {
+  font-family: Three;
+  src: url("../Font/PTN57F.ttf");
+}
+@font-face {
+  font-family: Four;
+  src: url("../Font/PTN77F.ttf");
+}
+@font-face {
+  font-family: Five;
+  src: url("../Font/PTS55F.ttf");
+}
+@font-face {
+  font-family: Six;
+  src: url("../Font/PTS56F.ttf");
+}
+@font-face {
+  font-family: Seven;
+  src: url("../Font/PTS75F.ttf");
+}
+@font-face {
+  font-family: Eight;
+  src: url("../Font/PTS76F.ttf");
+}
+@colorWhit: white;
+@colorBlack: black;
+@colorBlockOne: #f9f9f9;
+
+.body {
+  margin: 0;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+}
+.headerOne {
+  display: flex;
+  justify-content: center;
+  width: 84%;
+  &Menu {
+    display: flex;
+    justify-content: space-between;
+    width: 44%;
+    margin: 12px 0 13px;
+    &One {
+      display: flex;
+      justify-content: space-between;
+      width: 55%;
+      &Information {
+        font-size: 10.3px;
+        font-family: "Three";
+        text-decoration: none;
+        color: @colorWhit;
+      }
+      .info {
+        margin-left: 3px;
+      }
+      .prays {
+        margin-right: 1px;
+      }
+      .store {
+        margin-right: 2px;
+      }
+      .contact {
+        margin-right: 4px;
+      }
+    }
+    &Two {
+      display: flex;
+      color: @colorWhit;
+      width: 11%;
+      justify-content: end;
+      &Arrow {
+        width: 70%;
+        height: 9px;
+      }
+      &Enter {
+        font-size: 10px;
+        font-family: "Three";
+        text-decoration: none;
+        color: @colorWhit;
+        margin-left: 3px;
+      }
+    }
+  }
+}
+.headerTwo {
+  background-image: url("../images/background-image.png");
+  background-size: 100% 100%;
+  width: 84%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &Usi {
+    display: flex;
+    justify-content: center;
+    width: 29%;
+    margin-top: 38px;
+    margin-right: 11px;
+    &Image {
+      background-image: url("../images/index-logo.png");
+      background-size: 100% 100%;
+      width: 60%;
+      height: 130px;
+    }
+  }
+  &Message {
+    width: 44%;
+    display: flex;
+    flex-direction: row;
+    &Quickly, &Cool, &Expensive {
+      display: flex;
+      flex-direction: column;
+      margin-top: 13px;
+      width: 30%;
+    }
+    &Cool {
+      width: 31%;
+      margin-left: 10px;
+    }
+    &Expensive {
+      margin-left: 18px;
+      width: 31%;
+    }
+    .mainQuickly, .mainCool, .mainExpensive {
+      display: flex;
+      justify-content: center;
+      font-size: 19px;
+      margin-right: 10px;
+      font-family: "Four";
+    }
+    .mainCool, .mainExpensive {
+      margin-left: 25px;
+    }
+    .bubaQuicklyQ {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .bubaQuickly, .bubaCool, .bubaExpensive {
+      width: 13px;
+      height: 13px;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+      background: @colorWhit;
+    }
+    .bubaQuickly {
+      margin-left: 3px;
+    }
+    .bubaCool {
+      margin-left: 28px;
+    }
+    .bubaExpensive {
+      margin-left: 28px;
+    }
+    .textQuickly, .textCool, .textExpensive {
+      font-size: 9px;
+      text-align: center;
+      margin-top: 15px;
+      font-family: "Four";
+      line-height: 15px;
+      margin-left: -8px;
+    }
+    .textCool {
+      margin-left: 8px;
+    }
+    .textExpensive {
+      line-height: 15px;
+    }
+  }
+  &WhitOne {
+    color: @colorBlack;
+    width: 45.5%;
+    margin-top: 50px;
+    display: flex;
+    &BlockOne {
+      background: @colorBlockOne;
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      .headerTwoWhitOneNews {
+        font-family: "Four";
+        font-size: 19px;
+        margin-left: 50px;
+        margin-top: 29px;
+      }
+      .headerTwoWhitOneTexOne,.headerTwoWhitOneTextTwo {
+        font-family: "Four";
+        font-size: 9px;
+        line-height: 15px;
+        margin-left: 50px;
+        margin-top: 13px;
+      }
+      .headerTwoWhitOneTextTwo {
+        margin-top: 15px;
+      }
+      .headerTwoWhitOneButton {
+        font-family: "Four";
+        background: @colorBlack;
+        color: @colorWhit;
+        border: none;
+        margin: 17px 0 32px 50px;
+        font-size: 9px;
+        padding: 8px 20px;
+      }
+    }
+    &BlockLine {
+      background: @colorBlockOne;
+      width: 4%;
+      display: flex;
+      justify-content:flex-end;
+      &First{
+        height: 220px;
+        width: 5px;
+        background: #d3d3d3;
+      }
+    }
+    &BlockTwo {
+      background: @colorBlockOne;
+      width: 48%;
+      &Foto{
+        font-family: "Four";
+        margin: 28px 0 0 55px;
+        font-size: 19px;
+      }
+      &Image {
+        background-image: url("../images/inside-design.png");
+        background-size: 100% 100%;
+        width: 61%;
+        height: 103px;
+        margin: 18px 0 0 58px;
+      }
+      &Button {
+        display: flex;
+        justify-content: space-between;
+        width: 64%;
+        margin: 30px 0 0 55px;
+        .headerTwoWhitTwoBlockTwoButtonA,.headerTwoWhitTwoBlockTwoButtonB{
+          background: @colorBlack;
+          color: @colorWhit;
+          border: none;
+          font-size: 9px;
+          padding: 8px 32px;
+          font-family: "Four";
+        }
+        .headerTwoWhitTwoBlockTwoButtonB {
+          margin-left: 10px;
+          padding: 8px 32px 8px 28px;
+        }
+      }
+    }
+  }
+  &WhitTwo {
+    display: flex;
+    margin-top: 22px;
+    width: 45.5%;
+    color:@colorBlack;
+    &BlockOne {
+      background: @colorBlockOne;
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      &Contact {
+        font-family: "Four";
+        font-size: 19px;
+        margin: 31px 0 0 50px;
+      }
+      &Address,&Schedule {
+        font-family: "Four";
+        margin: 12px 0 0 50px;
+        font-size: 8px;
+        line-height: 15px;
+      }
+      &Button {
+        font-family: "Four";
+        font-size: 15px;
+        margin: 14px 0 38px 50px;
+        display: flex;
+        .headerTwoWhitTwoBlockOneButtonA,.headerTwoWhitTwoBlockOneButtonB {
+          background: @colorBlack;
+          color: @colorWhit;
+          border: none;
+          font-family: "Four";
+          font-size: 9px;
+          padding: 8px 19px;
+        }
+        .headerTwoWhitTwoBlockOneButtonB {
+          margin-left: 13px;
+          padding: 8px 14px;
+        }
+      }
+    }
+    &BlockLine {
+      background: @colorBlockOne;
+      width: 4%;
+      display: flex;
+      justify-content: flex-end;
+      &First {
+        height: 220px;
+        width: 5px;
+        background: #d3d3d3;
+      }
+    }
+    .headerTwoWhitTwoBlockTwo {
+      background: @colorBlockOne;
+      width: 48%;
+      .headerTwoWhitTwoBlockEnroll{
+        margin: 30px 0 0 55px;
+        font-family: "Four";
+        font-size: 19px;
+      }
+      .headerTwoWhitTwoBlockIndicate {
+        margin: 13px 0 0 55px;
+        font-family: "Four";
+        font-size: 9px;
+        line-height: 15px;
+      }
+      .headerTwoWhitTwoBlockTwoButtonOne {
+        margin: 14px 0 0 40px;
+        font-family: "Four";
+        font-size: 8px;
+        .headerTwoWhitTwoBlockTwoButtonD {
+          margin-left: 14px;
+          padding: 6px 58px 6px 8px;
+          font-size: 9px;
+          font-family: "Four";
+          border: 2px solid black;
+          background: @colorBlockOne;
+        }
+        .headerTwoWhitTwoBlockTwoButtonT {
+          margin-left: 10px;
+          padding: 6px 54px 6px 8px;
+          font-size: 9px;
+          font-family: "Four";
+          border: 2px solid black;
+          background: @colorBlockOne;
+        }
+      }
+      .headerTwoWhitTwoBlockTwoButtonTwo {
+        margin: 12px 0 0 55px;
+        font-family: "Four";
+        font-size: 8px;
+        .headerTwoWhitTwoBlockTwoButtonN {
+          margin-left: -1px;
+          padding: 6px 39px 6px 8px;
+          font-size: 9px;
+          font-family: "Four";
+          border: 2px solid black;
+          background: @colorBlockOne;
+        }
+        .headerTwoWhitTwoBlockTwoButtonTf {
+          margin-left: 10px;
+          padding: 6px 44px 6px 8px;
+          font-size: 9px;
+          font-family: "Four";
+          border: 2px solid black;
+          background: @colorBlockOne;
+        }
+      }
+      .headerTwoWhitTwoBlockTwoButtonThree {
+        margin: 13px 0 0 54px;
+       .headerTwoWhitTwoBlockTwoSend {
+         font-family: "Seven";
+         background: @colorBlack;
+         color: @colorWhit;
+         border: none;
+         width: 79.2%;
+         font-size: 7.5px;
+         padding: 8.4px ;
+       }
+      }
+    }
+  }
+}
+.headerThree {
+  display: flex;
+  justify-content: center;
+  background-color: #161616;
+  width: 100%;
+  margin-top: 40px;
+  padding: 16px 0 26px 0;
+  color: @colorWhit;
+  &One {
+    display: flex;
+    align-items: center;
+    width: 39%;
+    .headerThreeOneAddress{
+      font-size: 8px;
+      width: 40%;
+      line-height: 15px;
+      margin: 21px 0 0 6px;
+      font-family: "Five";
+      .headerThreeWhy {
+        color: @colorWhit;
+        font-size: 8px;
+      }
+    }
+    .headerThreeOneFriend {
+      width: 23%;
+      display: flex;
+      flex-direction: column;
+      .give {
+        font-size: 8px;
+        font-family: "Five";
+        margin: 14px 0 0 13px ;
+        }
+      .soc{
+        display: flex;
+        margin: 12px 0 0 4px;
+        .vkO,.f,.in  {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 27px;
+          height: 26px;
+          background:#000000;
+          .vk {
+            background-image: url("../images/vk.png");
+            background-size: 100% 100%;
+            width: 20px;
+            height: 20px;
+            padding: 3px  2px 0px 2px;
+          }
+        }
+        .f,.in{
+          width: 27px;
+          height: 26px;
+          margin-left: 3px;
+          .ff {
+            background-image: url("../images/f.png");
+            background-size: 100% 100%;
+            width: 10px;
+            height: 16px;
+          }
+        }
+        .inn {
+          background-image: url("../images/in.png");
+          background-size: 100% 100%;
+          width: 14px;
+          height: 16px;
+        }
+      }
+    }
+    .headerThreeOneAcademy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 32%;
+      .devel {
+        font-size: 8px;
+        margin: 15px 16px 0px 0px;
+        font-family: "Five";
+
+      }
+      .ru {
+        font-size: 8px;
+        margin-top: 12px;
+        background: @colorBlack;
+        padding: 8px 11px;
+        font-family: "Five";
+      }
+    }
+  }
+}

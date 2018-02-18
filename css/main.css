@@ -1,0 +1,542 @@
+@font-face {
+  font-family: One;
+  src: url("../Font/PTC55F.ttf");
+}
+@font-face {
+  font-family: Two;
+  src: url("../Font/PTC75F.ttf");
+}
+@font-face {
+  font-family: Three;
+  src: url("../Font/PTN57F.ttf");
+}
+@font-face {
+  font-family: Four;
+  src: url("../Font/PTN77F.ttf");
+}
+@font-face {
+  font-family: Five;
+  src: url("../Font/PTS55F.ttf");
+}
+@font-face {
+  font-family: Six;
+  src: url("../Font/PTS56F.ttf");
+}
+@font-face {
+  font-family: Seven;
+  src: url("../Font/PTS75F.ttf");
+}
+@font-face {
+  font-family: Eight;
+  src: url("../Font/PTS76F.ttf");
+}
+.body {
+  margin: 0;
+}
+.header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  background: black;
+}
+.headerOne {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 84%;
+}
+.headerOneMenu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 44%;
+  margin: 12px 0 13px;
+}
+.headerOneMenuOne {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 55%;
+}
+.headerOneMenuOneInformation {
+  font-size: 10.3px;
+  font-family: "Three";
+  text-decoration: none;
+  color: white;
+}
+.headerOneMenuOne .info {
+  margin-left: 3px;
+}
+.headerOneMenuOne .prays {
+  margin-right: 1px;
+}
+.headerOneMenuOne .store {
+  margin-right: 2px;
+}
+.headerOneMenuOne .contact {
+  margin-right: 4px;
+}
+.headerOneMenuTwo {
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  width: 11%;
+  -ms-flex-pack: end;
+      justify-content: end;
+}
+.headerOneMenuTwoArrow {
+  width: 70%;
+  height: 9px;
+}
+.headerOneMenuTwoEnter {
+  font-size: 10px;
+  font-family: "Three";
+  text-decoration: none;
+  color: white;
+  margin-left: 3px;
+}
+.headerTwo {
+  background-image: url("../images/background-image.png");
+  background-size: 100% 100%;
+  width: 84%;
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.headerTwoUsi {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 29%;
+  margin-top: 38px;
+  margin-right: 11px;
+}
+.headerTwoUsiImage {
+  background-image: url("../images/index-logo.png");
+  background-size: 100% 100%;
+  width: 60%;
+  height: 130px;
+}
+.headerTwoMessage {
+  width: 44%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+.headerTwoMessageQuickly,
+.headerTwoMessageCool,
+.headerTwoMessageExpensive {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-top: 13px;
+  width: 30%;
+}
+.headerTwoMessageCool {
+  width: 31%;
+  margin-left: 10px;
+}
+.headerTwoMessageExpensive {
+  margin-left: 18px;
+  width: 31%;
+}
+.headerTwoMessage .mainQuickly,
+.headerTwoMessage .mainCool,
+.headerTwoMessage .mainExpensive {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-size: 19px;
+  margin-right: 10px;
+  font-family: "Four";
+}
+.headerTwoMessage .mainCool,
+.headerTwoMessage .mainExpensive {
+  margin-left: 25px;
+}
+.headerTwoMessage .bubaQuicklyQ {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.headerTwoMessage .bubaQuickly,
+.headerTwoMessage .bubaCool,
+.headerTwoMessage .bubaExpensive {
+  width: 13px;
+  height: 13px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  background: white;
+}
+.headerTwoMessage .bubaQuickly {
+  margin-left: 3px;
+}
+.headerTwoMessage .bubaCool {
+  margin-left: 28px;
+}
+.headerTwoMessage .bubaExpensive {
+  margin-left: 28px;
+}
+.headerTwoMessage .textQuickly,
+.headerTwoMessage .textCool,
+.headerTwoMessage .textExpensive {
+  font-size: 9px;
+  text-align: center;
+  margin-top: 15px;
+  font-family: "Four";
+  line-height: 15px;
+  margin-left: -8px;
+}
+.headerTwoMessage .textCool {
+  margin-left: 8px;
+}
+.headerTwoMessage .textExpensive {
+  line-height: 15px;
+}
+.headerTwoWhitOne {
+  color: black;
+  width: 45.5%;
+  margin-top: 50px;
+  display: -ms-flexbox;
+  display: flex;
+}
+.headerTwoWhitOneBlockOne {
+  background: #f9f9f9;
+  width: 45%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.headerTwoWhitOneBlockOne .headerTwoWhitOneNews {
+  font-family: "Four";
+  font-size: 19px;
+  margin-left: 50px;
+  margin-top: 29px;
+}
+.headerTwoWhitOneBlockOne .headerTwoWhitOneTexOne,
+.headerTwoWhitOneBlockOne .headerTwoWhitOneTextTwo {
+  font-family: "Four";
+  font-size: 9px;
+  line-height: 15px;
+  margin-left: 50px;
+  margin-top: 13px;
+}
+.headerTwoWhitOneBlockOne .headerTwoWhitOneTextTwo {
+  margin-top: 15px;
+}
+.headerTwoWhitOneBlockOne .headerTwoWhitOneButton {
+  font-family: "Four";
+  background: black;
+  color: white;
+  border: none;
+  margin: 17px 0 32px 50px;
+  font-size: 9px;
+  padding: 8px 20px;
+}
+.headerTwoWhitOneBlockLine {
+  background: #f9f9f9;
+  width: 4%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+.headerTwoWhitOneBlockLineFirst {
+  height: 220px;
+  width: 5px;
+  background: #d3d3d3;
+}
+.headerTwoWhitOneBlockTwo {
+  background: #f9f9f9;
+  width: 48%;
+}
+.headerTwoWhitOneBlockTwoFoto {
+  font-family: "Four";
+  margin: 28px 0 0 55px;
+  font-size: 19px;
+}
+.headerTwoWhitOneBlockTwoImage {
+  background-image: url("../images/inside-design.png");
+  background-size: 100% 100%;
+  width: 61%;
+  height: 103px;
+  margin: 18px 0 0 58px;
+}
+.headerTwoWhitOneBlockTwoButton {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 64%;
+  margin: 30px 0 0 55px;
+}
+.headerTwoWhitOneBlockTwoButton .headerTwoWhitTwoBlockTwoButtonA,
+.headerTwoWhitOneBlockTwoButton .headerTwoWhitTwoBlockTwoButtonB {
+  background: black;
+  color: white;
+  border: none;
+  font-size: 9px;
+  padding: 8px 32px;
+  font-family: "Four";
+}
+.headerTwoWhitOneBlockTwoButton .headerTwoWhitTwoBlockTwoButtonB {
+  margin-left: 10px;
+  padding: 8px 32px 8px 28px;
+}
+.headerTwoWhitTwo {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 22px;
+  width: 45.5%;
+  color: black;
+}
+.headerTwoWhitTwoBlockOne {
+  background: #f9f9f9;
+  width: 45%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.headerTwoWhitTwoBlockOneContact {
+  font-family: "Four";
+  font-size: 19px;
+  margin: 31px 0 0 50px;
+}
+.headerTwoWhitTwoBlockOneAddress,
+.headerTwoWhitTwoBlockOneSchedule {
+  font-family: "Four";
+  margin: 12px 0 0 50px;
+  font-size: 8px;
+  line-height: 15px;
+}
+.headerTwoWhitTwoBlockOneButton {
+  font-family: "Four";
+  font-size: 15px;
+  margin: 14px 0 38px 50px;
+  display: -ms-flexbox;
+  display: flex;
+}
+.headerTwoWhitTwoBlockOneButton .headerTwoWhitTwoBlockOneButtonA,
+.headerTwoWhitTwoBlockOneButton .headerTwoWhitTwoBlockOneButtonB {
+  background: black;
+  color: white;
+  border: none;
+  font-family: "Four";
+  font-size: 9px;
+  padding: 8px 19px;
+}
+.headerTwoWhitTwoBlockOneButton .headerTwoWhitTwoBlockOneButtonB {
+  margin-left: 13px;
+  padding: 8px 14px;
+}
+.headerTwoWhitTwoBlockLine {
+  background: #f9f9f9;
+  width: 4%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+.headerTwoWhitTwoBlockLineFirst {
+  height: 220px;
+  width: 5px;
+  background: #d3d3d3;
+}
+.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo {
+  background: #f9f9f9;
+  width: 48%;
+}
+.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockEnroll {
+  margin: 30px 0 0 55px;
+  font-family: "Four";
+  font-size: 19px;
+}
+.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockIndicate {
+  margin: 13px 0 0 55px;
+  font-family: "Four";
+  font-size: 9px;
+  line-height: 15px;
+}
+.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonOne {
+  margin: 14px 0 0 40px;
+  font-family: "Four";
+  font-size: 8px;
+}
+.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonOne .headerTwoWhitTwoBlockTwoButtonD {
+  margin-left: 14px;
+  padding: 6px 58px 6px 8px;
+  font-size: 9px;
+  font-family: "Four";
+  border: 2px solid black;
+  background: #f9f9f9;
+}
+.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonOne .headerTwoWhitTwoBlockTwoButtonT {
+  margin-left: 10px;
+  padding: 6px 54px 6px 8px;
+  font-size: 9px;
+  font-family: "Four";
+  border: 2px solid black;
+  background: #f9f9f9;
+}
+.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonTwo {
+  margin: 12px 0 0 55px;
+  font-family: "Four";
+  font-size: 8px;
+}
+.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonTwo .headerTwoWhitTwoBlockTwoButtonN {
+  margin-left: -1px;
+  padding: 6px 39px 6px 8px;
+  font-size: 9px;
+  font-family: "Four";
+  border: 2px solid black;
+  background: #f9f9f9;
+}
+.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonTwo .headerTwoWhitTwoBlockTwoButtonTf {
+  margin-left: 10px;
+  padding: 6px 44px 6px 8px;
+  font-size: 9px;
+  font-family: "Four";
+  border: 2px solid black;
+  background: #f9f9f9;
+}
+.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonThree {
+  margin: 13px 0 0 54px;
+}
+.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonThree .headerTwoWhitTwoBlockTwoSend {
+  font-family: "Seven";
+  background: black;
+  color: white;
+  border: none;
+  width: 79.2%;
+  font-size: 7.5px;
+  padding: 8.4px ;
+}
+.headerThree {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #161616;
+  width: 100%;
+  margin-top: 40px;
+  padding: 16px 0 26px 0;
+  color: white;
+}
+.headerThreeOne {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 39%;
+}
+.headerThreeOne .headerThreeOneAddress {
+  font-size: 8px;
+  width: 40%;
+  line-height: 15px;
+  margin: 21px 0 0 6px;
+  font-family: "Five";
+}
+.headerThreeOne .headerThreeOneAddress .headerThreeWhy {
+  color: white;
+  font-size: 8px;
+}
+.headerThreeOne .headerThreeOneFriend {
+  width: 23%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.headerThreeOne .headerThreeOneFriend .give {
+  font-size: 8px;
+  font-family: "Five";
+  margin: 14px 0 0 13px ;
+}
+.headerThreeOne .headerThreeOneFriend .soc {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 12px 0 0 4px;
+}
+.headerThreeOne .headerThreeOneFriend .soc .vkO,
+.headerThreeOne .headerThreeOneFriend .soc .f,
+.headerThreeOne .headerThreeOneFriend .soc .in {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 27px;
+  height: 26px;
+  background: #000000;
+}
+.headerThreeOne .headerThreeOneFriend .soc .vkO .vk,
+.headerThreeOne .headerThreeOneFriend .soc .f .vk,
+.headerThreeOne .headerThreeOneFriend .soc .in .vk {
+  background-image: url("../images/vk.png");
+  background-size: 100% 100%;
+  width: 20px;
+  height: 20px;
+  padding: 3px  2px 0px 2px;
+}
+.headerThreeOne .headerThreeOneFriend .soc .f,
+.headerThreeOne .headerThreeOneFriend .soc .in {
+  width: 27px;
+  height: 26px;
+  margin-left: 3px;
+}
+.headerThreeOne .headerThreeOneFriend .soc .f .ff,
+.headerThreeOne .headerThreeOneFriend .soc .in .ff {
+  background-image: url("../images/f.png");
+  background-size: 100% 100%;
+  width: 10px;
+  height: 16px;
+}
+.headerThreeOne .headerThreeOneFriend .soc .inn {
+  background-image: url("../images/in.png");
+  background-size: 100% 100%;
+  width: 14px;
+  height: 16px;
+}
+.headerThreeOne .headerThreeOneAcademy {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  width: 32%;
+}
+.headerThreeOne .headerThreeOneAcademy .devel {
+  font-size: 8px;
+  margin: 15px 16px 0px 0px;
+  font-family: "Five";
+}
+.headerThreeOne .headerThreeOneAcademy .ru {
+  font-size: 8px;
+  margin-top: 12px;
+  background: black;
+  padding: 8px 11px;
+  font-family: "Five";
+}
