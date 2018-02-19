@@ -50,15 +50,16 @@
   &Menu {
     display: flex;
     justify-content: space-between;
-    width: 44%;
-    margin: 12px 0 13px;
+    width: 60%;
+    margin: 19px 0 19px;
     &One {
       display: flex;
-      justify-content: space-between;
-      width: 55%;
+      justify-content: space-around;
+      width: 72%;
+      //background: aqua;
       &Information {
-        font-size: 10.3px;
-        font-family: "Three";
+        font-size: 14px;
+        font-family: "Four";
         text-decoration: none;
         color: @colorWhit;
       }
@@ -81,12 +82,13 @@
       width: 11%;
       justify-content: end;
       &Arrow {
-        width: 70%;
-        height: 9px;
+        height: 13px;
+        width: 17px;
+        margin-top: 3px;
       }
       &Enter {
-        font-size: 10px;
-        font-family: "Three";
+        font-size: 14px;
+        font-family: "Four";
         text-decoration: none;
         color: @colorWhit;
         margin-left: 3px;
@@ -116,21 +118,18 @@
     }
   }
   &Message {
-    width: 44%;
+    width: 57%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     &Quickly, &Cool, &Expensive {
       display: flex;
       flex-direction: column;
       margin-top: 13px;
-      width: 30%;
-    }
-    &Cool {
       width: 31%;
-      margin-left: 10px;
+      margin-right: 29px;
     }
-    &Expensive {
-      margin-left: 18px;
+    &Cool,&Expensive {
       width: 31%;
     }
     .mainQuickly, .mainCool, .mainExpensive {
@@ -147,7 +146,7 @@
       display: flex;
       justify-content: center;
       width: 100%;
-      margin-top: 10px;
+      margin-top: 9px;
     }
     .bubaQuickly, .bubaCool, .bubaExpensive {
       width: 13px;
@@ -166,12 +165,12 @@
       margin-left: 28px;
     }
     .textQuickly, .textCool, .textExpensive {
-      font-size: 9px;
+      font-size: 11px;
       text-align: center;
-      margin-top: 15px;
+      margin-top: 12px;
       font-family: "Four";
       line-height: 15px;
-      margin-left: -8px;
+      margin-left: 4px;
     }
     .textCool {
       margin-left: 8px;
@@ -182,7 +181,7 @@
   }
   &WhitOne {
     color: @colorBlack;
-    width: 45.5%;
+    width: 55.5%;
     margin-top: 50px;
     display: flex;
     &BlockOne {
@@ -192,14 +191,14 @@
       flex-direction: column;
       .headerTwoWhitOneNews {
         font-family: "Four";
-        font-size: 19px;
+        font-size: 24px;
         margin-left: 50px;
         margin-top: 29px;
       }
       .headerTwoWhitOneTexOne,.headerTwoWhitOneTextTwo {
         font-family: "Four";
-        font-size: 9px;
-        line-height: 15px;
+        font-size: 13px;
+        line-height: 20px;
         margin-left: 50px;
         margin-top: 13px;
       }
@@ -212,7 +211,7 @@
         color: @colorWhit;
         border: none;
         margin: 17px 0 32px 50px;
-        font-size: 9px;
+        font-size: 12px;
         padding: 8px 20px;
       }
     }
@@ -222,7 +221,7 @@
       display: flex;
       justify-content:flex-end;
       &First{
-        height: 220px;
+        height: 308px;
         width: 5px;
         background: #d3d3d3;
       }
@@ -230,34 +229,34 @@
     &BlockTwo {
       background: @colorBlockOne;
       width: 48%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       &Foto{
         font-family: "Four";
-        margin: 28px 0 0 55px;
-        font-size: 19px;
+        font-size: 24px;
+        width: 69%;
+        margin-top: 29px;
       }
       &Image {
         background-image: url("../images/inside-design.png");
         background-size: 100% 100%;
-        width: 61%;
-        height: 103px;
-        margin: 18px 0 0 58px;
+        width: 70%;
+        height: 140px;
+        margin-top: 15px;
       }
       &Button {
         display: flex;
         justify-content: space-between;
-        width: 64%;
-        margin: 30px 0 0 55px;
+        width: 70%;
+        margin-top: 31px;
         .headerTwoWhitTwoBlockTwoButtonA,.headerTwoWhitTwoBlockTwoButtonB{
           background: @colorBlack;
           color: @colorWhit;
           border: none;
-          font-size: 9px;
-          padding: 8px 32px;
+          font-size: 12px;
+          padding: 8px 42px;
           font-family: "Four";
-        }
-        .headerTwoWhitTwoBlockTwoButtonB {
-          margin-left: 10px;
-          padding: 8px 32px 8px 28px;
         }
       }
     }
@@ -265,7 +264,7 @@
   &WhitTwo {
     display: flex;
     margin-top: 22px;
-    width: 45.5%;
+    width: 55.5%;
     color:@colorBlack;
     &BlockOne {
       background: @colorBlockOne;
@@ -274,29 +273,29 @@
       flex-direction: column;
       &Contact {
         font-family: "Four";
-        font-size: 19px;
+        font-size: 24px;
         margin: 31px 0 0 50px;
       }
       &Address,&Schedule {
         font-family: "Four";
-        margin: 12px 0 0 50px;
-        font-size: 8px;
-        line-height: 15px;
+        margin: 15px 0 0 50px;
+        font-size: 13px;
+        line-height: 20px;
       }
       &Button {
         font-family: "Four";
         font-size: 15px;
-        margin: 14px 0 38px 50px;
+        margin: 22px 0 38px 50px;
         display: flex;
-        .headerTwoWhitTwoBlockOneButtonA,.headerTwoWhitTwoBlockOneButtonB {
+        &A,&B {
           background: @colorBlack;
           color: @colorWhit;
           border: none;
           font-family: "Four";
-          font-size: 9px;
+          font-size: 12px;
           padding: 8px 19px;
         }
-        .headerTwoWhitTwoBlockOneButtonB {
+        &B {
           margin-left: 13px;
           padding: 8px 14px;
         }
@@ -308,7 +307,7 @@
       display: flex;
       justify-content: flex-end;
       &First {
-        height: 220px;
+        height: 308px;
         width: 5px;
         background: #d3d3d3;
       }
@@ -316,69 +315,62 @@
     .headerTwoWhitTwoBlockTwo {
       background: @colorBlockOne;
       width: 48%;
-      .headerTwoWhitTwoBlockEnroll{
-        margin: 30px 0 0 55px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &Enroll{
         font-family: "Four";
-        font-size: 19px;
+        font-size: 24px;
+        display: flex;
+        width: 69%;
+        margin-top: 31px;
       }
-      .headerTwoWhitTwoBlockIndicate {
-        margin: 13px 0 0 55px;
+      &Indicate {
         font-family: "Four";
-        font-size: 9px;
-        line-height: 15px;
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 15px;
+        margin-left: 23px;
       }
-      .headerTwoWhitTwoBlockTwoButtonOne {
-        margin: 14px 0 0 40px;
-        font-family: "Four";
-        font-size: 8px;
-        .headerTwoWhitTwoBlockTwoButtonD {
-          margin-left: 14px;
-          padding: 6px 58px 6px 8px;
-          font-size: 9px;
+      &ButtonOne {
+        width: 68%;
+        margin-top: 15px;
+        &D,&T {
+          padding: 6px 65px 6px 15px;
+          font-size: 13px;
           font-family: "Four";
           border: 2px solid black;
           background: @colorBlockOne;
+
         }
-        .headerTwoWhitTwoBlockTwoButtonT {
+        &T {
           margin-left: 10px;
-          padding: 6px 54px 6px 8px;
-          font-size: 9px;
-          font-family: "Four";
-          border: 2px solid black;
-          background: @colorBlockOne;
         }
       }
-      .headerTwoWhitTwoBlockTwoButtonTwo {
-        margin: 12px 0 0 55px;
-        font-family: "Four";
-        font-size: 8px;
-        .headerTwoWhitTwoBlockTwoButtonN {
-          margin-left: -1px;
-          padding: 6px 39px 6px 8px;
-          font-size: 9px;
+      &ButtonTwo {
+        width: 68%;
+        margin-top: 15px;
+        &N,&Tf {
+          padding: 6px 38px 6px 15px;
+          font-size: 13px;
           font-family: "Four";
           border: 2px solid black;
           background: @colorBlockOne;
         }
-        .headerTwoWhitTwoBlockTwoButtonTf {
+        &Tf {
           margin-left: 10px;
-          padding: 6px 44px 6px 8px;
-          font-size: 9px;
-          font-family: "Four";
-          border: 2px solid black;
-          background: @colorBlockOne;
+          padding: 6px 51px 6px 15px;
         }
       }
       .headerTwoWhitTwoBlockTwoButtonThree {
-        margin: 13px 0 0 54px;
-       .headerTwoWhitTwoBlockTwoSend {
+       .headerTwoWhitTwoBlockTwoButtonThreeSend {
          font-family: "Seven";
          background: @colorBlack;
-         color: @colorWhit;
+         color: white;
          border: none;
-         width: 79.2%;
-         font-size: 7.5px;
-         padding: 8.4px ;
+         font-size: 12px;
+         padding: 8px 88px;
+         margin-top: 21px;
        }
       }
     }
@@ -395,25 +387,25 @@
   &One {
     display: flex;
     align-items: center;
-    width: 39%;
+    width: 47%;
     .headerThreeOneAddress{
-      font-size: 8px;
+      font-size: 12px;
       width: 40%;
-      line-height: 15px;
+      line-height: 18px;
       margin: 21px 0 0 6px;
-      font-family: "Five";
+      font-family: "Three";
       .headerThreeWhy {
         color: @colorWhit;
-        font-size: 8px;
+        font-size: 12px;
       }
     }
-    .headerThreeOneFriend {
+    &Friend {
       width: 23%;
       display: flex;
       flex-direction: column;
       .give {
-        font-size: 8px;
-        font-family: "Five";
+        font-size: 12px;
+        font-family: "Three";
         margin: 14px 0 0 13px ;
         }
       .soc{
@@ -423,52 +415,53 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 27px;
-          height: 26px;
+          width: 36px;
+          height: 33px;
           background:#000000;
           .vk {
             background-image: url("../images/vk.png");
             background-size: 100% 100%;
-            width: 20px;
-            height: 20px;
-            padding: 3px  2px 0px 2px;
+            width: 25px;
+            height: 24px;
+            padding: 2px 2px 0px 2px;
+            margin-top: 5px;
           }
         }
         .f,.in{
-          width: 27px;
-          height: 26px;
+          width: 36px;
+          height: 33px;
           margin-left: 3px;
           .ff {
             background-image: url("../images/f.png");
             background-size: 100% 100%;
-            width: 10px;
-            height: 16px;
+            width: 11px;
+            height: 18px;
           }
         }
         .inn {
           background-image: url("../images/in.png");
           background-size: 100% 100%;
-          width: 14px;
-          height: 16px;
+          width: 17px;
+          height: 19px;
         }
       }
     }
-    .headerThreeOneAcademy {
+    &Academy {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       width: 32%;
       .devel {
-        font-size: 8px;
-        margin: 15px 16px 0px 0px;
-        font-family: "Five";
+        font-size: 12px;
+        margin: 18px 27px 0px 0px;
+        font-family: "Three";
 
       }
       .ru {
-        font-size: 8px;
+        font-size: 10px;
         margin-top: 12px;
         background: @colorBlack;
-        padding: 8px 11px;
+        padding: 11px 19px;
         font-family: "Five";
       }
     }
