@@ -34,6 +34,7 @@
     "imagemin-pngquant": "^4.0.0"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0",
     "optipng-bin": "^4.0.0"
   }
 }
