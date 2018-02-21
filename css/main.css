@@ -60,7 +60,7 @@
 .headerOneMenuOne {
   display: -ms-flexbox;
   display: flex;
-  /*-ms-flex-pack: distribute;*/
+  -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 72%;
 }
@@ -105,7 +105,6 @@
 .headerTwo {
   background-image: url("../images/background-image.png");
   background-size: 100% 100%;
-  width: 84%;
   color: white;
   display: -ms-flexbox;
   display: flex;
@@ -130,12 +129,12 @@
   height: 130px;
 }
 .headerTwoMessage {
-  width: 57%;
+  width: 49.5%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  /*-ms-flex-pack: distribute;*/
+  -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 .headerTwoMessageQuickly,
@@ -159,7 +158,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-    justify-content: center;
+      justify-content: center;
   font-size: 19px;
   margin-right: 10px;
   font-family: "Four";
@@ -214,10 +213,11 @@
 }
 .headerTwoWhitOne {
   color: black;
-  width: 55.5%;
+  width: 48.5%;
   margin-top: 50px;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 6px;
 }
 .headerTwoWhitOneBlockOne {
   background: #f9f9f9;
@@ -263,12 +263,12 @@
 }
 .headerTwoWhitOneBlockLineFirst {
   height: 308px;
-  width: 5px;
-  background: #d3d3d3;
+  width: 2px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
 }
 .headerTwoWhitOneBlockTwo {
   background: #f9f9f9;
-  width: 48%;
+  width: 48.6%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -310,7 +310,8 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 22px;
-  width: 55.5%;
+  width: 48.7%;
+  margin-left: 9px;
   color: black;
 }
 .headerTwoWhitTwoBlockOne {
@@ -362,9 +363,9 @@
       justify-content: flex-end;
 }
 .headerTwoWhitTwoBlockLineFirst {
-  height: 308px;
-  width: 5px;
-  background: #d3d3d3;
+  width: 2px;
+  background: #333;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwo {
   background: #f9f9f9;
@@ -381,7 +382,7 @@
   font-size: 24px;
   display: -ms-flexbox;
   display: flex;
-  width: 69%;
+  width: 68%;
   margin-top: 31px;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoIndicate {
@@ -389,7 +390,7 @@
   font-size: 13px;
   line-height: 20px;
   margin-top: 15px;
-  margin-left: 23px;
+  margin-left: 19px;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOne {
   width: 68%;
@@ -428,8 +429,9 @@
   color: white;
   border: none;
   font-size: 12px;
-  padding: 8px 88px;
+  padding: 8px 88.5px;
   margin-top: 21px;
+  margin-right: 11px;
 }
 .headerThree {
   display: -ms-flexbox;
@@ -447,7 +449,7 @@
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  width: 47%;
+  width: 48.8%;
 }
 .headerThreeOne .headerThreeOneAddress {
   font-size: 12px;
@@ -526,7 +528,7 @@
       flex-direction: column;
   -ms-flex-align: end;
       align-items: flex-end;
-  width: 32%;
+  width: 33.4%;
 }
 .headerThreeOneAcademy .devel {
   font-size: 12px;

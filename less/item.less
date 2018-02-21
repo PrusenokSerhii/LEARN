@@ -90,7 +90,7 @@
       display: flex;
       width: 9%;
       display: flex;
-      justify-content: space-evenly;
+      //justify-content: space-evenly;
       &Image {
         background-image: url("../images/login.png");
         background-size: 100% 100%;
@@ -110,51 +110,57 @@
 .itemTwo {
   display: flex;
   justify-content: center;
-  margin-top: 4px;
-}
+  margin-top: 4px;}
 .itemOneMiddle {
-  background-color: #fbeafc;
+  background-image: url("../images/Fon.png");
   width: 60.6%;
   .itemOneMiddleOne {
     &First {
-      font-family: "Three";
-      width: 60.8%;
+      font-family: "Four";
+      width: 62.2%;
       text-align: right;
       font-size: 25px;
-      font-weight: 600;
       margin-top: 41px;
     }
     &Second {
       display: flex;
-      width: 68.6%;
-      justify-content: flex-end;
+      width: 67.2%;
+      justify-content: center;
       &Main {
-        font-family: "Four";
-        text-align: right;
-        font-size: 16px;
-        margin-top: 10px;
+        font-family: "Three";
+        font-weight: 600;
+        font-size: 10px;
+        margin: 13px 7px 0 0px;
       }
       &Buba {
-        width: 7px;
-        height: 7px;
+        width: 5px;
+        height: 5px;
         transform: rotate(-45deg);
         transform-origin: 0 100%;
         background: @colorBlack;
-        margin: 20px 10px 0 15px;;
+        margin: 18px 10px 0 9px;
         }
       &Story, &Care, &Travel {
-        font-family: "Four";
-        text-align: right;
-        font-size: 16px;
-        margin: 10px 0px 0 0;
+        font-family: "Three";
+        font-size: 10px;
+        font-weight: 600;
+        margin: 13px 6px 0 0;
+      }
+      &Care {
+        margin: 13px 0px 0 0;
       }
       &Travel {
-        font-size: 12.5px;
+        margin: 13px 4px 0 2px;
+      }
+      &Travel {
+        font-size: 10px;
+        font-family: "Three";
+        font-weight: 600;
         margin: 13px 4px 0 0;
         color: gray;
       }
       .cccc {
-        margin: 10px 7px 0 0;
+        margin: 13px 7px 0 0;
       }
     }
   }
@@ -168,10 +174,9 @@
       justify-content: center;
     }
     .itemOneMiddleTwoBaggageBig {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-         margin-left: 48px;
+      width: 90%;
+      display: flex;
+      margin-left: 105px;
       }
       .itemOneMiddleTwoBaggageImageOne {
         background-image: url("../images/1.png");
@@ -183,7 +188,7 @@
       .itemOneMiddleTwoBaggageSmall {
         display: flex;
         justify-content: space-between;
-        width: 69%;
+        width: 68%;
         margin-left: 105px;
         margin-top: 16px;
         .itemOneMiddleTwoBaggageImageTwo,.itemOneMiddleTwoBaggageImageThree,.itemOneMiddleTwoBaggageImageFour {
@@ -241,8 +246,8 @@
   }
   .itemOneMiddleTwoTextFour {
     font-family: "Four";
-    margin: 49px 0 0 16px;
-    font-size: 19px;
+    margin: 49px 0 0 17px;
+    font-size: 17px;
   }
   .itemOneMiddleTwoTextFiveList {
     font-family: "Four";
@@ -291,8 +296,8 @@
   width: 60.65%;
   display: flex;
   background: #161616;
-  box-shadow: 0 0 50px -10px black;
   color: @colorWhit;
+  box-shadow: inset 0 14px 26px black;
 }
 .itemThreeButtonAddress {
   display: flex;
@@ -312,12 +317,8 @@
     font-size: 11px;
     width: 50%;
   }
-.itemlll {
-  width: 56%;
-  margin-left: 24px;
-}
 .itemThreeButtonSocial {
-  width: 26%;
+  width: 28%;
   display: flex;
   justify-content: center;
   flex-direction: column;

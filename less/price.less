@@ -66,7 +66,7 @@
         color: white;
         margin: 20px 0 0 4px;
         text-decoration: none;
-        padding-bottom: 16px;
+        padding-bottom: 15px;
         &:hover {
           border-bottom: 4px solid @colorWhit;
           margin-bottom: -4px;
@@ -86,8 +86,8 @@
       display: flex;
       width: 9%;
       display: flex;
-      justify-content: space-evenly;
-      &Image {
+      //justify-content: space-evenly;
+        &Image {
         background-image: url("../images/login.png");
         background-size: 100% 100%;
         height: 14px;
@@ -108,8 +108,8 @@
   justify-content: center;
   margin-top: 5px;
   &Whit {
-    background: #fbeafc;
-    width: 61%;
+    background-image: url("../images/Fon.png");
+    width: 60.6%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,14 +117,14 @@
       width: 80%;
       &OnePrise {
         font-family: "Four";
-        font-size: 30px;
-        margin: 50px 0 0 10px;
+        font-size: 26px;
+        margin: 39px 0 0 10px;
       }
       &OneHead {
         display: flex;
         font-family: "Four";
-        font-size: 14.6px;
-        margin: 19px 0 0 9px;
+        font-size: 12.6px;
+        margin: 13px 0 0 11px;
         font-weight: 600;
         &Two {
           width: 7px;
@@ -132,7 +132,7 @@
           transform: rotate(-45deg);
           transform-origin: 0 100%;
           background: @colorBlack;
-          margin: 7px 13px 0 19px;
+          margin: 7px 9px 0 16px;
         }
         &Three {
           color:grey;
@@ -141,49 +141,52 @@
       &Two {
         display: flex;
         justify-content: center;
+        margin-left: 11px;
         &Line {
           display: flex;
           justify-content: center;
-          width: 16.7%;
+          width: 19.7%;
           &One {
             border-top: 1.6px solid black;
             width: 100%;
-            margin-top: 68px;
+            margin-top: 52px;
           }
         }
         &Text {
-          font-size: 39.5px;
+          font-size: 36.5px;
           width: 65%;
           text-align: center;
           font-family: "Four";
-          margin: 40px 0 0 -3px;
+          margin: 28px 0 0 -3px;
         }
       }
       &Three {
         display: flex;
         flex-direction: row;
-        margin-top: 54px;
+        margin-top: 43px;
         &One {
           width: 50%;
           &Text {
             font-family: "Four";
-            font-size: 24px;
+            font-size: 20px;
             margin-left: 11px;
           }
           &List {
             font-family: "Four";
-            font-size: 14px;
+            font-size: 12px;
             padding: 5px 0 0 12px;
-            margin-top: 13px;
+            margin-top: 15px;
             line-height: 35px;
-            &Whole {
-              list-style: none;
+            &One,&Two,&Three,&Four {
+                display: flex;
             }
-            &Whole:before {
-              content: '\2666';
-              padding-right: 8px;
-              color: @colorBlack;
-              font-size: 20px;
+            .priseMiddleWhitBlockThreeOneListBuba {
+              width: 6.2px;
+              height: 6.2px;
+              transform: rotate(-45deg);
+              transform-origin: 0 100%;
+              background: @colorBlack;
+              margin: 15px 8px 0 4px;
             }
           }
         }
@@ -192,7 +195,7 @@
           margin-left: 10px;
           &Cost {
             font-family: "Four";
-            font-size: 24px;
+            font-size: 20px;
             margin-left: 5px;
           }
           &TableHeader{
@@ -202,15 +205,15 @@
             &Grid {
               border: 2px solid black;
               width: 36%;
-              font-family: Four;
+              font-family: "Four";
               padding: 10px 0;
               text-align: center;
-              font-size: 13.5px;
+              font-size: 12px;
             }
             .string {
               text-align:start;
               padding-left: 17px;
-              font-size: 14px;
+              font-size: 12px;
             }
           }
         }
@@ -223,13 +226,13 @@
           width: 50%;
           &TextOne {
             font-family: "Four";
-            font-size: 24px;
+            font-size: 20px;
             margin: 25px 0 0 10px;
           }
           &TextTwo {
             font-family: "Four";
-            font-size: 14px;
-            margin: 27px 0 0 10px;
+            font-size: 12px;
+            margin: 23px 0 0 10px;
             line-height: 24px;
           }
         }
@@ -239,7 +242,7 @@
           align-items: flex-end;
           &TextOne {
             font-family: "Four";
-            font-size: 14.3px;
+            font-size: 12px;
             line-height: 24px;
             margin-left: 11px;
           }
@@ -253,18 +256,18 @@
   justify-content: center;
 }
 .priseButtonOne {
-  width: 60.65%;
+  width: 60.95%;
   display: flex;
   background: #161616;
-  box-shadow: 0 0 50px -10px black;
   color: @colorWhit;
+  box-shadow: inset 0 14px 26px black;
 }
 .priseButtonOneAddress {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 12px;
-  width: 44%;
+  width: 51%;
   line-height: 18px;
   margin: 45px 0 32px 0;
   font-family: "Three";
@@ -292,7 +295,6 @@
   .priseButtonOneSocialSoc{
     display: flex;
     margin: 15px 0 7px 4px ;
-
     .priseButtonOneSocialVkO,.priseButtonOneSocialF,.priseButtonOneSocialIn  {
       display: flex;
       align-items: center;
