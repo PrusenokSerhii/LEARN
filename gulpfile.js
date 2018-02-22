@@ -43,7 +43,7 @@ gulp.task('less', function() {
 *
 **/
 gulp.task('browser-sync', function() {
-  browserSync.init(['css/*.css', 'js/**/*.js', 'index.html'], {
+  browserSync.init(['css/*.css', 'js/**/*.js', 'main.html'], {
     server: {
       baseDir: './'
     }

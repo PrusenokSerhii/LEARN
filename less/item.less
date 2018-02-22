@@ -30,20 +30,31 @@
   font-family: Eight;
   src: url("../Font/PTS76F.ttf");
 }
-.itemOne {
-  background: @colorBlack;
-}
 @colorWhit: white;
 @colorBlack: black;
-
-.body {
-  margin: 0
+* {
+  margin: 0;
+  padding: 0;
 }
-.header {
-  background: @colorBlack;
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: black;
+}
+.content {
+  flex: 1 0 auto;
+  background: black;
+}
+.footer {
+  flex: 0 0 auto;
+  background: black;
 }
 .itemOne {
-  background: @colorBlack;
   display: flex;
   justify-content: center;
   &Block {
@@ -90,7 +101,6 @@
       display: flex;
       width: 9%;
       display: flex;
-      //justify-content: space-evenly;
       &Image {
         background-image: url("../images/login.png");
         background-size: 100% 100%;
@@ -114,18 +124,19 @@
 .itemOneMiddle {
   background-image: url("../images/Fon.png");
   width: 60.6%;
+  display: flex;
+  flex-direction: column;
   .itemOneMiddleOne {
+    display: flex;
+    flex-direction: column;
+    margin-left: 105px;
     &First {
       font-family: "Four";
-      width: 62.2%;
-      text-align: right;
       font-size: 25px;
       margin-top: 41px;
     }
     &Second {
       display: flex;
-      width: 67.2%;
-      justify-content: center;
       &Main {
         font-family: "Three";
         font-weight: 600;
@@ -211,7 +222,7 @@
   .itemOneMiddleTwoTextOne {
     display: flex;
     font-family: "Four";
-    font-size: 12.5px;
+    font-size: 13.5px;
     margin: 15px 0 0 15.5px;
     .itemOneMiddleTwoTextOneITIS {
       width: 50%;
@@ -224,9 +235,9 @@
   }
   .itemOneMiddleTwoTextTWo {
     font-family: "Four";
-    font-size: 12px;
+    font-size: 13px;
     margin: 25px 0 0 16px;
-    line-height: 19px;
+    line-height: 22px;
   }
   .itemOneMiddleTwoTextThree {
     display: flex;
@@ -241,7 +252,10 @@
     .itemOneMiddleTwoTextThreeBuy {
       background: @colorBlack;
       color: @colorWhit;
-      padding: 7.5px 13.5px 11.5px 13.5px;
+      font-size: 11px;
+      font-family: "Four";
+      border: none;
+      padding: 7.5px 13.5px 8.5px 13.5px;
     }
   }
   .itemOneMiddleTwoTextFour {
@@ -251,7 +265,7 @@
   }
   .itemOneMiddleTwoTextFiveList {
     font-family: "Four";
-    font-size: 11px;
+    font-size: 13px;
     padding: 9px 0 0 17px;
     &One, &Two, &Three, &Four, &Five {
       list-style: none;

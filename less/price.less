@@ -32,12 +32,30 @@
 }
 @colorWhit: white;
 @colorBlack: black;
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+  background: black;
+}
+.footer {
+  flex: 0 0 auto;
+}
 .One {
   margin: 0;
 }
-.black {
-  background: @colorBlack;
-}
+
 .priceHeader {
   background: @colorBlack;
   display: flex;
@@ -86,7 +104,6 @@
       display: flex;
       width: 9%;
       display: flex;
-      //justify-content: space-evenly;
         &Image {
         background-image: url("../images/login.png");
         background-size: 100% 100%;
