@@ -418,36 +418,56 @@ body {
   margin-top: 15px;
   margin-left: 19px;
 }
+.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButton {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-left: 10px;
+}
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOne {
-  width: 68%;
+  width: 86%;
   margin-top: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin-left: 28px;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOneD,
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOneT {
-  padding: 6px 65px 6px 15px;
+  padding: 7px 0 7px 6px;
   font-size: 13px;
   font-family: "Four";
   border: 2px solid black;
   background: #f9f9f9;
+  width: 40%;
+  margin-left: 12px;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOneT {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwo {
-  width: 68%;
+  width: 86%;
   margin-top: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin-left: 28px;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwoN,
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwoTf {
-  padding: 6px 38px 6px 15px;
+  padding: 7px 0 7px 6px;
   font-size: 13px;
   font-family: "Four";
   border: 2px solid black;
   background: #f9f9f9;
+  width: 40%;
+  margin-left: 12px;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwoTf {
-  margin-left: 10px;
-  padding: 6px 51px 6px 15px;
+  margin-left: 15px;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonThree .headerTwoWhitTwoBlockTwoButtonThreeSend {
   font-family: "Seven";
@@ -455,9 +475,9 @@ body {
   color: white;
   border: none;
   font-size: 12px;
-  padding: 8px 88.5px;
-  margin-top: 21px;
-  margin-right: 11px;
+  padding: 8px 69px;
+  margin-top: 19px;
+  margin-left: 40px;
 }
 .headerThree {
   display: -ms-flexbox;
