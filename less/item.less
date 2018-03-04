@@ -32,27 +32,17 @@
 }
 @colorWhit: white;
 @colorBlack: black;
-* {
-  margin: 0;
-  padding: 0;
-}
-html,
-body {
+
+
+body, html{
   height: 100%;
+  background: black;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
+  background: black;
   height: 100%;
-  background: black;
-}
-.content {
-  flex: 1 0 auto;
-  background: black;
-}
-.footer {
-  flex: 0 0 auto;
-  background: black;
 }
 .itemOne {
   display: flex;
@@ -118,14 +108,17 @@ body {
   }
 }
 .itemTwo {
+  flex: 1 0 auto;
   display: flex;
   justify-content: center;
-  margin-top: 4px;}
+  margin-top: 4px;
+}
 .itemOneMiddle {
   background-image: url("../images/Fon.png");
   width: 60.6%;
   display: flex;
   flex-direction: column;
+
   .itemOneMiddleOne {
     display: flex;
     flex-direction: column;
@@ -150,7 +143,7 @@ body {
         transform-origin: 0 100%;
         background: @colorBlack;
         margin: 18px 10px 0 9px;
-        }
+      }
       &Story, &Care, &Travel {
         font-family: "Three";
         font-size: 10px;
@@ -303,6 +296,7 @@ body {
   }
 }
 .itemThree {
+  flex: 0 0 auto;
   display: flex;
   justify-content: center;
 }

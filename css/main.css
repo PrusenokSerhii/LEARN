@@ -288,7 +288,6 @@ body {
       justify-content: flex-end;
 }
 .headerTwoWhitOneBlockLineFirst {
-  height: 308px;
   width: 2px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
 }
@@ -329,7 +328,7 @@ body {
   color: white;
   border: none;
   font-size: 12px;
-  padding: 8px 42px;
+  padding: 8px 45px;
   font-family: "Four";
 }
 .headerTwoWhitTwo {
@@ -390,7 +389,6 @@ body {
 }
 .headerTwoWhitTwoBlockLineFirst {
   width: 2px;
-  background: #333;
   background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwo {
@@ -408,66 +406,75 @@ body {
   font-size: 24px;
   display: -ms-flexbox;
   display: flex;
-  width: 68%;
   margin-top: 31px;
+  width: 70%;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoIndicate {
   font-family: "Four";
-  font-size: 13px;
+  font-size: 12.5px;
   line-height: 20px;
   margin-top: 15px;
-  margin-left: 19px;
+  width: 70%;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButton {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin-left: 10px;
+  width: 100%;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOne {
-  width: 86%;
   margin-top: 15px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-left: 28px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOneD,
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOneT {
-  padding: 7px 0 7px 6px;
   font-size: 13px;
   font-family: "Four";
   border: 2px solid black;
+  width: 33%;
+  text-align: start;
+  padding: 7px 0 7px 10px;
   background: #f9f9f9;
-  width: 40%;
-  margin-left: 12px;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOneT {
-  margin-left: 15px;
+  margin-left: 16px;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwo {
-  width: 86%;
-  margin-top: 15px;
+  margin-top: 16px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-left: 28px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwoN,
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwoTf {
-  padding: 7px 0 7px 6px;
   font-size: 13px;
   font-family: "Four";
   border: 2px solid black;
+  width: 33%;
+  text-align: start;
+  padding: 7px 0 7px 10px;
   background: #f9f9f9;
-  width: 40%;
-  margin-left: 12px;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwoTf {
-  margin-left: 15px;
+  margin-left: 16px;
+}
+.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonThree {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonThree .headerTwoWhitTwoBlockTwoButtonThreeSend {
   font-family: "Seven";
@@ -475,9 +482,10 @@ body {
   color: white;
   border: none;
   font-size: 12px;
-  padding: 8px 69px;
   margin-top: 19px;
-  margin-left: 40px;
+  width: 73.5%;
+  padding: 8px 8px;
+  text-align: center;
 }
 .headerThree {
   display: -ms-flexbox;
@@ -574,7 +582,7 @@ body {
       flex-direction: column;
   -ms-flex-align: end;
       align-items: flex-end;
-  width: 33.4%;
+  width: 34.1%;
 }
 .headerThreeOneAcademy .devel {
   font-size: 12px;

@@ -32,33 +32,17 @@
 }
 @colorWhit: white;
 @colorBlack: black;
-* {
-  margin: 0;
-  padding: 0;
-}
-html,
-body {
+
+body, html{
   height: 100%;
+  background: black;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.content {
-  flex: 1 0 auto;
-  background: black;
-}
-.footer {
-  flex: 0 0 auto;
-  background: black;
-}
-.One {
-  margin: 0;
-}
-
 .priceHeader {
-  background: @colorBlack;
   display: flex;
   justify-content: center;
   .priceHeaderBlock {
@@ -122,15 +106,16 @@ body {
   }
 }
 .priseMiddle {
+  flex: 1 0 auto;
   display: flex;
   justify-content: center;
   margin-top: 5px;
   &Whit {
     background-image: url("../images/Fon.png");
+    background-size: 100% 100%;
     width: 60.6%;
     display: flex;
     justify-content: center;
-    align-items: center;
     &Block {
       width: 80%;
       &OnePrise {
@@ -199,12 +184,12 @@ body {
                 display: flex;
             }
             .priseMiddleWhitBlockThreeOneListBuba {
-              width: 6.2px;
-              height: 6.2px;
-              transform: rotate(-45deg);
-              transform-origin: 0 100%;
-              background: @colorBlack;
-              margin: 15px 8px 0 4px;
+                width: 6.2px;
+                height: 6.2px;
+                transform: rotate(-45deg);
+                transform-origin: 0 100%;
+                background: @colorBlack;
+                margin: 15px 8px 0 4px;
             }
           }
         }
@@ -270,6 +255,7 @@ body {
   }
 }
 .priseButton {
+  flex: 0 0 auto;
   display: flex;
   justify-content: center;
 }
