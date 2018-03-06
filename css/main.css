@@ -155,7 +155,7 @@ body {
   height: 130px;
 }
 .headerTwoMessage {
-  width: 49.5%;
+  width: 48%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -239,24 +239,25 @@ body {
 }
 .headerTwoWhitOne {
   color: black;
-  width: 48.5%;
+  width: 47%;
   margin-top: 50px;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 6px;
+  margin-right: 20px;
 }
 .headerTwoWhitOneBlockOne {
   background: #f9f9f9;
-  width: 45%;
+  width: 50%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  position: relative;
 }
 .headerTwoWhitOneBlockOne .headerTwoWhitOneNews {
   font-family: "Four";
   font-size: 24px;
-  margin-left: 50px;
+  margin-left: 40px;
   margin-top: 29px;
 }
 .headerTwoWhitOneBlockOne .headerTwoWhitOneTexOne,
@@ -264,7 +265,7 @@ body {
   font-family: "Four";
   font-size: 13px;
   line-height: 20px;
-  margin-left: 50px;
+  margin-left: 40px;
   margin-top: 13px;
 }
 .headerTwoWhitOneBlockOne .headerTwoWhitOneTextTwo {
@@ -275,25 +276,13 @@ body {
   background: black;
   color: white;
   border: none;
-  margin: 17px 0 32px 50px;
+  margin: 17px 0 32px 40px;
   font-size: 12px;
   padding: 8px 20px;
 }
-.headerTwoWhitOneBlockLine {
-  background: #f9f9f9;
-  width: 4%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-}
-.headerTwoWhitOneBlockLineFirst {
-  width: 2px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
-}
 .headerTwoWhitOneBlockTwo {
   background: #f9f9f9;
-  width: 48.6%;
+  width: 50%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -335,17 +324,18 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 22px;
-  width: 48.7%;
-  margin-left: 9px;
+  width: 47%;
   color: black;
+  margin-right: 20px;
 }
 .headerTwoWhitTwoBlockOne {
   background: #f9f9f9;
-  width: 45%;
+  width: 50%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  position: relative;
 }
 .headerTwoWhitTwoBlockOneContact {
   font-family: "Four";
@@ -358,6 +348,7 @@ body {
   margin: 15px 0 0 50px;
   font-size: 13px;
   line-height: 20px;
+  position: relative;
 }
 .headerTwoWhitTwoBlockOneButton {
   font-family: "Four";
@@ -379,27 +370,14 @@ body {
   margin-left: 13px;
   padding: 8px 14px;
 }
-.headerTwoWhitTwoBlockLine {
-  background: #f9f9f9;
-  width: 4%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-}
-.headerTwoWhitTwoBlockLineFirst {
-  width: 2px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
-}
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwo {
   background: #f9f9f9;
-  width: 48%;
+  width: 50%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
+  padding-left: 15%;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoEnroll {
   font-family: "Four";
@@ -407,21 +385,18 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 31px;
-  width: 70%;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoIndicate {
   font-family: "Four";
   font-size: 12.5px;
   line-height: 20px;
   margin-top: 15px;
-  width: 70%;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButton {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  width: 100%;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOne {
   margin-top: 15px;
@@ -429,18 +404,13 @@ body {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  -ms-flex-pack: center;
-      justify-content: center;
-  width: 100%;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOneD,
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOneT {
   font-size: 13px;
   font-family: "Four";
   border: 2px solid black;
-  width: 33%;
-  text-align: start;
-  padding: 7px 0 7px 10px;
+  padding: 7px 26% 7px 7px;
   background: #f9f9f9;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOneT {
@@ -452,29 +422,22 @@ body {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  -ms-flex-pack: center;
-      justify-content: center;
-  width: 100%;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwoN,
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwoTf {
   font-size: 13px;
   font-family: "Four";
   border: 2px solid black;
-  width: 33%;
-  text-align: start;
-  padding: 7px 0 7px 10px;
+  padding: 7px 17% 7px 7px;
   background: #f9f9f9;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwoTf {
   margin-left: 16px;
+  padding: 7px 22% 7px 7px;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonThree {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  width: 100%;
 }
 .headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonThree .headerTwoWhitTwoBlockTwoButtonThreeSend {
   font-family: "Seven";
@@ -483,8 +446,7 @@ body {
   border: none;
   font-size: 12px;
   margin-top: 19px;
-  width: 73.5%;
-  padding: 8px 8px;
+  padding: 8px 31% 8px;
   text-align: center;
 }
 .headerThree {
@@ -595,4 +557,22 @@ body {
   background: black;
   padding: 11px 19px;
   font-family: "Five";
+}
+.headerTwoWhitTwoBlockOne:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -63px;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
+}
+.headerTwoWhitOneBlockOne:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -6px;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
 }

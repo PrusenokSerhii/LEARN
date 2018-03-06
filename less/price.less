@@ -1,40 +1,9 @@
-@font-face {
-  font-family: One;
-  src: url("../Font/PTC55F.ttf");
-}
-@font-face {
-  font-family: Two;
-  src: url("../Font/PTC75F.ttf");
-}
-@font-face {
-  font-family: Three;
-  src: url("../Font/PTN57F.ttf");
-}
-@font-face {
-  font-family: Four;
-  src: url("../Font/PTN77F.ttf");
-}
-@font-face {
-  font-family: Five;
-  src: url("../Font/PTS55F.ttf");
-}
-@font-face {
-  font-family: Six;
-  src: url("../Font/PTS56F.ttf");
-}
-@font-face {
-  font-family: Seven;
-  src: url("../Font/PTS75F.ttf");
-}
-@font-face {
-  font-family: Eight;
-  src: url("../Font/PTS76F.ttf");
-}
+
 @colorWhit: white;
 @colorBlack: black;
 
 body, html{
-  height: 100%;
+  min-height: 100%;
   background: black;
 }
 .wrapper {
@@ -42,74 +11,12 @@ body, html{
   flex-direction: column;
   height: 100%;
 }
-.priceHeader {
-  display: flex;
-  justify-content: center;
-  .priceHeaderBlock {
-    width: 46%;
-    display: flex;
-    justify-content: space-between;
-    .priceHeaderOne {
-      display: flex;
-      justify-content: inherit;
-      width: 73%;
-      .loc {
-        text-decoration: none;
-      }
-      .priceHeaderOneLogo {
-        background-image: url("../images/logo.png");
-        background-size: 100% 100%;
-        width: 115px;
-        height: 23px;
-        margin: 17px 0 0 -11px;
-      }
-      &Information,&News,&Prise,&Store,&Contact {
-        font-size: 14px;
-        font-family: "Four";
-        color: white;
-        margin: 20px 0 0 4px;
-        text-decoration: none;
-        padding-bottom: 15px;
-        &:hover {
-          border-bottom: 4px solid @colorWhit;
-          margin-bottom: -4px;
-        }
-      }
-      &Prise {
-        margin: 20px 0 0 3px;
-      }
-      &Store {
-        margin: 20px 4px 0;
-      }
-      &Contact {
-        margin: 20px 5px 0 0;
-      }
-    }
-    .priceHeaderTwo {
-      display: flex;
-      width: 9%;
-      display: flex;
-        &Image {
-        background-image: url("../images/login.png");
-        background-size: 100% 100%;
-        height: 14px;
-        width: 17px;
-        margin: 23px 0 0 5px;
-      }
-      &Enter {
-        font-size: 14px;
-        font-family: "Four";
-        color: white;
-        margin: 21px 0 0 3px;
-      }
-    }
-  }
-}
+
 .priseMiddle {
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
-  margin-top: 5px;
+  margin-top: 4px;
   &Whit {
     background-image: url("../images/Fon.png");
     background-size: 100% 100%;
@@ -126,7 +33,7 @@ body, html{
       &OneHead {
         display: flex;
         font-family: "Four";
-        font-size: 12.6px;
+        font-size: 13px;
         margin: 13px 0 0 11px;
         font-weight: 600;
         &Two {
@@ -252,104 +159,5 @@ body, html{
         }
       }
     }
-  }
-}
-.priseButton {
-  flex: 0 0 auto;
-  display: flex;
-  justify-content: center;
-}
-.priseButtonOne {
-  width: 60.95%;
-  display: flex;
-  background: #161616;
-  color: @colorWhit;
-  box-shadow: inset 0 14px 26px black;
-}
-.priseButtonOneAddress {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  font-size: 12px;
-  line-height: 18px;
-  margin: 44px 0 32px 0px;
-  font-family: "Three";
-  width: 37%;
-}
-.priseButtonOneAddressWhy {
-  color: @colorWhit;
-  font-size: 11px;
-  width: 50%;
-}
-.itemlll {
-  width: 56%;
-  margin-left: 24px;
-}
-.priseButtonOneSocial {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 10px;
-  width: 38%;
-  margin-left: 13px;
-  .priseButtonOneSocialGive{
-    font-size: 12px;
-    font-family: "Three";
-    margin: 0 0 0 59px;
-  }
-  .priseButtonOneSocialSoc{
-    display: flex;
-    margin: 15px 0 7px 44px;
-    .priseButtonOneSocialVkO,.priseButtonOneSocialF,.priseButtonOneSocialIn  {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 36px;
-      height: 33px;
-      background:#000000;
-      .priseButtonOneSocialVk {
-        background-image: url("../images/vk.png");
-        background-size: 100% 100%;
-        width: 25px;
-        height: 24px;
-        padding: 2px  2px 0px 2px;
-        margin-top: 5px;
-      }
-    }
-    .priseButtonOneSocialF,.priseButtonOneSocialIn{
-      width: 36px;
-      height: 33px;
-      margin-left: 3px;
-      .priseButtonOneSocialFf {
-        background-image: url("../images/f.png");
-        background-size: 100% 100%;
-        width: 11px;
-        height: 18px;
-      }
-    }
-    .priseButtonOneSocialInn {
-      background-image: url("../images/in.png");
-      background-size: 100% 100%;
-      width: 17px;
-      height: 19px;
-    }
-  }
-}
-.priseButtonOneSocialAcademy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 13%;
-  .priseButtonOneSocialAcademyDevel {
-    font-size: 12px;
-    font-family: "Three";
-  }
-  .priseButtonOneSocialAcademyRu {
-    font-size: 10px;
-    background: @colorBlack;
-    padding: 11px 19px;
-    font-family: "Five";
-    margin-top: 15px;
   }
 }

@@ -139,7 +139,7 @@ body {
     }
   }
   &Message {
-    width: 49.5%;
+    width: 48%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -202,26 +202,27 @@ body {
   }
   &WhitOne {
     color: @colorBlack;
-    width: 48.5%;
+    width: 47%;
     margin-top: 50px;
     display: flex;
-    margin-left: 6px;
+    margin-right: 20px;
     &BlockOne {
       background: @colorBlockOne;
-      width: 45%;
+      width: 50%;
       display: flex;
       flex-direction: column;
+      position: relative;
       .headerTwoWhitOneNews {
         font-family: "Four";
         font-size: 24px;
-        margin-left: 50px;
+        margin-left: 40px;
         margin-top: 29px;
       }
       .headerTwoWhitOneTexOne,.headerTwoWhitOneTextTwo {
         font-family: "Four";
         font-size: 13px;
         line-height: 20px;
-        margin-left: 50px;
+        margin-left: 40px;
         margin-top: 13px;
       }
       .headerTwoWhitOneTextTwo {
@@ -232,24 +233,14 @@ body {
         background: @colorBlack;
         color: @colorWhit;
         border: none;
-        margin: 17px 0 32px 50px;
+        margin: 17px 0 32px 40px;
         font-size: 12px;
         padding: 8px 20px;
       }
     }
-    &BlockLine {
-      background: @colorBlockOne;
-      width: 4%;
-      display: flex;
-      justify-content:flex-end;
-      &First{
-        width: 2px;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
-      }
-    }
     &BlockTwo {
       background: @colorBlockOne;
-      width: 48.6%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -285,15 +276,16 @@ body {
   &WhitTwo {
     display: flex;
     margin-top: 22px;
-    width: 48.7%;
-    margin-left: 9px;
+    width: 47%;
     color:@colorBlack;
+    margin-right: 20px;
+
     &BlockOne {
       background: @colorBlockOne;
-      width: 45%;
+      width: 50%;
       display: flex;
       flex-direction: column;
-
+      position: relative;
       &Contact {
         font-family: "Four";
         font-size: 24px;
@@ -304,6 +296,7 @@ body {
         margin: 15px 0 0 50px;
         font-size: 13px;
         line-height: 20px;
+        position: relative;
       }
       &Button {
         font-family: "Four";
@@ -324,55 +317,37 @@ body {
         }
       }
     }
-    &BlockLine {
-      background: @colorBlockOne;
-      width: 4%;
-      display: flex;
-      justify-content: flex-end;
-      &First {
-        width: 2px;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
-      }
-    }
     .headerTwoWhitTwoBlockTwo {
       background: @colorBlockOne;
-      width: 48%;
+      width: 50%;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      &Enroll{
+      padding-left: 15%;
+      &Enroll {
         font-family: "Four";
         font-size: 24px;
         display: flex;
-        width: 70%;
         margin-top: 31px;
-        width: 70%;
       }
       &Indicate {
         font-family: "Four";
         font-size: 12.5px;
         line-height: 20px;
         margin-top: 15px;
-        width: 70%;
       }
       .headerTwoWhitTwoBlockTwoButton {
         display: flex;
         flex-direction: column;
-        width: 100%;
       }
       &ButtonOne {
         margin-top: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        width: 100%;
         &D,&T {
           font-size: 13px;
           font-family: "Four";
           border: 2px solid black;
-          width: 33%;
-          text-align: start;
-          padding: 7px 0 7px 10px;
+          padding: 7px 26% 7px 7px;
           background: #f9f9f9;
         }
         &T {
@@ -383,25 +358,20 @@ body {
         margin-top: 16px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        width: 100%;
         &N,&Tf {
           font-size: 13px;
           font-family: "Four";
           border: 2px solid black;
-          width: 33%;
-          text-align: start;
-          padding: 7px 0 7px 10px;
+          padding: 7px 17% 7px 7px;
           background: #f9f9f9;
         }
         &Tf {
           margin-left: 16px;
+          padding: 7px 22% 7px 7px;
         }
       }
       .headerTwoWhitTwoBlockTwoButtonThree {
         display: flex;
-        justify-content: center;
-        width:100%;
        .headerTwoWhitTwoBlockTwoButtonThreeSend {
          font-family: "Seven";
          background: black;
@@ -409,8 +379,7 @@ body {
          border: none;
          font-size: 12px;
          margin-top: 19px;
-         width: 73.5%;
-         padding: 8px 8px;
+         padding: 8px 31% 8px;
          text-align: center;
        }
       }
@@ -507,4 +476,22 @@ body {
       }
     }
   }
+}
+.headerTwoWhitTwoBlockOne:after {
+  content: "";
+  position: absolute;
+  top:0;
+  right: -63px;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
+}
+.headerTwoWhitOneBlockOne:after {
+  content: "";
+  position: absolute;
+  top:0;
+  right: -6px;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
 }

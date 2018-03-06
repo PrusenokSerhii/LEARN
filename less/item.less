@@ -1,39 +1,6 @@
-@font-face {
-  font-family: One;
-  src: url("../Font/PTC55F.ttf");
-}
-@font-face {
-  font-family: Two;
-  src: url("../Font/PTC75F.ttf");
-}
-@font-face {
-  font-family: Three;
-  src: url("../Font/PTN57F.ttf");
-}
-@font-face {
-  font-family: Four;
-  src: url("../Font/PTN77F.ttf");
-}
-@font-face {
-  font-family: Five;
-  src: url("../Font/PTS55F.ttf");
-}
-@font-face {
-  font-family: Six;
-  src: url("../Font/PTS56F.ttf");
-}
-@font-face {
-  font-family: Seven;
-  src: url("../Font/PTS75F.ttf");
-}
-@font-face {
-  font-family: Eight;
-  src: url("../Font/PTS76F.ttf");
-}
+
 @colorWhit: white;
 @colorBlack: black;
-
-
 body, html{
   height: 100%;
   background: black;
@@ -44,68 +11,33 @@ body, html{
   background: black;
   height: 100%;
 }
-.itemOne {
+.itemStore {
+  border-bottom: 4px solid white;
+  font-size: 14px;
+  font-family: "Four";
+  color: white;
+  margin: 20px 0 -4px 3px;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+.itemPrise {
+  font-size: 14px;
+  font-family: "Four";
+  color: white;
+  margin: 20px 0 0 4px;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+.itemPrise:hover {
+  border-bottom: 4px solid white;
+  margin-bottom: -4px;
+}
+.itemPriseButtonOneSocialAcademy {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  &Block {
-    width: 46%;
-    display: flex;
-    justify-content: space-between;
-    .itemOneHeaderOne {
-      display: flex;
-      justify-content: inherit;
-      width: 73%;
-      .lol {
-        text-decoration: none;
-      }
-      &Logo {
-        background-image: url("../images/logo.png");
-        background-size: 100% 100%;
-        width: 115px;
-        height: 23px;
-        margin: 17px 0 0 -11px;
-      }
-      &Information,&News,&Prise,&Store,&Contact {
-        font-size: 14px;
-        font-family: "Four";
-        color: white;
-        margin: 20px 0 0 4px;
-        text-decoration: none;
-        padding-bottom: 16px;
-        &:hover {
-          border-bottom: 4px solid @colorWhit;
-          margin-bottom: -4px;
-        }
-      }
-      &Prise {
-        margin: 20px 0 0 3px;
-      }
-      &Store {
-        margin: 20px 4px 0;
-      }
-      &Contact {
-        margin: 20px 5px 0 0;
-      }
-    }
-    .itemOneHeaderTwo {
-      display: flex;
-      width: 9%;
-      display: flex;
-      &Image {
-        background-image: url("../images/login.png");
-        background-size: 100% 100%;
-        height: 14px;
-        width: 17px;
-        margin: 23px 0 0 5px;
-      }
-      &Enter {
-        font-size: 14px;
-        font-family: "Four";
-        color: white;
-        margin: 21px 0 0 3px;
-      }
-    }
-  }
+  align-items: center;
+  width: 15%;
 }
 .itemTwo {
   flex: 1 0 auto;
@@ -133,12 +65,12 @@ body, html{
       &Main {
         font-family: "Three";
         font-weight: 600;
-        font-size: 10px;
+        font-size: 12px;
         margin: 13px 7px 0 0px;
       }
       &Buba {
-        width: 5px;
-        height: 5px;
+        width: 7px;
+        height: 7px;
         transform: rotate(-45deg);
         transform-origin: 0 100%;
         background: @colorBlack;
@@ -146,7 +78,7 @@ body, html{
       }
       &Story, &Care, &Travel {
         font-family: "Three";
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 600;
         margin: 13px 6px 0 0;
       }
@@ -157,7 +89,7 @@ body, html{
         margin: 13px 4px 0 2px;
       }
       &Travel {
-        font-size: 10px;
+        font-size: 12px;
         font-family: "Three";
         font-weight: 600;
         margin: 13px 4px 0 0;
@@ -227,10 +159,11 @@ body, html{
     }
   }
   .itemOneMiddleTwoTextTWo {
-    font-family: "Four";
-    font-size: 13px;
+    font-family: "Three";
+    font-size: 12px;
     margin: 25px 0 0 16px;
     line-height: 22px;
+    font-weight: 600;
   }
   .itemOneMiddleTwoTextThree {
     display: flex;
@@ -257,9 +190,10 @@ body, html{
     font-size: 17px;
   }
   .itemOneMiddleTwoTextFiveList {
-    font-family: "Four";
-    font-size: 13px;
+    font-family: "Three";
+    font-size: 12px;
     padding: 9px 0 0 17px;
+    font-weight: 600;
     &One, &Two, &Three, &Four, &Five {
       list-style: none;
     }
@@ -293,104 +227,5 @@ body, html{
       color: @colorBlack;
       font-size: 16px;
     }
-  }
-}
-.itemThree {
-  flex: 0 0 auto;
-  display: flex;
-  justify-content: center;
-}
-.itemThreeButton {
-  width: 60.65%;
-  display: flex;
-  background: #161616;
-  color: @colorWhit;
-  box-shadow: inset 0 14px 26px black;
-}
-.itemThreeButtonAddress {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 12px;
-  width: 44%;
-  line-height: 18px;
-  margin: 45px 0 32px 0;
-  font-family: "Three";
-}
-.itemPop {
-  margin-left: 20px;
-}
-.itemThreeWhy {
-    color: @colorWhit;
-    font-size: 11px;
-    width: 50%;
-  }
-.itemThreeButtonSocial {
-  width: 28%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 10px;
-  .itemGive{
-    font-size: 12px;
-    font-family: "Three";
-    margin: 0 0 0 17px ;
-  }
-  .itemSoc{
-    display: flex;
-    margin: 15px 0 7px 4px ;
-
-    .itemVkO,.itemF,.itemIn  {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 36px;
-      height: 33px;
-      background:#000000;
-      .itemVk {
-        background-image: url("../images/vk.png");
-        background-size: 100% 100%;
-        width: 25px;
-        height: 24px;
-        padding: 2px  2px 0px 2px;
-        margin-top: 5px;
-      }
-    }
-    .itemF,.itemIn{
-      width: 36px;
-      height: 33px;
-      margin-left: 3px;
-      .itemFf {
-        background-image: url("../images/f.png");
-        background-size: 100% 100%;
-        width: 11px;
-        height: 18px;
-      }
-    }
-    .itemInn {
-      background-image: url("../images/in.png");
-      background-size: 100% 100%;
-      width: 17px;
-      height: 19px;
-    }
-  }
-}
-.itemThreeButtonAcademy {
-  width: 27%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 11px 0 7px 0;
-  .itemDevel {
-    font-size: 12px;
-    font-family: "Three";
-  }
-  .itemRu {
-    font-size: 10px;
-    background: @colorBlack;
-    padding: 11px 19px;
-    font-family: "Five";
-    margin-top: 15px;
   }
 }
