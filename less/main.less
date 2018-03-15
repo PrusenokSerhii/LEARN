@@ -125,267 +125,292 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  &Usi {
-    display: flex;
-    justify-content: center;
-    width: 29%;
-    margin-top: 38px;
-    margin-right: 11px;
-    &Image {
-      background-image: url("../images/index-logo.png");
-      background-size: 100% 100%;
-      width: 60%;
-      height: 130px;
-    }
-  }
-  &Message {
-    width: 48%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    &Quickly, &Cool, &Expensive {
-      display: flex;
-      flex-direction: column;
-      margin-top: 13px;
-      width: 31%;
-      margin-right: 29px;
-    }
-    &Cool,&Expensive {
-      width: 31%;
-    }
-    .mainQuickly, .mainCool, .mainExpensive {
-      display: flex;
-      justify-content: center;
-      font-size: 19px;
-      margin-right: 10px;
-      font-family: "Four";
-    }
-    .mainCool, .mainExpensive {
-      margin-left: 25px;
-    }
-    .bubaQuicklyQ {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      margin-top: 9px;
-    }
-    .bubaQuickly, .bubaCool, .bubaExpensive {
-      width: 13px;
-      height: 13px;
-      transform: rotate(-45deg);
-      transform-origin: 0 100%;
-      background: @colorWhit;
-    }
-    .bubaQuickly {
-      margin-left: 3px;
-    }
-    .bubaCool {
-      margin-left: 28px;
-    }
-    .bubaExpensive {
-      margin-left: 28px;
-    }
-    .textQuickly, .textCool, .textExpensive {
-      font-size: 11px;
-      text-align: center;
-      margin-top: 12px;
-      font-family: "Four";
-      line-height: 15px;
-      margin-left: 4px;
-    }
-    .textCool {
-      margin-left: 8px;
-    }
-    .textExpensive {
-      line-height: 15px;
-    }
-  }
-  &WhitOne {
-    color: @colorBlack;
-    width: 47%;
-    margin-top: 50px;
-    display: flex;
-    margin-right: 20px;
-    &BlockOne {
-      background: @colorBlockOne;
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      .headerTwoWhitOneNews {
-        font-family: "Four";
-        font-size: 24px;
-        margin-left: 40px;
-        margin-top: 29px;
-      }
-      .headerTwoWhitOneTexOne,.headerTwoWhitOneTextTwo {
-        font-family: "Four";
-        font-size: 13px;
-        line-height: 20px;
-        margin-left: 40px;
-        margin-top: 13px;
-      }
-      .headerTwoWhitOneTextTwo {
-        margin-top: 15px;
-      }
-      .headerTwoWhitOneButton {
-        font-family: "Four";
-        background: @colorBlack;
-        color: @colorWhit;
-        border: none;
-        margin: 17px 0 32px 40px;
-        font-size: 12px;
-        padding: 8px 20px;
-      }
-    }
-    &BlockTwo {
-      background: @colorBlockOne;
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      &Foto{
-        font-family: "Four";
-        font-size: 24px;
-        width: 69%;
-        margin-top: 29px;
-      }
-      &Image {
-        background-image: url("../images/inside-design.png");
-        background-size: 100% 100%;
-        width: 70%;
-        height: 140px;
-        margin-top: 15px;
-      }
-      &Button {
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-        margin-top: 31px;
-        .headerTwoWhitTwoBlockTwoButtonA,.headerTwoWhitTwoBlockTwoButtonB{
-          background: @colorBlack;
-          color: @colorWhit;
-          border: none;
-          font-size: 12px;
-          padding: 8px 45px;
-          font-family: "Four";
-        }
-      }
-    }
-  }
-  &WhitTwo {
-    display: flex;
-    margin-top: 22px;
-    width: 47%;
-    color:@colorBlack;
-    margin-right: 20px;
+}
+.headerTwoUsi {
+  display: flex;
+  justify-content: center;
+  width: 29%;
+  margin-top: 38px;
+  margin-right: 11px;
+}
+.headerTwoUsiImage {
+  background-image: url("../images/index-logo.png");
+  background-size: 100% 100%;
+  width: 60%;
+  height: 130px;
+}
+.headerTwoMessage {
+  width: 48%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.headerTwoMessageQuickly,.headerTwoMessageCool,.headerTwoMessageExpensive {
+  display: flex;
+  flex-direction: column;
+  margin-top: 13px;
+  width: 31%;
+  margin-right: 29px;
+}
+.headerTwoMessageCool,.headerTwoMessageExpensive {
+  width: 31%;
+}
+.mainQuickly, .mainCool, .mainExpensive {
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+  margin-right: 10px;
+  font-family: "Four";
+}
+.mainCool, .mainExpensive {
+  margin-left: 25px;
+}
+.bubaQuicklyQ {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 9px;
+}
+.bubaQuickly, .bubaCool, .bubaExpensive {
+  width: 13px;
+  height: 13px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  background: @colorWhit;
+}
+.bubaQuickly {
+  margin-left: 3px;
+}
+.bubaCool {
+  margin-left: 28px;
+}
+.bubaExpensive {
+  margin-left: 28px;
+}
+.textQuickly, .textCool, .textExpensive {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 12px;
+  font-family: "Four";
+  line-height: 15px;
+  margin-left: 4px;
+}
+.textCool {
+  margin-left: 8px;
+}
+.textExpensive {
+  line-height: 15px;
+}
+.block_White {
+  width: 46%;
+  margin-top: 50px;
+  margin-right: 20px;
+  background: white;
+  position: relative;
+  display: flex;
+}
+.block_White_One {
+  margin-top: 20px;
+}
+.block_White_First {
+  width: 50%;
+  margin-left: 40px;
+  color: black;
+  position: relative;
+}
+.block_White_First_Width {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    &BlockOne {
-      background: @colorBlockOne;
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      &Contact {
-        font-family: "Four";
-        font-size: 24px;
-        margin: 31px 0 0 50px;
-      }
-      &Address,&Schedule {
-        font-family: "Four";
-        margin: 15px 0 0 50px;
-        font-size: 13px;
-        line-height: 20px;
-        position: relative;
-      }
-      &Button {
-        font-family: "Four";
-        font-size: 15px;
-        margin: 22px 0 38px 50px;
-        display: flex;
-        &A,&B {
-          background: @colorBlack;
-          color: @colorWhit;
-          border: none;
-          font-family: "Four";
-          font-size: 12px;
-          padding: 8px 19px;
-        }
-        &B {
-          margin-left: 13px;
-          padding: 8px 14px;
-        }
-      }
-    }
-    .headerTwoWhitTwoBlockTwo {
-      background: @colorBlockOne;
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      padding-left: 15%;
-      &Enroll {
-        font-family: "Four";
-        font-size: 24px;
-        display: flex;
-        margin-top: 31px;
-      }
-      &Indicate {
-        font-family: "Four";
-        font-size: 12.5px;
-        line-height: 20px;
-        margin-top: 15px;
-      }
-      .headerTwoWhitTwoBlockTwoButton {
-        display: flex;
-        flex-direction: column;
-      }
-      &ButtonOne {
-        margin-top: 15px;
-        display: flex;
-        flex-direction: row;
-        &D,&T {
-          font-size: 13px;
-          font-family: "Four";
-          border: 2px solid black;
-          padding: 7px 82px 7px 7px;
-          background: #f9f9f9;
-        }
-        &T {
-          margin-left: 16px;
-        }
-      }
-      &ButtonTwo {
-        margin-top: 16px;
-        display: flex;
-        flex-direction: row;
-        &N,&Tf {
-          font-size: 13px;
-          font-family: "Four";
-          border: 2px solid black;
-          padding: 7px 54px 7px 7px;
-          background: #f9f9f9;
-          white-space: nowrap;
-        }
-        &Tf {
-          margin-left: 16px;
-          padding: 7px 68px 7px 7px;
-        }
-      }
-      .headerTwoWhitTwoBlockTwoButtonThree {
-        display: flex;
-       .headerTwoWhitTwoBlockTwoButtonThreeSend {
-         font-family: "Seven";
-         background: black;
-         color: white;
-         border: none;
-         font-size: 12px;
-         margin-top: 19px;
-         padding: 8px 98px 8px;
-         text-align: center;
-       }
-      }
-    }
-  }
+.block_White_First:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -13px;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
+
+}
+.headerTwoWhitOne {
+  color: @colorBlack;
+  width: 47%;
+  margin-top: 50px;
+  display: flex;
+  margin-right: 20px;
+}
+.headerTwoWhitTwo {
+  margin-top: 22px;
+}
+.headerTwoWhitOneBlockOne {
+  background: @colorBlockOne;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.headerTwoWhitOneNews {
+  font-family: "Four";
+  font-size: 24px;
+  margin-top: 29px;
+}
+.headerTwoWhitOneTexOne,.headerTwoWhitOneTextTwo {
+  font-family: "Four";
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 13px;
+}
+.headerTwoWhitOneTextTwo {
+  margin-top: 15px;
+}
+.headerTwoWhitOneButton {
+  font-family: "Four";
+  background: @colorBlack;
+  color: @colorWhit;
+  border: none;
+  margin: 17px 0 32px 0;
+  font-size: 12px;
+  padding: 8px 20px;
+}
+.headerTwoWhitOneBlockTwo {
+  background: @colorBlockOne;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headerTwoWhitOneBlockTwoFoto{
+  font-family: "Four";
+  font-size: 24px;
+  width: 80%;
+  margin-top: 29px;
+}
+.headerTwoWhitOneBlockTwoImage {
+  background-image: url("../images/inside-design.png");
+  background-size: 100% 100%;
+  width: 80%;
+  height: 140px;
+  margin-top: 15px;
+}
+.headerTwoWhitOneBlockTwoButton {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 31px;
+}
+.headerTwoWhitTwoBlockTwoButtonA,.headerTwoWhitTwoBlockTwoButtonB{
+  background: @colorBlack;
+  color: @colorWhit;
+  border: none;
+  font-size: 12px;
+  padding: 8px 45px;
+  font-family: "Four";
+}
+.headerTwoWhitTwo {
+  display: flex;
+  margin-top: 22px;
+  width: 47%;
+  color: @colorBlack;
+  margin-right: 20px;
+}
+
+.headerTwoWhitTwoBlockOne {
+  background: @colorBlockOne;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.headerTwoWhitTwoBlockOneContact {
+  font-family: "Four";
+  font-size: 24px;
+  margin-top: 31px;
+}
+.headerTwoWhitTwoBlockOneAddress,.headerTwoWhitTwoBlockOneSchedule {
+  font-family: "Four";
+  margin-top: 15px;
+  font-size: 13px;
+  line-height: 20px;
+  position: relative;
+}
+.headerTwoWhitTwoBlockOneButton {
+  font-family: "Four";
+  font-size: 15px;
+  margin: 22px 0 38px 0;
+  display: flex;
+}
+.headerTwoWhitTwoBlockOneButtonA,.headerTwoWhitTwoBlockOneButtonB {
+  background: @colorBlack;
+  color: @colorWhit;
+  border: none;
+  font-family: "Four";
+  font-size: 12px;
+  padding: 8px 19px;
+}
+.headerTwoWhitTwoBlockOneButtonB {
+  margin-left: 13px;
+  padding: 8px 14px;
+}
+
+.headerTwoWhitTwoBlockTwoEnroll {
+  font-family: "Four";
+  font-size: 24px;
+  width: 80%;
+  margin-top: 31px;
+}
+.headerTwoWhitTwoBlockTwoIndicate  {
+  font-family: "Four";
+  font-size: 12.5px;
+  line-height: 20px;
+  margin-top: 15px;
+  width: 80%;
+}
+
+.block_White_First_Button {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.block_White_First_ButtonOne {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.block_White_First_ButtonOne_Top {
+  margin-top: 15px;
+}
+.block_White_First_Button_Size {
+  padding: 7px 85px 7px 7px;
+  font-size: 13px;
+  font-family: "Four";
+  background: white;
+  border: 1px solid black;
+}
+.block_White_First_Button_Size_Time {
+  margin-left: 12px;
+}
+.block_White_First_Button_Size_B {
+  padding-right: 58px;
+}
+.block_White_First_Button_Size_Phone {
+  margin-left: 12px;
+  padding-right: 71px;
+}
+
+.block_White_First_ButtonTwo {
+  margin-top: 20px;
+}
+.block_White_First_ButtonTwo_Size {
+  width: 100%;
+  background: black;
+  color: white;
+  font-size: 13px;
+  font-family: "Four";
+  border: none;
+  padding: 7px 0;
 }
 .headerThree {
   display: flex;
@@ -398,12 +423,14 @@ body {
   &One {
     display: flex;
     align-items: center;
-    width: 48.8%;
+    justify-content: space-between;
+    width: 46%;
+    margin-right: 20px;
     .headerThreeOneAddress{
       font-size: 12px;
       width: 39%;
       line-height: 18px;
-      margin: 21px 2px 0 7px;
+      margin: 21px 2px 0 0;
       font-family: "Three";
       .headerThreeWhy {
         color: @colorWhit;
@@ -461,10 +488,11 @@ body {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      width: 34.1%;
+      width: 32%;
+      margin-left: 4px;
       .devel {
         font-size: 12px;
-        margin: 18px 27px 0px 0px;
+        margin: 18px 30px 0px 0px;
         font-family: "Three";
 
       }

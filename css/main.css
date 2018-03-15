@@ -178,9 +178,9 @@ body {
 .headerTwoMessageExpensive {
   width: 31%;
 }
-.headerTwoMessage .mainQuickly,
-.headerTwoMessage .mainCool,
-.headerTwoMessage .mainExpensive {
+.mainQuickly,
+.mainCool,
+.mainExpensive {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -189,11 +189,11 @@ body {
   margin-right: 10px;
   font-family: "Four";
 }
-.headerTwoMessage .mainCool,
-.headerTwoMessage .mainExpensive {
+.mainCool,
+.mainExpensive {
   margin-left: 25px;
 }
-.headerTwoMessage .bubaQuicklyQ {
+.bubaQuicklyQ {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -201,9 +201,9 @@ body {
   width: 100%;
   margin-top: 9px;
 }
-.headerTwoMessage .bubaQuickly,
-.headerTwoMessage .bubaCool,
-.headerTwoMessage .bubaExpensive {
+.bubaQuickly,
+.bubaCool,
+.bubaExpensive {
   width: 13px;
   height: 13px;
   -webkit-transform: rotate(-45deg);
@@ -212,18 +212,18 @@ body {
           transform-origin: 0 100%;
   background: white;
 }
-.headerTwoMessage .bubaQuickly {
+.bubaQuickly {
   margin-left: 3px;
 }
-.headerTwoMessage .bubaCool {
+.bubaCool {
   margin-left: 28px;
 }
-.headerTwoMessage .bubaExpensive {
+.bubaExpensive {
   margin-left: 28px;
 }
-.headerTwoMessage .textQuickly,
-.headerTwoMessage .textCool,
-.headerTwoMessage .textExpensive {
+.textQuickly,
+.textCool,
+.textExpensive {
   font-size: 11px;
   text-align: center;
   margin-top: 12px;
@@ -231,11 +231,46 @@ body {
   line-height: 15px;
   margin-left: 4px;
 }
-.headerTwoMessage .textCool {
+.textCool {
   margin-left: 8px;
 }
-.headerTwoMessage .textExpensive {
+.textExpensive {
   line-height: 15px;
+}
+.block_White {
+  width: 46%;
+  margin-top: 50px;
+  margin-right: 20px;
+  background: white;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+}
+.block_White_One {
+  margin-top: 20px;
+}
+.block_White_First {
+  width: 50%;
+  margin-left: 40px;
+  color: black;
+  position: relative;
+}
+.block_White_First_Width {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.block_White_First:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -13px;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
 }
 .headerTwoWhitOne {
   color: black;
@@ -244,6 +279,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-right: 20px;
+}
+.headerTwoWhitTwo {
+  margin-top: 22px;
 }
 .headerTwoWhitOneBlockOne {
   background: #f9f9f9;
@@ -254,29 +292,27 @@ body {
       flex-direction: column;
   position: relative;
 }
-.headerTwoWhitOneBlockOne .headerTwoWhitOneNews {
+.headerTwoWhitOneNews {
   font-family: "Four";
   font-size: 24px;
-  margin-left: 40px;
   margin-top: 29px;
 }
-.headerTwoWhitOneBlockOne .headerTwoWhitOneTexOne,
-.headerTwoWhitOneBlockOne .headerTwoWhitOneTextTwo {
+.headerTwoWhitOneTexOne,
+.headerTwoWhitOneTextTwo {
   font-family: "Four";
   font-size: 13px;
   line-height: 20px;
-  margin-left: 40px;
   margin-top: 13px;
 }
-.headerTwoWhitOneBlockOne .headerTwoWhitOneTextTwo {
+.headerTwoWhitOneTextTwo {
   margin-top: 15px;
 }
-.headerTwoWhitOneBlockOne .headerTwoWhitOneButton {
+.headerTwoWhitOneButton {
   font-family: "Four";
   background: black;
   color: white;
   border: none;
-  margin: 17px 0 32px 40px;
+  margin: 17px 0 32px 0;
   font-size: 12px;
   padding: 8px 20px;
 }
@@ -293,13 +329,13 @@ body {
 .headerTwoWhitOneBlockTwoFoto {
   font-family: "Four";
   font-size: 24px;
-  width: 69%;
+  width: 80%;
   margin-top: 29px;
 }
 .headerTwoWhitOneBlockTwoImage {
   background-image: url("../images/inside-design.png");
   background-size: 100% 100%;
-  width: 70%;
+  width: 80%;
   height: 140px;
   margin-top: 15px;
 }
@@ -308,11 +344,11 @@ body {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  width: 70%;
+  width: 80%;
   margin-top: 31px;
 }
-.headerTwoWhitOneBlockTwoButton .headerTwoWhitTwoBlockTwoButtonA,
-.headerTwoWhitOneBlockTwoButton .headerTwoWhitTwoBlockTwoButtonB {
+.headerTwoWhitTwoBlockTwoButtonA,
+.headerTwoWhitTwoBlockTwoButtonB {
   background: black;
   color: white;
   border: none;
@@ -340,12 +376,12 @@ body {
 .headerTwoWhitTwoBlockOneContact {
   font-family: "Four";
   font-size: 24px;
-  margin: 31px 0 0 50px;
+  margin-top: 31px;
 }
 .headerTwoWhitTwoBlockOneAddress,
 .headerTwoWhitTwoBlockOneSchedule {
   font-family: "Four";
-  margin: 15px 0 0 50px;
+  margin-top: 15px;
   font-size: 13px;
   line-height: 20px;
   position: relative;
@@ -353,7 +389,7 @@ body {
 .headerTwoWhitTwoBlockOneButton {
   font-family: "Four";
   font-size: 15px;
-  margin: 22px 0 38px 50px;
+  margin: 22px 0 38px 0;
   display: -ms-flexbox;
   display: flex;
 }
@@ -370,85 +406,65 @@ body {
   margin-left: 13px;
   padding: 8px 14px;
 }
-.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo {
-  background: #f9f9f9;
-  width: 50%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  padding-left: 15%;
-}
-.headerTwoWhitTwo .headerTwoWhitTwoBlockTwoEnroll {
+.headerTwoWhitTwoBlockTwoEnroll {
   font-family: "Four";
   font-size: 24px;
-  display: -ms-flexbox;
-  display: flex;
+  width: 80%;
   margin-top: 31px;
 }
-.headerTwoWhitTwo .headerTwoWhitTwoBlockTwoIndicate {
+.headerTwoWhitTwoBlockTwoIndicate {
   font-family: "Four";
   font-size: 12.5px;
   line-height: 20px;
   margin-top: 15px;
+  width: 80%;
 }
-.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButton {
+.block_White_First_Button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  width: 80%;
 }
-.headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOne {
+.block_White_First_ButtonOne {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: 20px;
+}
+.block_White_First_ButtonOne_Top {
   margin-top: 15px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
 }
-.headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOneD,
-.headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOneT {
+.block_White_First_Button_Size {
+  padding: 7px 85px 7px 7px;
   font-size: 13px;
   font-family: "Four";
-  border: 2px solid black;
-  padding: 7px 82px 7px 7px;
-  background: #f9f9f9;
+  background: white;
+  border: 1px solid black;
 }
-.headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonOneT {
-  margin-left: 16px;
+.block_White_First_Button_Size_Time {
+  margin-left: 12px;
 }
-.headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwo {
-  margin-top: 16px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+.block_White_First_Button_Size_B {
+  padding-right: 58px;
 }
-.headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwoN,
-.headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwoTf {
-  font-size: 13px;
-  font-family: "Four";
-  border: 2px solid black;
-  padding: 7px 54px 7px 7px;
-  background: #f9f9f9;
-  white-space: nowrap;
+.block_White_First_Button_Size_Phone {
+  margin-left: 12px;
+  padding-right: 71px;
 }
-.headerTwoWhitTwo .headerTwoWhitTwoBlockTwoButtonTwoTf {
-  margin-left: 16px;
-  padding: 7px 68px 7px 7px;
+.block_White_First_ButtonTwo {
+  margin-top: 20px;
 }
-.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonThree {
-  display: -ms-flexbox;
-  display: flex;
-}
-.headerTwoWhitTwo .headerTwoWhitTwoBlockTwo .headerTwoWhitTwoBlockTwoButtonThree .headerTwoWhitTwoBlockTwoButtonThreeSend {
-  font-family: "Seven";
+.block_White_First_ButtonTwo_Size {
+  width: 100%;
   background: black;
   color: white;
+  font-size: 13px;
+  font-family: "Four";
   border: none;
-  font-size: 12px;
-  margin-top: 19px;
-  padding: 8px 98px 8px;
-  text-align: center;
+  padding: 7px 0;
 }
 .headerThree {
   display: -ms-flexbox;
@@ -466,13 +482,16 @@ body {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  width: 48.8%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 46%;
+  margin-right: 20px;
 }
 .headerThreeOne .headerThreeOneAddress {
   font-size: 12px;
   width: 39%;
   line-height: 18px;
-  margin: 21px 2px 0 7px;
+  margin: 21px 2px 0 0;
   font-family: "Three";
 }
 .headerThreeOne .headerThreeOneAddress .headerThreeWhy {
@@ -545,11 +564,12 @@ body {
       flex-direction: column;
   -ms-flex-align: end;
       align-items: flex-end;
-  width: 34.1%;
+  width: 32%;
+  margin-left: 4px;
 }
 .headerThreeOneAcademy .devel {
   font-size: 12px;
-  margin: 18px 27px 0px 0px;
+  margin: 18px 30px 0px 0px;
   font-family: "Three";
 }
 .headerThreeOneAcademy .ru {
