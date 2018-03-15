@@ -340,38 +340,32 @@ body {
   margin-top: 15px;
 }
 .headerTwoWhitOneBlockTwoButton {
+  width: 80%;
+  margin-top: 31px;
+}
+.headerTwoWhitOneBlockTwoButtonHead {
+  -ms-flex-direction: row;
+      flex-direction: row;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  width: 80%;
-  margin-top: 31px;
 }
 .headerTwoWhitTwoBlockTwoButtonA,
 .headerTwoWhitTwoBlockTwoButtonB {
+  width: 100%;
+}
+.uy {
+  width: 100%;
   background: black;
   color: white;
   border: none;
   font-size: 12px;
-  padding: 8px 45px;
+  padding: 8px 0;
   font-family: "Four";
 }
-.headerTwoWhitTwo {
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 22px;
-  width: 47%;
-  color: black;
-  margin-right: 20px;
-}
-.headerTwoWhitTwoBlockOne {
-  background: #f9f9f9;
-  width: 50%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  position: relative;
+.headerTwoWhitTwoBlockTwoButtonB {
+  margin-left: 10px;
 }
 .headerTwoWhitTwoBlockOneContact {
   font-family: "Four";
@@ -438,21 +432,19 @@ body {
   margin-top: 15px;
 }
 .block_White_First_Button_Size {
-  padding: 7px 85px 7px 7px;
+  padding: 7px 0 7px 15px;
   font-size: 13px;
   font-family: "Four";
   background: white;
   border: 1px solid black;
+  width: 100%;
+  text-align: start;
 }
 .block_White_First_Button_Size_Time {
   margin-left: 12px;
 }
-.block_White_First_Button_Size_B {
-  padding-right: 58px;
-}
 .block_White_First_Button_Size_Phone {
   margin-left: 12px;
-  padding-right: 71px;
 }
 .block_White_First_ButtonTwo {
   margin-top: 20px;
