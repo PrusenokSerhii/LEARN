@@ -98,7 +98,6 @@ body {
 .adres {
   color: #ffffff;
   margin-left: 15%;
-  text-align: justify;
   -ms-flex-pack: center;
       justify-content: center;
   margin-top: 5px;
@@ -187,7 +186,7 @@ body {
   line-height: 2;
   margin-bottom: 25px;
   font-weight: bold;
-  text-align: justify;
+  width: 300px;
 }
 .button1,
 .button3,
@@ -225,7 +224,7 @@ body {
   margin-bottom: 25px;
 }
 input {
-  width: 170px;
+  width: 125px;
   height: 25px;
   margin-bottom: 15px;
   border: 2px solid black;
@@ -237,7 +236,7 @@ input {
 .black {
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 285px;
   background-color: #000;
 }
 #date,
@@ -245,11 +244,10 @@ input {
   margin-right: 20px;
 }
 .vk {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   background-color: #000;
-  background-image: url("../images/vk.jpg");
-  background-size: cover;
+  background-image: url(../images/vk.png);
 }
 .line {
   background-image: url("../images/line.png");
@@ -261,19 +259,19 @@ input {
   display: flex;
 }
 .face {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   background-color: #000;
-  background-image: url("../images/facebook.jpg");
-  background-size: cover;
-  margin: 0 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-image: url(../images/facebook.png);
 }
 .insta {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   background-color: #000;
-  background-image: url("../images/instagram.jpg");
-  background-size: cover;
+  background-image: url(../images/insta.png);
+  background-size: contain;
 }
 @font-face {
   font-family: "PT Sans Narrow", sans-serif;
