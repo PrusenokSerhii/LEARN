@@ -1,35 +1,3 @@
-@font-face {
-  font-family: One;
-  src: url("../Font/PTC55F.ttf");
-}
-@font-face {
-  font-family: Two;
-  src: url("../Font/PTC75F.ttf");
-}
-@font-face {
-  font-family: Three;
-  src: url("../Font/PTN57F.ttf");
-}
-@font-face {
-  font-family: Four;
-  src: url("../Font/PTN77F.ttf");
-}
-@font-face {
-  font-family: Five;
-  src: url("../Font/PTS55F.ttf");
-}
-@font-face {
-  font-family: Six;
-  src: url("../Font/PTS56F.ttf");
-}
-@font-face {
-  font-family: Seven;
-  src: url("../Font/PTS75F.ttf");
-}
-@font-face {
-  font-family: Eight;
-  src: url("../Font/PTS76F.ttf");
-}
 @colorWhit: white;
 @colorBlack: black;
 @colorBlockOne: #f9f9f9;
@@ -43,452 +11,400 @@ body {
   height: 100%;
   background: black;
 }
+.body {
+  margin: 0;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-.content {
-  flex: 1 0 auto;
-}
-.footer {
-  flex: 0 0 auto;
-}
-
-.body {
-  margin: 0;
-}
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: black;
-}
-.headerOne {
-  background: black;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  &Menu {
+  .header {
+    background: black;
     display: flex;
-    justify-content: space-between;
-    width: 50.5%;
-    margin: 19px 0 19px;
-    &One {
+    justify-content: center;
+    width: 100%;
+    .menu {
       display: flex;
-      justify-content: space-around;
-      width: 72%;
-      &Information {
-        font-size: 14px;
-        font-family: "Four";
-        text-decoration: none;
+      justify-content: space-between;
+      width: 45%;
+      margin: 19px 20px 19px 0;
+      &__blockOne {
+        display: flex;
+        justify-content: space-between;
+        width: 72%;
+        &_styles {
+          font-size: 14px;
+          font-family: "Four";
+          text-decoration: none;
+          color: @colorWhit;
+        }
+      }
+      &__blockTwo {
+        display: flex;
         color: @colorWhit;
-      }
-      .info {
-        margin-left: 3px;
-      }
-      .prays {
-        margin-right: 1px;
-      }
-      .store {
-        margin-right: 2px;
-      }
-      .contact {
-        margin-right: 4px;
-      }
-    }
-    &Two {
-      display: flex;
-      color: @colorWhit;
-      width: 11%;
-      justify-content: end;
-      &Arrow {
-        height: 13px;
-        width: 17px;
-        margin-top: 3px;
-      }
-      &Enter {
-        font-size: 14px;
-        font-family: "Four";
-        text-decoration: none;
-        color: @colorWhit;
-        margin-left: 3px;
+        width: 11%;
+        justify-content: flex-end;
+        &_arrow {
+          height: 13px;
+          width: 17px;
+          margin-top: 3px;
+        }
+        &_enter {
+          font-size: 14px;
+          font-family: "Four";
+          text-decoration: none;
+          color: @colorWhit;
+          margin-left: 3px;
+        }
       }
     }
   }
 }
-.headerTwo {
-  background-image: url("../images/background-image.png");
-  background-size: 100% 100%;
-  width: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.content {
+  flex: 1 0 auto;
+  .section {
+    background-image: url("../images/background-image.png");
+    background-size: 100% 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgIndex {
+    display: flex;
+    justify-content: center;
+    width: 29%;
+    margin-top: 38px;
+    margin-right: 11px;
+    &__img {
+      background-image: url("../images/index-logo.png");
+      background-size: 100% 100%;
+      width: 60%;
+      height: 130px;
+    }
+  }
+  .message {
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .quickly, .cool, .expensive {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+    width: 31%;
+    margin-right: 29px;
+    &__header, &__header, &__header {
+      display: flex;
+      justify-content: center;
+      font-size: 19px;
+      margin-right: 10px;
+      font-family: "Four";
+    }
+    .cool__header, .expensive__header {
+      margin-left: 25px;
+    }
+    &__buba, &__buba, &__buba {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 9px;
+      &_style, &_style, &_style {
+        width: 13px;
+        height: 13px;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+        background: @colorWhit;
+      }
+      .quickly__buba_style {
+        margin-left: 3px;
+      }
+      .cool__buba_style, .expensive__buba_style {
+        margin-left: 28px;
+      }
+    }
+    &__text, &__text, &__text {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 12px;
+      font-family: "Four";
+      line-height: 15px;
+      margin-left: 4px;
+    }
+    .cool__text {
+      margin-left: 8px;
+    }
+    .expensive__text {
+      line-height: 15px;
+    }
+  }
+  .whiteBlocks {
+    width: 46%;
+    margin-top: 50px;
+    margin-right: 20px;
+    background: white;
+    position: relative;
+    display: flex;
+  }
+  .whiteBlockTwoMargin {
+    margin-top: 30px;
+  }
+  .news, .photo, .contactInformation, .enroll {
+    width: 50%;
+    margin-left: 40px;
+    color: black;
+    position: relative;
+    .news__header {
+      font-family: "Four";
+      font-size: 24px;
+      margin-top: 29px;
+    }
+    .news__text {
+      font-family: "Four";
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 15px;
+    }
+    .news__button {
+      font-family: "Four";
+      background: @colorBlack;
+      color: @colorWhit;
+      border: none;
+      margin: 17px 0 32px 0;
+      font-size: 12px;
+      padding: 8px 20px;
+    }
+    .photo__header {
+      font-family: "Four";
+      font-size: 24px;
+      width: 80%;
+      margin-top: 29px;
+    }
+    .photo__img {
+      background-image: url("../images/inside-design.png");
+      background-size: 100% 100%;
+      width: 80%;
+      height: 140px;
+      margin-top: 15px;
+    }
+    .photo__button {
+      width: 80%;
+      margin-top: 31px;
+    }
+    .photoButton {
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+      &__back, &__forward {
+        width: 100%;
+        &_style {
+          width: 100%;
+          background: @colorBlack;
+          color: @colorWhit;
+          border: none;
+          font-size: 12px;
+          padding: 8px 0;
+          font-family: "Four";
+        }
+      }
+      &__forward {
+        margin-left: 10px;
+      }
+    }
+    .contactInformation__header {
+      font-family: "Four";
+      font-size: 24px;
+      margin-top: 31px;
+    }
+    .contactInformation__address, .contactInformation__schedule {
+      font-family: "Four";
+      margin-top: 15px;
+      font-size: 13px;
+      line-height: 20px;
+      position: relative;
+    }
+    .contactInformation__button {
+      font-family: "Four";
+      font-size: 15px;
+      margin: 22px 0 38px 0;
+      display: flex;
+      .button__One, .button__Two {
+        background: @colorBlack;
+        color: @colorWhit;
+        border: none;
+        font-family: "Four";
+        font-size: 12px;
+        padding: 8px 19px;
+      }
+      .button__Two {
+        margin-left: 13px;
+        padding: 8px 14px;
+      }
+    }
+    .enroll__header {
+      font-family: "Four";
+      font-size: 24px;
+      width: 80%;
+      margin-top: 31px;
+    }
+    .enroll__indicate {
+      font-family: "Four";
+      font-size: 12.5px;
+      line-height: 20px;
+      margin-top: 15px;
+      width: 80%;
+    }
+    .enroll__button {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      .buttons {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+        &Margin {
+          margin-top: 15px;
+        }
+        &__style {
+          padding: 7px 0 7px 15px;
+          font-size: 13px;
+          font-family: "Four";
+          background: white;
+          border: 1px solid black;
+          width: 100%;
+          text-align: start;
+          &_margin {
+            margin-left: 12px;
+          }
+        }
+      }
+      .bigButton {
+        margin-top: 20px;
+        &__style {
+          width: 100%;
+          background: black;
+          color: white;
+          font-size: 13px;
+          font-family: "Four";
+          border: none;
+          padding: 7px 0;
+        }
+      }
+    }
+  }
+  .photoStyle, .enrollStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .news::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -13px;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
+  }
+  .contactInformation::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -13px;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
+  }
 }
-.headerTwoUsi {
-  display: flex;
-  justify-content: center;
-  width: 29%;
-  margin-top: 38px;
-  margin-right: 11px;
-}
-.headerTwoUsiImage {
-  background-image: url("../images/index-logo.png");
-  background-size: 100% 100%;
-  width: 60%;
-  height: 130px;
-}
-.headerTwoMessage {
-  width: 48%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.headerTwoMessageQuickly,.headerTwoMessageCool,.headerTwoMessageExpensive {
-  display: flex;
-  flex-direction: column;
-  margin-top: 13px;
-  width: 31%;
-  margin-right: 29px;
-}
-.headerTwoMessageCool,.headerTwoMessageExpensive {
-  width: 31%;
-}
-.mainQuickly, .mainCool, .mainExpensive {
-  display: flex;
-  justify-content: center;
-  font-size: 19px;
-  margin-right: 10px;
-  font-family: "Four";
-}
-.mainCool, .mainExpensive {
-  margin-left: 25px;
-}
-.bubaQuicklyQ {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 9px;
-}
-.bubaQuickly, .bubaCool, .bubaExpensive {
-  width: 13px;
-  height: 13px;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-  background: @colorWhit;
-}
-.bubaQuickly {
-  margin-left: 3px;
-}
-.bubaCool {
-  margin-left: 28px;
-}
-.bubaExpensive {
-  margin-left: 28px;
-}
-.textQuickly, .textCool, .textExpensive {
-  font-size: 11px;
-  text-align: center;
-  margin-top: 12px;
-  font-family: "Four";
-  line-height: 15px;
-  margin-left: 4px;
-}
-.textCool {
-  margin-left: 8px;
-}
-.textExpensive {
-  line-height: 15px;
-}
-.block_White {
-  width: 46%;
-  margin-top: 50px;
-  margin-right: 20px;
-  background: white;
-  position: relative;
-  display: flex;
-}
-.block_White_One {
-  margin-top: 20px;
-}
-.block_White_First {
-  width: 50%;
-  margin-left: 40px;
-  color: black;
-  position: relative;
-}
-.block_White_First_Width {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.block_White_First:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -13px;
-  height: 100%;
-  width: 2px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
-}
-.headerTwoWhitOne {
-  color: @colorBlack;
-  width: 47%;
-  margin-top: 50px;
-  display: flex;
-  margin-right: 20px;
-}
-.headerTwoWhitTwo {
-  margin-top: 22px;
-}
-.headerTwoWhitOneBlockOne {
-  background: @colorBlockOne;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.headerTwoWhitOneNews {
-  font-family: "Four";
-  font-size: 24px;
-  margin-top: 29px;
-}
-.headerTwoWhitOneTexOne,.headerTwoWhitOneTextTwo {
-  font-family: "Four";
-  font-size: 13px;
-  line-height: 20px;
-  margin-top: 13px;
-}
-.headerTwoWhitOneTextTwo {
-  margin-top: 15px;
-}
-.headerTwoWhitOneButton {
-  font-family: "Four";
-  background: @colorBlack;
-  color: @colorWhit;
-  border: none;
-  margin: 17px 0 32px 0;
-  font-size: 12px;
-  padding: 8px 20px;
-}
-.headerTwoWhitOneBlockTwo {
-  background: @colorBlockOne;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.headerTwoWhitOneBlockTwoFoto{
-  font-family: "Four";
-  font-size: 24px;
-  width: 80%;
-  margin-top: 29px;
-}
-.headerTwoWhitOneBlockTwoImage {
-  background-image: url("../images/inside-design.png");
-  background-size: 100% 100%;
-  width: 80%;
-  height: 140px;
-  margin-top: 15px;
-}
-.headerTwoWhitOneBlockTwoButton {
-  width: 80%;
-  margin-top: 31px;
-}
-.headerTwoWhitOneBlockTwoButtonHead  {
-  flex-direction: row;
-  display: flex;
-  justify-content: space-between;
-}
-.headerTwoWhitTwoBlockTwoButtonA,.headerTwoWhitTwoBlockTwoButtonB{
-  width: 100%;
-}
-.uy {
- width: 100%;
-  background: @colorBlack;
-  color: @colorWhit;
-  border: none;
-  font-size: 12px;
-  padding: 8px 0;
-  font-family: "Four";
-}
-.headerTwoWhitTwoBlockTwoButtonB {
-  margin-left: 10px;
-}
-.headerTwoWhitTwoBlockOneContact {
-  font-family: "Four";
-  font-size: 24px;
-  margin-top: 31px;
-}
-.headerTwoWhitTwoBlockOneAddress,.headerTwoWhitTwoBlockOneSchedule {
-  font-family: "Four";
-  margin-top: 15px;
-  font-size: 13px;
-  line-height: 20px;
-  position: relative;
-}
-.headerTwoWhitTwoBlockOneButton {
-  font-family: "Four";
-  font-size: 15px;
-  margin: 22px 0 38px 0;
-  display: flex;
-}
-.headerTwoWhitTwoBlockOneButtonA,.headerTwoWhitTwoBlockOneButtonB {
-  background: @colorBlack;
-  color: @colorWhit;
-  border: none;
-  font-family: "Four";
-  font-size: 12px;
-  padding: 8px 19px;
-}
-.headerTwoWhitTwoBlockOneButtonB {
-  margin-left: 13px;
-  padding: 8px 14px;
-}
-
-.headerTwoWhitTwoBlockTwoEnroll {
-  font-family: "Four";
-  font-size: 24px;
-  width: 80%;
-  margin-top: 31px;
-}
-.headerTwoWhitTwoBlockTwoIndicate  {
-  font-family: "Four";
-  font-size: 12.5px;
-  line-height: 20px;
-  margin-top: 15px;
-  width: 80%;
-}
-.block_White_First_Button {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-}
-.block_White_First_ButtonOne {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-.block_White_First_ButtonOne_Top {
-  margin-top: 15px;
-}
-.block_White_First_Button_Size {
-  padding: 7px 0 7px 15px;
-  font-size: 13px;
-  font-family: "Four";
-  background: white;
-  border: 1px solid black;
-  width: 100%;
-  text-align: start;
-}
-.block_White_First_Button_Size_Time {
-  margin-left: 12px;
-}
-.block_White_First_Button_Size_B {
-}
-.block_White_First_Button_Size_Phone {
-  margin-left: 12px;
-}
-
-.block_White_First_ButtonTwo {
-  margin-top: 20px;
-}
-.block_White_First_ButtonTwo_Size {
-  width: 100%;
-  background: black;
-  color: white;
-  font-size: 13px;
-  font-family: "Four";
-  border: none;
-  padding: 7px 0;
-}
-.headerThree {
-  display: flex;
-  justify-content: center;
-  background-color: #161616;
-  width: 100%;
-  margin-top: 40px;
-  padding: 16px 0 26px 0;
-  color: @colorWhit;
-  &One {
+.footer {
+  flex: 0 0 auto;
+  &Style {
+    display: flex;
+    justify-content: center;
+    background-color: #161616;
+    width: 100%;
+    margin-top: 40px;
+    padding: 16px 0 26px 0;
+    color: @colorWhit;
+  }
+  &Content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 46%;
     margin-right: 20px;
-    .headerThreeOneAddress{
+    &__address {
       font-size: 12px;
       width: 39%;
       line-height: 18px;
       margin: 21px 2px 0 0;
       font-family: "Three";
-      .headerThreeWhy {
+      &_why {
         color: @colorWhit;
         font-size: 12px;
       }
     }
-    &Friend {
+    &__net {
       width: 23%;
       display: flex;
       flex-direction: column;
-      .give {
+      &_header {
         font-size: 12px;
         font-family: "Three";
         margin: 14px 0 0 13px ;
-        }
-      .soc{
+      }
+      &_social {
         display: flex;
         margin: 12px 0 0 4px;
-        .vkO,.f,.in  {
+        .social__vk,.social__f,.social__ins {
           display: flex;
           align-items: center;
           justify-content: center;
           width: 36px;
           height: 33px;
-          background:#000000;
-          .vk {
+          background: #000000;
+          .social__vk_style {
             background-image: url("../images/vk.png");
             background-size: 100% 100%;
             width: 25px;
             height: 24px;
-            padding: 2px 2px 0px 2px;
+            padding: 2px 2px 0 2px;
             margin-top: 5px;
           }
-        }
-        .f,.in{
-          width: 36px;
-          height: 33px;
-          margin-left: 3px;
-          .ff {
+          .social__f_style {
             background-image: url("../images/f.png");
             background-size: 100% 100%;
             width: 11px;
             height: 18px;
           }
+          .social__ins_style {
+            background-image: url("../images/in.png");
+            background-size: 100% 100%;
+            width: 17px;
+            height: 19px;
+          }
         }
-        .inn {
-          background-image: url("../images/in.png");
-          background-size: 100% 100%;
-          width: 17px;
-          height: 19px;
+        .social__f,.social__ins {
+          margin-left: 3px;
+
         }
       }
     }
-    &Academy {
+    &__academy {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       width: 32%;
       margin-left: 4px;
-      .devel {
+      &_devel {
         font-size: 12px;
-        margin: 18px 30px 0px 0px;
+        margin: 18px 30px 0 0;
         font-family: "Three";
-
       }
-      .ru {
+      &_ru {
         font-size: 10px;
         margin-top: 12px;
         background: @colorBlack;
@@ -498,21 +414,12 @@ body {
     }
   }
 }
-.headerTwoWhitTwoBlockOne:after {
-  content: "";
-  position: absolute;
-  top:0;
-  right: -63px;
-  height: 100%;
-  width: 2px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
-}
-.headerTwoWhitOneBlockOne:after {
-  content: "";
-  position: absolute;
-  top:0;
-  right: -6px;
-  height: 100%;
-  width: 2px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
-}
+
+
+
+
+
+
+
+
+

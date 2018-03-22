@@ -1,4 +1,3 @@
-
 @colorWhit: white;
 @colorBlack: black;
 * {
@@ -25,153 +24,274 @@ body {
   padding-bottom: 15px;
   border-bottom: 4px solid white;
 }
-
-.priseMiddle {
+.section {
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
   margin-top: 4px;
-  &Whit {
-    background-image: url("../images/Fon.png");
-    background-size: 100% 100%;
-    width: 60.6%;
+}
+.sectionBackground {
+  background-image: url("../images/Fon.png");
+  background-size: 100% 100%;
+  width: 60.6%;
+  display: flex;
+  justify-content: center;
+}
+.block {
+  width: 80%;
+  &One {
+    &__prise {
+      font-family: "Four";
+      font-size: 26px;
+      margin: 39px 0 0 10px;
+    }
+  }
+  &Two {
+    display: flex;
+    &__header, &__prise {
+      font-family: "Three";
+      font-size: 12px;
+      margin: 13px 0 0 11px;
+      font-weight: 600;
+    }
+    &__buba {
+      width: 7px;
+      height: 7px;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+      background: @colorBlack;
+      margin: 19px 9px 0 19px;
+    }
+    &__prise {
+      color: grey;
+      margin-left: 3px;
+    }
+
+  }
+  &Line {
     display: flex;
     justify-content: center;
-    &Block {
-      width: 80%;
-      &OnePrise {
-        font-family: "Four";
-        font-size: 26px;
-        margin: 39px 0 0 10px;
+    margin-left: 11px;
+    &__line {
+      display: flex;
+      justify-content: center;
+      width: 19.7%;
+      &_item {
+        border-top: 1.6px solid black;
+        width: 100%;
+        margin-top: 52px;
       }
-      &OneHead {
-        display: flex;
-        font-family: "Three";
+    }
+    &__text {
+      font-size: 36.5px;
+      width: 65%;
+      text-align: center;
+      font-family: "Four";
+      margin: 28px 0 0 -3px;
+    }
+  }
+  &Three {
+    display: flex;
+    flex-direction: row;
+    margin-top: 43px;
+    &__header {
+      width: 50%;
+      &_style {
+        font-family: "Four";
+        font-size: 20px;
+        margin-left: 11px;
+      }
+      &_list {
+        font-family: "Four";
         font-size: 12px;
-        margin: 13px 0 0 11px;
-        font-weight: 600;
-        &Two {
-          width: 7px;
-          height: 7px;
+        padding: 5px 0 0 12px;
+        margin-top: 15px;
+        line-height: 35px;
+        .listStyle {
+          display: flex;
+        }
+        .listBuba {
+          width: 6.2px;
+          height: 6.2px;
           transform: rotate(-45deg);
           transform-origin: 0 100%;
           background: @colorBlack;
-          margin: 7px 9px 0 16px;
-        }
-        &Three {
-          color:grey;
+          margin: 15px 8px 0 4px;
         }
       }
-      &Two {
+    }
+  }
+  &Four {
+    width: 50%;
+    margin-left: 10px;
+    &__header {
+      font-family: "Four";
+      font-size: 20px;
+      margin-left: 5px;
+    }
+    &__table {
+      border-collapse: collapse;
+      margin: 34px 0 0 6px;
+      width: 97%;
+      &_grid {
+        border: 2px solid black;
+        width: 36%;
+        font-family: "Four";
+        padding: 10px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .string {
+        text-align:start;
+        padding-left: 17px;
+        font-size: 12px;
+      }
+    }
+  }
+  .blockFive {
+    display: flex;
+    margin-top: 14px;
+    &__one {
+      width: 50%;
+      &_header {
+        font-family: "Four";
+        font-size: 20px;
+        margin: 25px 0 0 10px;
+      }
+      &_TextOne {
+        font-family: "Four";
+        font-size: 12px;
+        margin: 23px 0 0 10px;
+        line-height: 24px;
+      }
+      &_TextTwo {
+        width: 50%;
         display: flex;
-        justify-content: center;
-        margin-left: 11px;
-        &Line {
-          display: flex;
-          justify-content: center;
-          width: 19.7%;
-          &One {
-            border-top: 1.6px solid black;
-            width: 100%;
-            margin-top: 52px;
-          }
-        }
-        &Text {
-          font-size: 36.5px;
-          width: 65%;
-          text-align: center;
+        align-items: flex-end;
+        .style {
           font-family: "Four";
-          margin: 28px 0 0 -3px;
-        }
-      }
-      &Three {
-        display: flex;
-        flex-direction: row;
-        margin-top: 43px;
-        &One {
-          width: 50%;
-          &Text {
-            font-family: "Four";
-            font-size: 20px;
-            margin-left: 11px;
-          }
-          &List {
-            font-family: "Four";
-            font-size: 12px;
-            padding: 5px 0 0 12px;
-            margin-top: 15px;
-            line-height: 35px;
-            &One,&Two,&Three,&Four {
-                display: flex;
-            }
-            .priseMiddleWhitBlockThreeOneListBuba {
-                width: 6.2px;
-                height: 6.2px;
-                transform: rotate(-45deg);
-                transform-origin: 0 100%;
-                background: @colorBlack;
-                margin: 15px 8px 0 4px;
-            }
-          }
-        }
-        &Two {
-          width: 50%;
-          margin-left: 10px;
-          &Cost {
-            font-family: "Four";
-            font-size: 20px;
-            margin-left: 5px;
-          }
-          &TableHeader{
-            border-collapse: collapse;
-            margin: 34px 0 0 6px;
-            width: 97%;
-            &Grid {
-              border: 2px solid black;
-              width: 36%;
-              font-family: "Four";
-              padding: 10px 0;
-              text-align: center;
-              font-size: 12px;
-            }
-            .string {
-              text-align:start;
-              padding-left: 17px;
-              font-size: 12px;
-            }
-          }
-        }
-      }
-      &Four {
-        display: flex;
-        margin-top: 14px;
-        margin-bottom:30px;
-        &One {
-          width: 50%;
-          &TextOne {
-            font-family: "Four";
-            font-size: 20px;
-            margin: 25px 0 0 10px;
-          }
-          &TextTwo {
-            font-family: "Four";
-            font-size: 12px;
-            margin: 23px 0 0 10px;
-            line-height: 24px;
-          }
-        }
-        &Two {
-          width: 50%;
-          display: flex;
-          align-items: flex-end;
-          &TextOne {
-            font-family: "Four";
-            font-size: 12px;
-            line-height: 24px;
-            margin-left: 11px;
-          }
+          font-size: 12px;
+          line-height: 24px;
+          margin-left: 11px;
         }
       }
     }
   }
 }
+.footer {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  .footerStyle {
+    width: 60.6%;
+    display: flex;
+    background: #161616;
+    color: white;
+    box-shadow: inset 0 14px 26px black;
+    .footerContent__address {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-size: 12px;
+      line-height: 18px;
+      margin: 44px 0 32px 0;
+      font-family: "Three";
+      width: 37%;
+      &_why {
+        color: white;
+        font-size: 11px;
+        width: 50%;
+      }
+    }
+    .footerContent__net {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 10px;
+      width: 38%;
+      margin-left: 13px;
+      &_header {
+        font-size: 12px;
+        font-family: "Three";
+        margin: 0 0 0 59px;
+      }
+      &_social {
+        display: flex;
+        margin: 15px 0 7px 44px;
+        .social__f, .social__ins {
+          margin-left: 3px;
+        }
+        .social__vk, .social__f, .social__ins {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 33px;
+          background: #000000;
+          .social__vk_style {
+            background-image: url("../images/vk.png");
+            background-size: 100% 100%;
+            width: 25px;
+            height: 24px;
+            padding: 2px 2px 0 2px;
+            margin-top: 5px;
+          }
+          .social__f_style {
+            background-image: url("../images/f.png");
+            background-size: 100% 100%;
+            width: 11px;
+            height: 18px;
+          }
+          .social__ins_style {
+            background-image: url("../images/in.png");
+            background-size: 100% 100%;
+            width: 17px;
+            height: 19px;
+          }
+        }
+      }
+    }
+    .footerContent__academy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 12%;
+      &_devel {
+        font-size: 12px;
+        font-family: "Three";
+      }
+      &_ru {
+        font-size: 10px;
+        background: black;
+        padding: 11px 19px;
+        font-family: "Five";
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
