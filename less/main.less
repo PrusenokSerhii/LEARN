@@ -1,10 +1,16 @@
+@font-face {
+  font-family: 'MyWebFonts';
+  src: url("../fonts/PTC55F.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 body {
   margin: 0;
 }
 .grid {
   display: flex;
   flex-direction: column;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'MyWebFonts';
 }
 .header {
   font-size: 16px;
@@ -91,9 +97,10 @@ body {
 .friend {
   display: flex;
   text-align: center;
+  justify-content: center;
   color: #ffffff;
   flex-direction: column;
-  margin: 5px 188px;
+  margin: auto;
 }
 .button {
   width: 25px;
@@ -114,9 +121,9 @@ body {
 .powered {
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
-  color: #ffffff;
   margin-right: 15%;
+  color: #ffffff;
+  margin-left: 10%;
 }
 .razrab {
   text-align: center;
@@ -154,7 +161,7 @@ body {
   line-height: 2;
   margin-bottom: 25px;
   font-weight: bold;
-  width: 300px;
+  width: 60%;
 }
 .button1, .button3, .button2 {
   background-color: #000000;
@@ -186,6 +193,7 @@ body {
   margin-top: 15px;
   line-height: 2;
   margin-bottom: 25px;
+  width: 60%;
 }
 input {
   width: 125px;
@@ -233,10 +241,4 @@ input {
   background-color: #000;
   background-image: url(../images/insta.png);
   background-size: contain;
-}
-@font-face {
-  font-family: "PT Sans Narrow", sans-serif;
-  src: url("../fonts/PTC55F.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
 }

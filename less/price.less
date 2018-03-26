@@ -1,7 +1,16 @@
+@font-face {
+  font-family: 'MyWebFonts';
+  src: url("../fonts/PTC55F.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  margin: 0;
+}
 .grid {
   display: flex;
   flex-direction: column;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'MyWebFonts';
 }
 .header {
   font-size: 16px;
@@ -37,13 +46,14 @@
 .footer {
   display: inline-flex;
   font-size: 12px;
-  background-color: #696969;
+  background-color: #1c1a1a;
   width: 100%;
+  height: 150px;
+  align-items: center;
 }
 .adres {
   color: #ffffff;
   margin-left: 15%;
-  text-align: justify;
   justify-content: center;
   margin-top: 5px;
 }
@@ -53,9 +63,10 @@
 .friend {
   display: flex;
   text-align: center;
+  justify-content: center;
   color: #ffffff;
   flex-direction: column;
-  margin: 5px 25px;
+  margin: auto;
 }
 .button {
   width: 25px;
@@ -71,14 +82,14 @@
 }
 .last {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  margin-top: 25px;
 }
 .powered {
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
+  margin-right: 15%;
   color: #ffffff;
+  margin-left: 10%;
 }
 .razrab {
   text-align: center;
@@ -112,6 +123,7 @@
 .glav {
   display: flex;
   flex-direction: row;
+  font-weight: 700;
 }
 .list {
   color: #d3d3d3;
@@ -166,7 +178,7 @@
   margin: 15px 0;
 }
 .vincent, .vincent1 {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 15px;
   margin-top: 15px;
 }
@@ -184,14 +196,19 @@ td {
   margin-left: 10px;
   width: 50%;
   padding-left: 10px;
+  font-weight: 700;
 }
 .cena {
   text-align: center;
   width: 50%;
+  font-weight: 700;
 }
 .vincent1 {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 15px;
   margin-top: 15px;
   width: 70%;
- }
+}
+.word {
+  font-weight: 700;
+}
