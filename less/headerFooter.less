@@ -1,3 +1,5 @@
+@import (reference) "color";
+
 .header {
   display: flex;
   justify-content: center;
@@ -20,12 +22,12 @@
     &_style {
       font-size: 14px;
       font-family: "Four";
-      color: white;
+      color: @colorWhite;
       text-decoration: none;
       margin-top: 20px;
       padding-bottom: 15px;
       &:hover {
-        border-bottom: 4px solid white;
+        border-bottom: 4px solid @colorWhite;
         margin-bottom: -4px;
       }
     }
@@ -46,24 +48,25 @@
     &_enter {
       font-size: 14px;
       font-family: "Four";
-      color: white;
+      color: @colorWhite;
       margin: 21px 0 0 3px;
     }
   }
 }
+
 .footer {
   flex: 0 0 auto;
   display: flex;
   justify-content: center;
-  .footerWidth {
+  &_width {
     width: 61.3%;
   }
-  .footerStyle {
+  &Content {
     display: flex;
     background: #161616;
-    color: white;
+    color: @colorWhite;
     box-shadow: inset 0 14px 26px black;
-    .footerContent__address {
+    &__address {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
@@ -73,12 +76,12 @@
       font-family: "Three";
       width: 37%;
       &_why {
-        color: white;
+        color: @colorWhite;
         font-size: 11px;
         width: 50%;
       }
     }
-    .footerContent__net {
+    &__net {
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -90,138 +93,43 @@
         font-family: "Three";
         margin: 0 0 0 59px;
       }
-      &_social {
+      .social {
         display: flex;
         margin: 15px 0 7px 44px;
-        .social__f, .social__ins {
+        &__f, &__ins {
           margin-left: 3px;
         }
-        .social__vk, .social__f, .social__ins {
+        &__vk, &__f, &__ins {
           display: flex;
           align-items: center;
           justify-content: center;
           width: 36px;
           height: 33px;
-          background: #000000;
-          .social__vk_style {
-            background-image: url("../images/vk.png");
-            background-size: 100% 100%;
-            width: 25px;
-            height: 24px;
-            padding: 2px 2px 0 2px;
-            margin-top: 5px;
-          }
-          .social__f_style {
-            background-image: url("../images/f.png");
-            background-size: 100% 100%;
-            width: 11px;
-            height: 18px;
-          }
-          .social__ins_style {
-            background-image: url("../images/in.png");
-            background-size: 100% 100%;
-            width: 17px;
-            height: 19px;
-          }
+          background: @colorBlack;
+        }
+        &__vk_style {
+          background-image: url("../images/vk.png");
+          background-size: 100% 100%;
+          width: 25px;
+          height: 24px;
+          padding: 2px 2px 0 2px;
+          margin-top: 5px;
+        }
+        &__f_style {
+          background-image: url("../images/f.png");
+          background-size: 100% 100%;
+          width: 11px;
+          height: 18px;
+        }
+        &__ins_style {
+          background-image: url("../images/in.png");
+          background-size: 100% 100%;
+          width: 17px;
+          height: 19px;
         }
       }
     }
-    .footerContent__academy {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 12%;
-      &_devel {
-        font-size: 12px;
-        font-family: "Three";
-      }
-      &_ru {
-        font-size: 10px;
-        background: black;
-        padding: 11px 19px;
-        font-family: "Five";
-        margin-top: 15px;
-      }
-    }
-  }
-}
-.footer {
-  flex: 0 0 auto;
-  display: flex;
-  justify-content: center;
-  .footerWidth {
-    width: 61.3%;
-  }
-  .footerStyle {
-    display: flex;
-    background: #161616;
-    color: white;
-    box-shadow: inset 0 14px 26px black;
-    .footerContent__address {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      font-size: 12px;
-      line-height: 18px;
-      margin: 44px 0 32px 0;
-      font-family: "Three";
-      width: 37%;
-      &_why {
-        color: white;
-        font-size: 11px;
-        width: 50%;
-      }
-    }
-    .footerContent__net {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      margin-top: 10px;
-      width: 38%;
-      margin-left: 13px;
-      &_header {
-        font-size: 12px;
-        font-family: "Three";
-        margin: 0 0 0 59px;
-      }
-      &_social {
-        display: flex;
-        margin: 15px 0 7px 44px;
-        .social__f, .social__ins {
-          margin-left: 3px;
-        }
-        .social__vk, .social__f, .social__ins {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 36px;
-          height: 33px;
-          background: #000000;
-          .social__vk_style {
-            background-image: url("../images/vk.png");
-            background-size: 100% 100%;
-            width: 25px;
-            height: 24px;
-            padding: 2px 2px 0 2px;
-            margin-top: 5px;
-          }
-          .social__f_style {
-            background-image: url("../images/f.png");
-            background-size: 100% 100%;
-            width: 11px;
-            height: 18px;
-          }
-          .social__ins_style {
-            background-image: url("../images/in.png");
-            background-size: 100% 100%;
-            width: 17px;
-            height: 19px;
-          }
-        }
-      }
-    }
-    .footerContent__academy {
+    &__academy {
       display: flex;
       flex-direction: column;
       justify-content: center;

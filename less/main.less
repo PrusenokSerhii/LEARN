@@ -1,6 +1,5 @@
-@colorWhit: white;
-@colorBlack: black;
-@colorBlockOne: #f9f9f9;
+@import "color";
+@import "marker";
 
 * {
   margin: 0;
@@ -9,7 +8,7 @@
 html,
 body {
   height: 100%;
-  background: black;
+  background: @colorBlack;
 }
 .body {
   margin: 0;
@@ -19,7 +18,7 @@ body {
   flex-direction: column;
   height: 100%;
   .header {
-    background: black;
+    background: @colorBlack;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -36,12 +35,12 @@ body {
           font-size: 14px;
           font-family: "Four";
           text-decoration: none;
-          color: @colorWhit;
+          color: @colorWhite;
         }
       }
       &__blockTwo {
         display: flex;
-        color: @colorWhit;
+        color: @colorWhite;
         width: 11%;
         justify-content: flex-end;
         &_arrow {
@@ -53,7 +52,7 @@ body {
           font-size: 14px;
           font-family: "Four";
           text-decoration: none;
-          color: @colorWhit;
+          color: @colorWhite;
           margin-left: 3px;
         }
       }
@@ -66,7 +65,7 @@ body {
     background-image: url("../images/background-image.png");
     background-size: 100% 100%;
     width: 100%;
-    color: white;
+    color: @colorWhite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,6 +81,7 @@ body {
       background-size: 100% 100%;
       width: 60%;
       height: 130px;
+      margin-left: 11px;
     }
   }
   .message {
@@ -111,18 +111,11 @@ body {
       justify-content: center;
       width: 100%;
       margin-top: 9px;
-      &_style, &_style, &_style {
-        width: 13px;
-        height: 13px;
-        transform: rotate(-45deg);
-        transform-origin: 0 100%;
-        background: @colorWhit;
-      }
       .quickly__buba_style {
         margin-left: 3px;
       }
       .cool__buba_style, .expensive__buba_style {
-        margin-left: 28px;
+        margin-left: 32px;
       }
     }
     &__text, &__text, &__text {
@@ -144,7 +137,7 @@ body {
     width: 46%;
     margin-top: 50px;
     margin-right: 20px;
-    background: white;
+    background: @colorWhite;
     position: relative;
     display: flex;
   }
@@ -154,7 +147,7 @@ body {
   .news, .photo, .contactInformation, .enroll {
     width: 50%;
     margin-left: 40px;
-    color: black;
+    color: @colorBlack;
     position: relative;
     .news__header {
       font-family: "Four";
@@ -170,7 +163,7 @@ body {
     .news__button {
       font-family: "Four";
       background: @colorBlack;
-      color: @colorWhit;
+      color: @colorWhite;
       border: none;
       margin: 17px 0 32px 0;
       font-size: 12px;
@@ -202,7 +195,7 @@ body {
         &_style {
           width: 100%;
           background: @colorBlack;
-          color: @colorWhit;
+          color: @colorWhite;
           border: none;
           font-size: 12px;
           padding: 8px 0;
@@ -232,7 +225,7 @@ body {
       display: flex;
       .button__One, .button__Two {
         background: @colorBlack;
-        color: @colorWhit;
+        color: @colorWhite;
         border: none;
         font-family: "Four";
         font-size: 12px;
@@ -272,8 +265,8 @@ body {
           padding: 7px 0 7px 15px;
           font-size: 13px;
           font-family: "Four";
-          background: white;
-          border: 1px solid black;
+          background: @colorWhite;
+          border: 1px solid @colorBlack;
           width: 100%;
           text-align: start;
           &_margin {
@@ -285,8 +278,8 @@ body {
         margin-top: 20px;
         &__style {
           width: 100%;
-          background: black;
-          color: white;
+          background: @colorBlack;
+          color: @colorWhite;
           font-size: 13px;
           font-family: "Four";
           border: none;
@@ -304,7 +297,7 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    right: -13px;
+    right: -7px;
     height: 100%;
     width: 2px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
@@ -313,7 +306,7 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    right: -13px;
+    right: -7px;
     height: 100%;
     width: 2px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 80%);
@@ -328,7 +321,7 @@ body {
     width: 100%;
     margin-top: 40px;
     padding: 16px 0 26px 0;
-    color: @colorWhit;
+    color: @colorWhite;
   }
   &Content {
     display: flex;
@@ -343,7 +336,7 @@ body {
       margin: 21px 2px 0 0;
       font-family: "Three";
       &_why {
-        color: @colorWhit;
+        color: @colorWhite;
         font-size: 12px;
       }
     }
@@ -365,7 +358,7 @@ body {
           justify-content: center;
           width: 36px;
           height: 33px;
-          background: #000000;
+          background: @colorBlack;
           .social__vk_style {
             background-image: url("../images/vk.png");
             background-size: 100% 100%;

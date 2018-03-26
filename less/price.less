@@ -1,5 +1,5 @@
-@colorWhit: white;
-@colorBlack: black;
+@import "color";
+@import "marker";
 * {
   margin: 0;
   padding: 0;
@@ -7,22 +7,22 @@
 html,
 body {
   height: 100%;
-  background: black;
+  background: @colorBlack;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  background: black;
+  background: @colorBlack;
 }
 .priseList {
   font-size: 14px;
   font-family: "Four";
-  color: white;
+  color: @colorWhite;
   margin: 20px 0 -4px 4px;
   text-decoration: none;
   padding-bottom: 15px;
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid @colorWhite;
 }
 .footerWidthP {
   width: 60.7%;
@@ -57,14 +57,6 @@ body {
       margin: 13px 0 0 11px;
       font-weight: 600;
     }
-    &__buba {
-      width: 7px;
-      height: 7px;
-      transform: rotate(-45deg);
-      transform-origin: 0 100%;
-      background: @colorBlack;
-      margin: 19px 9px 0 19px;
-    }
     &__prise {
       color: grey;
       margin-left: 3px;
@@ -80,7 +72,7 @@ body {
       justify-content: center;
       width: 19.7%;
       &_item {
-        border-top: 1.6px solid black;
+        border-top: 1.6px solid @colorBlack;
         width: 100%;
         margin-top: 52px;
       }
@@ -113,14 +105,6 @@ body {
         .listStyle {
           display: flex;
         }
-        .listBuba {
-          width: 6.2px;
-          height: 6.2px;
-          transform: rotate(-45deg);
-          transform-origin: 0 100%;
-          background: @colorBlack;
-          margin: 15px 8px 0 4px;
-        }
       }
     }
   }
@@ -137,7 +121,7 @@ body {
       margin: 34px 0 0 6px;
       width: 97%;
       &_grid {
-        border: 2px solid black;
+        border: 2px solid @colorBlack;
         width: 36%;
         font-family: "Four";
         padding: 10px 0;

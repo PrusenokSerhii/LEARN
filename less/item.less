@@ -1,5 +1,5 @@
-@colorWhit: white;
-@colorBlack: black;
+@import "color";
+@import "marker";
 body, html{
   height: 100%;
   background: black;
@@ -7,17 +7,17 @@ body, html{
 .wrapper {
   display: flex;
   flex-direction: column;
-  background: black;
+  background: @colorBlack;
   height: 100%;
 }
 .headerMargin {
   margin-top: -8px;
 }
 .storeStyle {
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid @colorWhite;
   font-size: 14px;
   font-family: "Four";
-  color: white;
+  color: @colorWhite;
   margin: 20px 0 -4px 3px;
   text-decoration: none;
   padding-bottom: 15px;
@@ -25,13 +25,13 @@ body, html{
 .priseStyle {
   font-size: 14px;
   font-family: "Four";
-  color: white;
+  color: @colorWhite;
   margin: 20px 0 0 4px;
   text-decoration: none;
   padding-bottom: 15px;
 }
 .priseStyle:hover {
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid @colorWhite;
   margin-bottom: -4px;
 }
 
@@ -61,14 +61,6 @@ body, html{
           font-weight: 600;
           font-size: 12px;
           margin: 13px 7px 0 0;
-        }
-        .menuBuba {
-          width: 7px;
-          height: 7px;
-          transform: rotate(-45deg);
-          transform-origin: 0 100%;
-          background: @colorBlack;
-          margin: 18px 10px 0 9px;
         }
         .menuItem {
           font-family: "Three";
@@ -160,7 +152,7 @@ body, html{
         }
         &_buy {
           background: @colorBlack;
-          color: @colorWhit;
+          color: @colorWhite;
           font-size: 11px;
           font-family: "Four";
           border: none;
@@ -179,12 +171,6 @@ body, html{
         font-weight: 600;
         &_item {
           list-style: none;
-          &::before {
-            content: '\2666';
-            padding-right: 7px;
-            color: @colorBlack;
-            font-size: 16px;
-          }
         }
       }
     }
