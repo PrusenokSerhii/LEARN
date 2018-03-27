@@ -26,6 +26,7 @@
     "browser-sync": "^2.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^1.0.1",
+    "gulp-connect-php": "^1.0.3",
     "gulp-imagemin": "^2.2.1",
     "gulp-less": "^3.4.0",
     "gulp-plumber": "^0.6.6",
