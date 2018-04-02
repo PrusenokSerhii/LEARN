@@ -1,0 +1,404 @@
+@import "colorGold";
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .content {
+    flex: 1 0 auto;
+    .header {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &__imgLogo {
+        background-image: url("../goldCoach/img/Layer 1.png");
+        background-size: 100% 100%;
+        width: 331px;
+        height: 83px;
+        margin-top: 30px;
+      }
+      &__textOne {
+        font-size: 27px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-content: center;
+        margin-left: 22px;
+      }
+      &__line {
+        background-color: @colorDark;
+        width: 65%;
+        height: 1px;
+        margin-top: 30px;
+      }
+      &__textTwo {
+        font-size: 34px;
+        color: @backgroundOrange;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 45px;
+      }
+      &__textThree {
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 40px;
+      }
+      &__button {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        &_style {
+          background-color: @backgroundOrange;
+          color: @colorWhite;
+          padding: 15px 45px;
+          font-size: 30px;
+          font-family: Arial, Helvetica, sans-serif;
+          border: none;
+          border-bottom: 6px solid @colorBorder;
+        }
+      }
+    }
+    .block {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 30px;
+      &__orange {
+        width: 32%;
+        background-color: @backgroundOrange;
+        display: flex;
+        flex-direction: column;
+        &_date {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          margin-top: 40px;
+          .calendar {
+            background-color: @colorWhite;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 25%;
+            font-weight: 600;
+            margin-left: 30px;
+            &May {
+              background-color: @colorDark;
+              color: @colorWhite;
+              font-size: 22px;
+              display: flex;
+              justify-content: center;
+              padding: 4px 0;
+            }
+            &Number {
+              font-size: 85px;
+              color: @colorNumber;
+              display: flex;
+              justify-content: center;
+              margin-top: 4px;
+            }
+          }
+          .time {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            margin-left: 30px;
+            font-weight: 600;
+            font-size: 29px;
+            color: @colorWhite;
+            &Number {
+              width: 90%;
+              margin-top: 15px;
+            }
+            &Line {
+              background-image: url("../goldCoach/img/-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -.png");
+              background-repeat: repeat-x;
+              width: 85%;
+              height: 5px;
+              margin-top: 15px;
+            }
+            &MCK {
+              margin-top: 12px;
+              font-size: 20px;
+            }
+          }
+        }
+        &_face {
+          display: flex;
+          justify-content: center;
+          .faceStyle {
+            background-image: url("../goldCoach/img/Ivan_Zymbytskyi_001.png");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 200px;
+            margin-top: 50px;
+          }
+        }
+        &_speaker, &_ivan, &_zambicky {
+          font-size: 22px;
+          font-family: Arial, Helvetica, sans-serif;
+          color: @colorWhite;
+          font-style: italic;
+          text-align: center;
+          margin-top: 30px;
+        }
+        &_ivan, &_zambicky {
+          margin-top: 15px;
+          font-style: normal;
+        }
+        &_zambicky {
+          margin-top: 0;
+        }
+        .block__orange_list {
+          font-size: 18px;
+          color: @colorWhite;
+          font-family: Arial, Helvetica, sans-serif;
+          background: @backgroundOrange;
+          text-decoration: none;
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .listStyle {
+            margin-top: 20px;
+            width: 70%;
+          }
+        }
+      }
+      .block__white {
+        width: 32%;
+        background-color:@colorBlock;
+        &_header {
+          text-align: center;
+          margin-top: 40px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 21px;
+          font-weight: 600;
+        }
+        &_timer {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+          .timer {
+            display: flex;
+            flex-direction: row;
+            &__block {
+              font-family: Arial, Helvetica, sans-serif;
+              &_zero {
+                padding: 8px 20px;
+                border-radius: 10px;
+                background-color: @colorDark;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 200%;
+                color: @colorWhite;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+              &_value {
+                font-size: 14px;
+                color: @colorDark;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 10px;
+              }
+            }
+            .blockMargin {
+              margin-left: 12px;
+            }
+          }
+        }
+        &_headerTwo {
+          margin-top: 50px;
+          display: flex;
+          justify-content: center;
+          .headerTwo_text {
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: @colorDark;
+            font-weight: bold;
+            margin-left: 30px;
+          }
+        }
+        &_list {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 30px;
+          .listItem {
+            width: 80%;
+            margin-left: 30px;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: @colorDark;
+            list-style: none;
+            position: relative;
+            margin-top: 30px;
+            &::before {
+              content: url("../goldCoach/img/marker.png");
+              position: absolute;
+              left: -36px;
+            }
+          }
+          .listStyle {
+            font-weight: 600;
+          }
+          .listBottom {
+            margin-bottom: 60px;
+          }
+        }
+      }
+    }
+    .textFormat {
+      font-size: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: @colorDark;
+      font-style: italic;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .textQuestion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      &__style, &__already {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: @colorWhite;
+        background-color: @backgroundOrange;
+        width: 25%;
+        height: 57px;
+      }
+      &__already {
+        width: 80%;
+        background: none;
+        color: @colorDark;
+        text-align: center;
+        margin-top: 30px;
+      }
+      .alreadyMargin {
+        margin-top: 0;
+      }
+      &__line {
+        background-image: url("../goldCoach/img/lineTwo.png");
+        background-repeat: repeat-x;
+        width: 65%;
+        height: 16px;
+        margin-top: 15px;
+      }
+    }
+    .blockTwo {
+      background: url("../goldCoach/img/text_2.png");
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      &__text {
+        width: 64%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: @colorDark;
+        &_textHeader {
+          font-weight: bold;
+          text-align: center;;
+          font-size: 35px;
+          margin-top: 20px;
+        }
+        &_item {
+          font-size: 27px;
+          margin-top: 40px;
+        }
+        .textBottom {
+          margin-bottom: 150px;
+        }
+      }
+    }
+    .collage {
+      background: url("../goldCoach/img/collage.png") no-repeat center center;
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -180px;
+      height: 950px;
+      &__img {
+        background: url("../goldCoach/img/photos.png") no-repeat center center;
+        background-size: 100% 100%;
+        width: 64%;
+        height: 575px;
+        margin-top: 125px;
+      }
+      &__text {
+        width: 64%;
+        font-size: 30px;
+        margin-top: 30px;
+      }
+      .textWidth {
+        font-weight: 600;
+      }
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+      &__style {
+        background-color: @backgroundOrange;
+        width: 64%;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        border-bottom: 6px solid @colorBorder;
+      }
+    }
+  }
+  .footer {
+    flex: 0 0 auto;
+    &__block {
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
+      &_vk, &_f, &_tr {
+        background-image: url("../goldCoach/img/vk.png");
+        background-size: 100% 100%;
+        width: 35px;
+        height: 35px;
+      }
+      &_f {
+        background-image: url("../goldCoach/img/f.png");
+        margin-left: 2px;
+      }
+      &_tr {
+        background-image: url("../goldCoach/img/tr.png");
+        margin-left: 2px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+
+  .block__orange {
+    background-color: green;
+  }
+
+  .textQuestion__style {
+    color: blue;
+  }
+  .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

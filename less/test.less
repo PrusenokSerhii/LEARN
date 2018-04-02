@@ -1,0 +1,242 @@
+//* {
+//  margin: 0;
+//  padding: 0;
+//}
+//html,
+//body {
+//  height: 100%;
+//}
+//.wrapper {
+//  display: flex;
+//  flex-direction: column;
+//  height: 100%;
+//  .content {
+//    flex: 1 0 auto;
+//    background: url("../images/test/img/Photo Background.png");
+//    background-size: 100% 100%;
+//    .header {
+//      margin-top: 60px;
+//      display: flex;
+//      justify-content: space-between;
+//      &Logo {
+//        display: flex;
+//        width: 25%;
+//        justify-content: flex-end;
+//        &__style {
+//          background-image: url("../images/test/img/LogoOne.png");
+//          width: 158px;
+//          height: 18px;
+//        }
+//      }
+//      &Menu {
+//        display: flex;
+//        flex-direction: row;
+//        width: 22%;
+//        &__menu {
+//          font-size: 16px;
+//          font-family: "Arial";
+//          color: rgb(255, 255, 255);
+//          margin-left: 11px;
+//        }
+//        &__btn {
+//          height: 4px;
+//          width: 20px;
+//          background-color: #adb2ba;
+//          position: relative;
+//          border-radius: 8px;
+//          margin-left: 15px;
+//          &:before, &:after {
+//            content: "";
+//            position: absolute;
+//            display: block;
+//            width: 20px;
+//            height: 4px;
+//            background-color: #adb2ba;
+//            border-radius: 8px;
+//            left: 0;
+//            top: 8px;
+//          }
+//          &:after {
+//            top: 16px;
+//          }
+//        }
+//      }
+//    }
+//    .section {
+//      margin-top: 180px;
+//      .weDesign {
+//        font-size: 70px;
+//        font-family: "Arial";
+//        color: rgb(255, 255, 255);
+//        font-weight: 600;
+//        text-align: center;
+//      }
+//      .things {
+//        color: #ed600b;
+//        font-weight: 600;
+//      }
+//      .text {
+//        text-align: center;
+//        font-size: 25px;
+//        font-family: "Arial";
+//        color: #ffffff;
+//        margin-top: 40px;
+//      }
+//      .textMargin {
+//        margin-top: 10px;
+//      }
+//    }
+//    .sectionTwo {
+//      text-align: center;
+//      margin-top: 75px;
+//      .button {
+//        text-align: center;
+//        padding: 10px 40px;
+//        border-radius: 10px;
+//        background: none;
+//        border: 1px solid rgb(255, 255, 255);
+//        box-shadow: none;
+//        color: white;
+//        &:hover {
+//          background: #ed600b;
+//        }
+//      }
+//      .buttonHireStyle {
+//        padding: 10px 55px;
+//      }
+//      .buttonOurStyle {
+//        margin-left: 15px;
+//      }
+//    }
+//    .sectionThree {
+//      display: flex;
+//      justify-content: center;
+//      margin: 200px 0 20px 0;
+//      .arrow {
+//        background: url("../images/test/img/014__circle_arrow_down.png");
+//        background-size: 100% 100%;
+//        width: 20px;
+//        height: 20px;
+//      }
+//    }
+//  }
+//  .footer {
+//    flex: 0 0 auto;
+//    display: flex;
+//    align-items: center;
+//    justify-content: center;
+//    &Item {
+//      display: flex;
+//      width: 65%;
+//      justify-content: space-between;
+//      margin-bottom: 115px;
+//      &__print, &__web, &__app, &__logo {
+//        display: flex;
+//        flex-direction: column;
+//        align-items: center;
+//        .circleBorder {
+//          border: 1px solid rgb(59, 67, 76);
+//          width: 150px;
+//          height: 150px;
+//          border-radius: 50%;
+//          display: flex;
+//          justify-content: center;
+//          align-items: center;
+//          text-align: center;
+//          margin-top: 100px;
+//        }
+//        .printImg {
+//          background: url("../images/test/img/Inteligentny obiekt wektorowy-3.png");
+//          background-size: 100% 100%;
+//          width: 55px;
+//          height: 55px;
+//        }
+//        .webImg {
+//          background: url("../images/test/img/Inteligentny obiekt wektorowy-2.png");
+//          background-size: 100% 100%;
+//          width: 55px;
+//          height: 50px;
+//        }
+//        .appImg {
+//          background: url("../images/test/img/Inteligentny obiekt wektorowy-1.png");
+//          background-size: 100% 100%;
+//          width: 40px;
+//          height: 70px;
+//        }
+//        .logoImg {
+//          background: url("../images/test/img/Inteligentny obiekt wektorowy.png");
+//          background-size: 100% 100%;
+//          width: 40px;
+//          height: 70px;
+//        }
+//        .textHeader {
+//          font-size: 16px;
+//          font-weight: 600;
+//          font-family: "Arial";
+//          color: rgb(59, 67, 76);
+//          margin-top: 30px;
+//        }
+//        .textWhole {
+//          font-size: 14px;
+//          font-family: "Arial";
+//          color: rgb(59, 67, 76);
+//          margin-top: 30px;
+//        }
+//        .margin {
+//          margin-top: 5px;
+//        }
+//      }
+//    }
+//  }
+//}
+
+
+
+
+.Header {
+  //height: 200px;
+  border: 2px solid green;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+
+
+.item {
+  height: 40px;
+  //width: 60px;
+  background: brown;
+  margin: 5px;
+  flex-grow: 1;
+  order: 10;
+}
+//.item_1 {
+//  flex-grow: 2;
+//}
+//
+//
+//.item_2 {
+//  flex-grow: 3;
+//}
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
